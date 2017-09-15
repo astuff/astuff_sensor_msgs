@@ -1,0 +1,9 @@
+Header header
+
+int8 latitude_degrees
+uint8 latitude_minutes
+uint8 latitude_seconds
+int8 longitude_degrees
+uint8 longitude_minutes
+uint8 longitude_seconds
+float64 heading

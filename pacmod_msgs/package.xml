@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+  <name>pacmod_msgs</name>
+  <version>1.2.0</version>
+  <description>Message definition files for the PACMod driver</description>
+  <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
+  <license>Closed Source</license>
+  <url type="repository">https://bitbucket.org/autonomoustuff/ros_pacmod</url>
+  <author email="jwhitley@autonomoustuff.com">Josh Whitley</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>
