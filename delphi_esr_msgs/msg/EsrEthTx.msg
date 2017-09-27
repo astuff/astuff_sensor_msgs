@@ -18,7 +18,3 @@ float32[64]       target_report_range
 float32[64]       target_report_range_rate
 float32[64]       target_report_theta
 float32[64]       target_report_amplitude
-float32[64]       pos_x
-float32[64]       pos_y
-float32[64]       vel_x
-float32[64]       vel_y
