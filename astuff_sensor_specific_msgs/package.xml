@@ -3,11 +3,16 @@
   <name>astuff_sensor_specific_msgs</name>
   <version>2.0.0</version>
   <description>Messages specific to AStuff-provided sensors.</description>
-  <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
-  <license>GNU GPL v3</license>
+  <license>GPLv3</license>
+
   <url type="repository">https://github.com/astuff/astuff_sensor_specific_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_specific_msgs/issues</url>
+
+  <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Joshua Whitley</author>
+
   <buildtool_depend>catkin</buildtool_depend>
+
   <run_depend>delphi_esr_msgs</run_depend>
   <run_depend>delphi_srr_msgs</run_depend>
   <run_depend>ibeo_lux_msgs</run_depend>
@@ -16,4 +21,8 @@
   <run_depend>mobileye_560_660_msgs</run_depend>
   <run_depend>neobotix_usboard_msgs</run_depend>
   <run_depend>pacmod_msgs</run_depend>
+
+  <export>
+    <metapackage />
+  </export>
 </package>
