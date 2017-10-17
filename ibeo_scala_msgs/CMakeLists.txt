@@ -14,9 +14,9 @@ add_message_files(
   CameraImage.msg
   ContourPointSigma.msg
   DeviceStatus.msg
-  HostsVehicleState2805.msg
-  HostsVehicleState2806.msg
-  HostsVehicleState2807.msg
+  HostVehicleState2805.msg
+  HostVehicleState2806.msg
+  HostVehicleState2807.msg
   IbeoDataHeader.msg
   MountingPositionF.msg
   Object2225.msg
