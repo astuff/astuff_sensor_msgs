@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+  <name>ibeo_msgs</name>
+  <version>2.0.0</version>
+  <description>Package containing messages for Ibeo sensors.</description>
+  <license>LGPLv2.1</license>
+
+  <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
+  <author email="jwhitley@autonomoustuff.com">Joshua Whitley</author>
+  <author email="jkale@autonomoustuff.com">Joe Kale</author>
+  <author email="preed@swri.org">P.J. Reed</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>message_generation</build_depend>
+  <build_depend>std_msgs</build_depend>
+
+  <run_depend>message_runtime</run_depend>
+  <run_depend>std_msgs</run_depend>
+</package>

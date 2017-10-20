@@ -1,0 +1,10 @@
+uint16 relative_time_of_measurement
+Point2Di position_closest_point
+Point2Di object_box_size
+Point2Dui object_box_size_sigma
+int16 object_box_orientation
+uint16 object_box_orientation_sigma
+Point2Di tracking_point_coordinate
+Point2Dui tracking_point_coordinate_sigma
+uint8 number_of_contour_points
+ContourPointSigma[] contour_point_list
