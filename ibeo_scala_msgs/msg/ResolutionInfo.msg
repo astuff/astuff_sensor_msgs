@@ -1,2 +1,0 @@
-float32 resolution_start_angle
-float32 resolution

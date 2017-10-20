@@ -7,7 +7,7 @@ A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_specif
 - `delphi_esr_msgs`
 - `delphi_srr_msgs`
 - `ibeo_lux_msgs`
-- `ibeo_scala_msgs`
+- `ibeo_msgs` (Messages for all Ibeo sensors)
 - `kartech_linear_actuator_msgs`
 - `mobileye_560_660_msgs`
 - `neobotix_usboard_msgs`
