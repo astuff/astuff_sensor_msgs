@@ -16,4 +16,12 @@ int16 mounting_roll_angle_ticks
 int16 mounting_position_x
 int16 mounting_position_y
 int16 mounting_position_z
+bool ground_labeled
+bool dirt_labeled
+bool rain_labeled
+uint8 mirror_side
 ScanPoint2202[] scan_point_list
+
+# mirror_side values
+uint8 FRONT=0
+uint8 REAR=1
