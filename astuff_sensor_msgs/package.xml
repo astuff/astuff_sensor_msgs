@@ -15,7 +15,6 @@
 
   <run_depend>delphi_esr_msgs</run_depend>
   <run_depend>delphi_srr_msgs</run_depend>
-  <run_depend>ibeo_lux_msgs</run_depend>
   <run_depend>ibeo_msgs</run_depend>
   <run_depend>kartech_linear_actuator_msgs</run_depend>
   <run_depend>mobileye_560_660_msgs</run_depend>
