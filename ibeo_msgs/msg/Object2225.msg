@@ -5,19 +5,19 @@ uint16 hidden_status_age
 uint8 classification
 uint8 classification_certainty
 uint32 classification_age
-Point2DFloat bounding_box_center
-Point2DFloat bounding_box_size
-Point2DFloat object_box_center
-Point2DFloat object_box_center_sigma
-Point2DFloat object_box_size
+Point2Df bounding_box_center
+Point2Df bounding_box_size
+Point2Df object_box_center
+Point2Df object_box_center_sigma
+Point2Df object_box_size
 float32 yaw_angle
-Point2DFloat relative_velocity
-Point2DFloat relative_velocity_sigma
-Point2DFloat absolute_velocity
-Point2DFloat absolute_velocity_sigma
+Point2Df relative_velocity
+Point2Df relative_velocity_sigma
+Point2Df absolute_velocity
+Point2Df absolute_velocity_sigma
 uint8 number_of_contour_points
 uint8 closest_point_index
-Point2DFloat[] contour_point_list
+Point2Df[] contour_point_list
 
 # classification values
 uint8 UNCLASSIFIED=0
