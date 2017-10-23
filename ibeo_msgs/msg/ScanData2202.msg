@@ -9,6 +9,7 @@ time scan_end_time
 uint16 angle_ticks_per_rotation
 int16 start_angle_ticks
 int16 end_angle_ticks
+uint16 scan_points_count
 int16 mounting_yaw_angle_ticks
 int16 mounting_pitch_angle_ticks
 int16 mounting_roll_angle_ticks

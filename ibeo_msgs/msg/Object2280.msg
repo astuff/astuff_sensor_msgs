@@ -1,4 +1,4 @@
-uint16 object_id
+uint16 id
 uint8 tracking_model
 bool mobility_of_dyn_object_detected
 bool motion_model_validated
@@ -17,6 +17,7 @@ Point2Df relative_velocity
 Point2Df relative_velocity_sigma
 Point2Df absolute_velocity
 Point2Df absolute_velocity_sigma
+uint8 number_of_contour_points
 uint8 closest_point_index
 uint16 reference_point_location
 Point2Df reference_point_coordinate

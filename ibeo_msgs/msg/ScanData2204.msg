@@ -1,16 +1,19 @@
 Header header
 
 IbeoDataHeader ibeo_header
-time scan_start_time
-uint8 scan_end_time_offset
+uint64 scan_start_time
+uint32 scan_end_time_offset
+bool ground_labeled
+bool dirt_labeled
+bool rain_labeled
 bool fused_scan
 uint8 mirror_side
 uint8 coordinate_system
 uint16 scan_number
 uint16 scan_points
-uint8 number_of_scanner_infos
-ScannerInfo2205[] scanner_info_list
-ScanPoint2205[] scan_point_list
+uint16 number_of_scanner_infos
+ScannerInfo2204[] scanner_info_list
+ScanPoint2204[] scan_point_list
 
 # mirror_side values
 uint8 FRONT=0

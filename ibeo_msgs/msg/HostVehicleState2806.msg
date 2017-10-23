@@ -1,7 +1,7 @@
 Header header
 
 IbeoDataHeader ibeo_header
-time stamp
+time timestamp
 int32 distance_x
 int32 distance_y
 float32 course_angle

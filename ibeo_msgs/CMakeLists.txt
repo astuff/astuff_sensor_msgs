@@ -15,15 +15,18 @@ add_message_files(FILES
   CameraImage.msg
   ContourPointSigma.msg
   DeviceStatus.msg
+  ErrorWarning.msg
   HostVehicleState2805.msg
   HostVehicleState2806.msg
   HostVehicleState2807.msg
   IbeoDataHeader.msg
   MountingPositionF.msg
+  Object2221.msg
   Object2225.msg
   Object2270.msg
   Object2271.msg
   Object2280.msg
+  ObjectData2221.msg
   ObjectData2225.msg
   ObjectData2270.msg
   ObjectData2271.msg
@@ -33,10 +36,13 @@ add_message_files(FILES
   Point2Dui.msg
   ResolutionInfo.msg
   ScanData2202.msg
+  ScanData2204.msg
   ScanData2205.msg
   ScanData2208.msg
-  ScannerInfo.msg
+  ScannerInfo2204.msg
+  ScannerInfo2205.msg
   ScanPoint2202.msg
+  ScanPoint2204.msg
   ScanPoint2205.msg
   ScanPoint2208.msg
   Sigma2D.msg
