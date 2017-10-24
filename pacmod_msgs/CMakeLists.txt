@@ -28,6 +28,7 @@ add_message_files(
   SystemRptFloat.msg
   SystemRptInt.msg
   VehicleSpeedRpt.msg
+  VinRpt.msg
   WheelSpeedRpt.msg
   YawRateRpt.msg
 )
