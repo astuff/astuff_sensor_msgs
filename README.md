@@ -1,6 +1,6 @@
 # ROS Messages for AutonomouStuff-provided Drivers #
 
-[![Build Status](https://travis-ci.org/astuff/astuff_sensor_specific_msgs.svg?branch=master)](https://travis-ci.org/astuff/astuff_sensor_specific_msgs)
+[![Build Status](https://travis-ci.org/astuff/astuff_sensor_msgs.svg?branch=master)](https://travis-ci.org/astuff/astuff_sensor_msgs)
 
 A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_specific_msgs` contains:
 
