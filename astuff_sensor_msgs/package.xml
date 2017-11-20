@@ -13,13 +13,13 @@
 
   <buildtool_depend>catkin</buildtool_depend>
 
-  <depend>delphi_esr_msgs</depend>
-  <depend>delphi_srr_msgs</depend>
-  <depend>ibeo_msgs</depend>
-  <depend>kartech_linear_actuator_msgs</depend>
-  <depend>mobileye_560_660_msgs</depend>
-  <depend>neobotix_usboard_msgs</depend>
-  <depend>pacmod_msgs</depend>
+  <exec_depend>delphi_esr_msgs</exec_depend>
+  <exec_depend>delphi_srr_msgs</exec_depend>
+  <exec_depend>ibeo_msgs</exec_depend>
+  <exec_depend>kartech_linear_actuator_msgs</exec_depend>
+  <exec_depend>mobileye_560_660_msgs</exec_depend>
+  <exec_depend>neobotix_usboard_msgs</exec_depend>
+  <exec_depend>pacmod_msgs</exec_depend>
 
   <export>
     <metapackage />
