@@ -10,7 +10,6 @@ project(kartech_linear_actuator_msgs)
 find_package(catkin REQUIRED
   message_generation
   std_msgs
-  message_runtime
 )
 
 ## Generate messages in the 'msg' folder
@@ -47,5 +46,7 @@ generate_messages(
 )
 
 catkin_package(
- CATKIN_DEPENDS std_msgs
+ CATKIN_DEPENDS
+ std_msgs
+ message_runtime
 )
