@@ -17,6 +17,7 @@ add_message_files(
   AnsWriteParaset.msg  
   Command.msg          
   Data4Sensors.msg  
+  Data1Sensor.msg
   Paraset.msg
 )
 
