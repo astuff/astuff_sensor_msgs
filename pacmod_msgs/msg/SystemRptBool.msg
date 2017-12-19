@@ -3,6 +3,6 @@ Header header
 bool enabled
 bool override_active
 
-uint16 manual_input
-uint16 command
-uint16 output
+bool manual_input
+bool command
+bool output
