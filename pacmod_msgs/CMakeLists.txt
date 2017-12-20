@@ -25,6 +25,7 @@ add_message_files(
   SteeringPIDRpt2.msg
   SteeringPIDRpt3.msg
   SteeringPIDRpt4.msg
+  SteerSystemCmd.msg
   SystemCmdBool.msg
   SystemCmdFloat.msg
   SystemCmdInt.msg
