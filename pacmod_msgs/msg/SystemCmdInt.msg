@@ -2,6 +2,8 @@ Header header
 
 bool enable
 bool ignore_overrides
+bool clear_override
+
 uint16 command
 
 uint16 TURN_RIGHT = 0
