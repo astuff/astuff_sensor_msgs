@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   DateTimeRpt.msg
+  DetectedObjectRpt.msg
   GlobalRpt.msg
   LatLonHeadingRpt.msg
   MotorRpt1.msg
@@ -32,6 +33,8 @@ add_message_files(
   SystemRptBool.msg
   SystemRptFloat.msg
   SystemRptInt.msg
+  VehicleControlsRpt.msg
+  VehicleDynamicsRpt.msg
   VehicleSpeedRpt.msg
   VinRpt.msg
   WheelSpeedRpt.msg
