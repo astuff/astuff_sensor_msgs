@@ -12,8 +12,8 @@ uint16 manual_input
 uint16 command
 uint16 output
 
-uint16 TURN_NONE = 0
-uint16 TURN_LEFT = 1
+uint16 TURN_LEFT = 0
+uint16 TURN_NONE = 1
 uint16 TURN_RIGHT = 2
 uint16 TURN_HAZARDS = 3
 
