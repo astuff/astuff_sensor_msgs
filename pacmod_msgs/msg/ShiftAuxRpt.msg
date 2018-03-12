@@ -1,0 +1,8 @@
+Header header
+
+bool between_gears
+bool between_gears_is_valid
+bool stay_in_neutral_mode
+bool stay_in_neutral_mode_is_valid
+bool shift_interlock_active
+bool shift_interlock_active_is_valid

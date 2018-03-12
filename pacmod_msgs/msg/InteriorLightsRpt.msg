@@ -1,0 +1,10 @@
+Header header
+
+bool dome_lights_on
+bool dome_lights_on_is_valid
+bool rear_dome_lights_on
+bool rear_dome_lights_on_is_valid
+bool mood_lights_on
+bool mood_lights_on_is_valid
+uint8 dim_level
+bool dim_level_is_valid

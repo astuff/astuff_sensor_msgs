@@ -1,0 +1,16 @@
+Header header
+
+bool driver_door_open
+bool driver_door_open_is_valid
+bool passenger_door_open
+bool passenger_door_open_is_valid
+bool rear_driver_door_open
+bool rear_driver_door_open_is_valid
+bool rear_passenger_door_open
+bool rear_passenger_door_open_is_valid
+bool hood_open
+bool hood_open_is_valid
+bool trunk_open
+bool trunk_open_is_valid
+bool fuel_door_open
+bool fuel_door_open_is_valid
