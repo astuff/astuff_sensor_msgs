@@ -1,0 +1,12 @@
+Header header
+
+float64 raw_pedal_pos
+bool raw_pedal_pos_is_valid
+float64 raw_pedal_force
+bool raw_pedal_force_is_valid
+bool user_interaction
+bool user_interaction_is_valid
+float64 brake_torque
+bool brake_torque_is_valid
+float64 brake_pressure
+bool brake_pressure_is_valid

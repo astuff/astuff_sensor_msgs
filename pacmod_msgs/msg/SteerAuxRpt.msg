@@ -1,0 +1,10 @@
+Header header
+
+float64 raw_position
+bool raw_position_is_valid
+float64 raw_torque
+bool raw_torque_is_valid
+bool user_interaction
+bool user_interaction_is_valid
+float64 rotation_rate
+bool rotation_rate_is_valid

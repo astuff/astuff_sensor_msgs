@@ -12,16 +12,24 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
+  AccelAuxRpt.msg
+  BrakeAuxRpt.msg
   DateTimeRpt.msg
   DetectedObjectRpt.msg
+  DoorRpt.msg
+  ExteriorLightsRpt.msg
   GlobalRpt.msg
+  InteriorLightsRpt.msg
   LatLonHeadingRpt.msg
   MotorRpt1.msg
   MotorRpt2.msg
   MotorRpt3.msg
+  OccupancyRpt.msg
   PacmodCmd.msg
   ParkingBrakeStatusRpt.msg
   PositionWithSpeed.msg
+  ShiftAuxRpt.msg
+  SteerAuxRpt.msg
   SteeringPIDRpt1.msg
   SteeringPIDRpt2.msg
   SteeringPIDRpt3.msg
