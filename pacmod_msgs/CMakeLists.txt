@@ -17,8 +17,8 @@ add_message_files(
   DateTimeRpt.msg
   DetectedObjectRpt.msg
   DoorRpt.msg
-  ExteriorLightsRpt.msg
   GlobalRpt.msg
+  HeadlightAuxRpt.msg
   InteriorLightsRpt.msg
   LatLonHeadingRpt.msg
   MotorRpt1.msg
@@ -26,8 +26,10 @@ add_message_files(
   MotorRpt3.msg
   OccupancyRpt.msg
   PacmodCmd.msg
+  ParkingBrakeAuxRpt.msg
   ParkingBrakeStatusRpt.msg
   PositionWithSpeed.msg
+  RearLightsRpt.msg
   ShiftAuxRpt.msg
   SteerAuxRpt.msg
   SteeringPIDRpt1.msg
@@ -41,11 +43,13 @@ add_message_files(
   SystemRptBool.msg
   SystemRptFloat.msg
   SystemRptInt.msg
+  TurnAuxRpt.msg
   VehicleControlsRpt.msg
   VehicleDynamicsRpt.msg
   VehicleSpeedRpt.msg
   VinRpt.msg
   WheelSpeedRpt.msg
+  WiperAuxRpt.msg
   YawRateRpt.msg
 )
 
