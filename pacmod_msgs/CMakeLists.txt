@@ -43,7 +43,7 @@ add_message_files(
   SystemRptFloat.msg
   SystemRptInt.msg
   TurnAuxRpt.msg
-  VehicleControlsRpt.msg
+  VehicleSpecificRpt1.msg
   VehicleDynamicsRpt.msg
   VehicleSpeedRpt.msg
   VinRpt.msg
