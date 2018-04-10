@@ -26,7 +26,6 @@ add_message_files(
   MotorRpt3.msg
   OccupancyRpt.msg
   PacmodCmd.msg
-  ParkingBrakeAuxRpt.msg
   ParkingBrakeStatusRpt.msg
   PositionWithSpeed.msg
   RearLightsRpt.msg
