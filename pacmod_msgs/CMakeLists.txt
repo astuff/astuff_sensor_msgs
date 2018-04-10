@@ -26,7 +26,6 @@ add_message_files(
   MotorRpt3.msg
   OccupancyRpt.msg
   PacmodCmd.msg
-  ParkingBrakeAuxRpt.msg
   ParkingBrakeStatusRpt.msg
   PositionWithSpeed.msg
   RearLightsRpt.msg
@@ -44,7 +43,7 @@ add_message_files(
   SystemRptFloat.msg
   SystemRptInt.msg
   TurnAuxRpt.msg
-  VehicleControlsRpt.msg
+  VehicleSpecificRpt1.msg
   VehicleDynamicsRpt.msg
   VehicleSpeedRpt.msg
   VinRpt.msg
