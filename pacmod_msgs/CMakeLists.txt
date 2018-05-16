@@ -13,6 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 add_message_files(
   FILES
   AccelAuxRpt.msg
+  AllSystemStatuses.msg
   BrakeAuxRpt.msg
   DateTimeRpt.msg
   DetectedObjectRpt.msg
@@ -20,6 +21,7 @@ add_message_files(
   GlobalRpt.msg
   HeadlightAuxRpt.msg
   InteriorLightsRpt.msg
+  KeyValuePair.msg
   LatLonHeadingRpt.msg
   MotorRpt1.msg
   MotorRpt2.msg
