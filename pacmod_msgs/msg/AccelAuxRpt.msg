@@ -6,3 +6,5 @@ float64 raw_pedal_force
 bool raw_pedal_force_is_valid
 bool user_interaction
 bool user_interaction_is_valid
+bool brake_interlock_active
+bool brake_interlock_active_is_valid
