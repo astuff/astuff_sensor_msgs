@@ -3,7 +3,7 @@
   <name>ibeo_msgs</name>
   <version>2.1.0</version>
   <description>Package containing messages for Ibeo sensors.</description>
-  <license>LGPLv2.1</license>
+  <license>MIT</license>
 
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Joshua Whitley</author>

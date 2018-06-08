@@ -3,7 +3,7 @@
   <name>neobotix_usboard_msgs</name>
   <version>2.1.0</version>
   <description>neobotix_usboard package</description>
-  <license>GPLv3</license>
+  <license>MIT</license>
 
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
   <author email="srustan@autonomoustuff.com">Sam Rustan</author>

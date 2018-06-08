@@ -3,7 +3,7 @@
   <name>delphi_srr_msgs</name>
   <version>2.1.0</version>
   <description>Message definitions for the Delphi SRR</description>
-  <license>GPLv3</license>
+  <license>MIT</license>
 
   <maintainer email="support@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Josh Whitley</author>
