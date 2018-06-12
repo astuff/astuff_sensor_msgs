@@ -5,8 +5,8 @@
   <description>Messages specific to AStuff-provided sensors.</description>
   <license>MIT</license>
 
-  <url type="repository">https://github.com/astuff/astuff_sensor_specific_msgs</url>
-  <url type="bugtracker">https://github.com/astuff/astuff_sensor_specific_msgs/issues</url>
+  <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
 
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Joshua Whitley</author>
@@ -20,6 +20,7 @@
   <exec_depend>mobileye_560_660_msgs</exec_depend>
   <exec_depend>neobotix_usboard_msgs</exec_depend>
   <exec_depend>pacmod_msgs</exec_depend>
+  <exec_depend>radar_msgs</exec_depend>
 
   <export>
     <metapackage />
