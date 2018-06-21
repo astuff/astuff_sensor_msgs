@@ -38,6 +38,8 @@ add_message_files(
   XCPMrrDtoResp.msg
   XCPMrrDtoReq.msg
   XCPMrrCtoResp.msg
+  XCPMrrCtoReq.msg
+  FordDiagReqFunc.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
