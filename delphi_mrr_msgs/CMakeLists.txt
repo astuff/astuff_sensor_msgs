@@ -45,6 +45,12 @@ add_message_files(
   VehicleStateMsg3.msg
   VehicleStateMsg2.msg
   VehicleStateMsg1.msg
+  LROSCarCfgFord.msg
+  SystemTDBlockage.msg
+  LrosVinPart3.msg
+  LrosVinPart2.msg
+  LrosVinPart1.msg
+  LrosSignalsActualValues.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)

@@ -1,0 +1,5 @@
+uint8 canYawRateCalcQf
+float canYawRateCalc
+float canYawRateBias
+float canVehicleSpeedCalc
+float canVehSpdCompFactor 
