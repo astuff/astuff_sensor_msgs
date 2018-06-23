@@ -40,6 +40,11 @@ add_message_files(
   XCPMrrCtoResp.msg
   XCPMrrCtoReq.msg
   FordDiagReqFunc.msg
+  FordDiagRespPhys.msg
+  WheelSpeedMsg.msg
+  VehicleStateMsg3.msg
+  VehicleStateMsg2.msg
+  VehicleStateMsg1.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
