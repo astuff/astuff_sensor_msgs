@@ -1,0 +1,2 @@
+float canDetTimeSinceMeas
+float canSensorTimeStamp

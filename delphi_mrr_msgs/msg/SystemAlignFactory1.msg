@@ -1,0 +1,6 @@
+float canFacTgtRangeR2m
+float canFacTgtRangeM2t
+float canFacTgtRange1
+uint8 canFacTgtMtgSpaceHor
+uint8 canFacTgtMtgOffset
+uint8 canFacAlignSampReq

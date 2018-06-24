@@ -1,0 +1,5 @@
+float canLateralMountingOffset 
+uint8 canFacPlateTiltNumber
+float canFacPlateTiltAngle
+uint8 canFacPlatePositionsTotal
+uint8 canFacAlignMaxNt

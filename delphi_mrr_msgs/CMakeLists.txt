@@ -51,6 +51,22 @@ add_message_files(
   LrosVinPart2.msg
   LrosVinPart1.msg
   LrosSignalsActualValues.msg
+  LrosFordSpecific.msg
+  IFVStatusVFPCANVersion.msg
+  IFVStatusHostCANVersion.msg
+  MRRHeaderSensorPosition.msg
+  MRRHeaderSensorCoverage.msg
+  MRRHeaderTimestamps.msg
+  MRRHeaderInformationDetections.msg
+  MRRControlAlignment.msg
+  MRRStatusTempVolt.msg
+  SystemStatus.msg
+  SystemAlignFactory2.msg
+  SystemAlignFactory1.msg
+  SystemAlignment2.msg
+  SystemAlignment1.msg
+  MRRControlMsgNR.msg
+  
 )
 
 generate_messages(DEPENDENCIES std_msgs)
