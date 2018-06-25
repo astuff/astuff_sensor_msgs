@@ -1,5 +1,5 @@
 uint8 	canAutoAlignHangleQf
 uint8 	canAlignmentStatus
 uint8 	canAlignmentState
-float   canAutoAlignHangleRef
-float   canAutoAlignHangle
+float32   canAutoAlignHangleRef
+float32   canAutoAlignHangle

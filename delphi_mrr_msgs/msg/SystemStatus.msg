@@ -2,7 +2,7 @@ bool 	canVehicleStat
 bool 	canDayNightStatus
 bool 	canWiperStatus
 bool 	canYawRateValidity
-float 	canYawRate
+float32 	canYawRate
 bool 	canVehicleSpeedValidity
 bool 	canVehicleSpeedDirection
-float 	canVehicleSpeed
+float32 	canVehicleSpeed

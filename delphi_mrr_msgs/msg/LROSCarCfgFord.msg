@@ -1,6 +1,6 @@
 int8 	kRadarAzimuthPolarity
-float  	canFaVertGroundOffset 
-float  	canFaVertLowerLimit
-float  	canFaVertUpperLimit
+float32  	canFaVertGroundOffset 
+float32  	canFaVertLowerLimit
+float32  	canFaVertUpperLimit
 uint8 	canLrosCarcfgvehtypeFord
 uint8 	canLrosCarcfgengineFord

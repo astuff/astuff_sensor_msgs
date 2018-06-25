@@ -1,6 +1,6 @@
-float canFacTgtRangeR2m
-float canFacTgtRangeM2t
-float canFacTgtRange1
+float32 canFacTgtRangeR2m
+float32 canFacTgtRangeM2t
+float32 canFacTgtRange1
 uint8 canFacTgtMtgSpaceHor
 uint8 canFacTgtMtgOffset
 uint8 canFacAlignSampReq

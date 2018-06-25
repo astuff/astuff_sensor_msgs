@@ -1,6 +1,6 @@
 bool   fsmYawRateValid
-float  fsmYawRate
+float32  fsmYawRate
 uint16 canVehicleIndex4fa
-float  fsmVehicleVelocity
+float32  fsmVehicleVelocity
 bool   canSteeringWhlAngleQf
 uint16 canSteeringWhlAngle

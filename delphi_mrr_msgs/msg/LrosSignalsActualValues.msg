@@ -1,7 +1,7 @@
 uint8 	canPowerSuppFord
 uint8 	canPowerMotiveFord
-float   canCruiseStatusFord
+float32   canCruiseStatusFord
 uint8 	canVehBattVolt
 uint16 	canGearPosition
-float   canAmbientTemp
+float32   canAmbientTemp
 uint8 	canIgnStatus

@@ -1,5 +1,5 @@
 bool canSensorPolarity
-float canSensorLatOffset
-float canSensorLongOffset
-float canSensorHangleOffset
+float32 canSensorLatOffset
+float32 canSensorLongOffset
+float32 canSensorHangleOffset
       
