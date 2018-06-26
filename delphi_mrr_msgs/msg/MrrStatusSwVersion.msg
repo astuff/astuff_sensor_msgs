@@ -1,0 +1,5 @@
+uint8 canPblFieldRevision
+uint8 canPblPromoteRevision 
+uint8 canSwFieldRevision
+uint8 canSwPromoteRevision
+uint8 canPblReleaseRevision

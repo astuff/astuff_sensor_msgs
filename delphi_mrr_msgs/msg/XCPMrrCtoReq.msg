@@ -1,0 +1,8 @@
+uint8 mrrXcpCtoCmdByte7
+uint8 mrrXcpCtoCmdByte6
+uint8 mrrXcpCtoCmdByte5
+uint8 mrrXcpCtoCmdByte4
+uint8 mrrXcpCtoCmdByte3
+uint8 mrrXcpCtoCmdByte2
+uint8 mrrXcpCtoCmdByte1
+uint8 mrrXcpCtoCmdByte0

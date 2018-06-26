@@ -1,0 +1,3 @@
+float32 canGlobalrealtimeFord
+float32 canVehSpeedFord
+float32 canVehYawFord

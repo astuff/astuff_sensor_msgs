@@ -1,0 +1,8 @@
+uint8 mrrXcpDtoRespByte7
+uint8 mrrXcpDtoRespByte6
+uint8 mrrXcpDtoRespByte5
+uint8 mrrXcpDtoRespByte4
+uint8 mrrXcpDtoRespByte3
+uint8 mrrXcpDtoRespByte2
+uint8 mrrXcpDtoRespByte1
+uint8 mrrXcpDtoRespByte0
