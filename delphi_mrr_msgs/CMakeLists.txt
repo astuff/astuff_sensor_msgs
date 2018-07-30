@@ -66,7 +66,7 @@ add_message_files(
   SystemAlignment2.msg
   SystemAlignment1.msg
   MRRControlMsgNR.msg
-  
+  MrrStatusSerialNumber.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
