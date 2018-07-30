@@ -54,6 +54,7 @@ add_message_files(
   MRRControlMsgNR.msg
   MrrStatusSerialNumber.msg
   MrrStatusSwVersion.msg
+  IfvStatusCompensated.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
