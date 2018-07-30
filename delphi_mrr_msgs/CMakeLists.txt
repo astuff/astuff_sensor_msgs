@@ -52,7 +52,13 @@ add_message_files(
   SystemAlignment2.msg
   SystemAlignment1.msg
   MRRControlMsgNR.msg
-  
+  MrrStatusSerialNumber.msg
+  MrrStatusSwVersion.msg
+  IfvStatusCompensated.msg
+  LrosOdometerValue.msg
+  MRRHeaderAlignmentState.msg
+  MRRControlMsgFR.msg
+  SystemControl.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
