@@ -55,6 +55,7 @@ add_message_files(
   MrrStatusSerialNumber.msg
   MrrStatusSwVersion.msg
   IfvStatusCompensated.msg
+  LrosOdometerValue.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)
