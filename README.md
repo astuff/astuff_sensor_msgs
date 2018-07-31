@@ -5,6 +5,7 @@
 A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_specific_msgs` contains:
 
 - `delphi_esr_msgs`
+- `delphi_mrr_msgs`
 - `delphi_srr_msgs`
 - `ibeo_lux_msgs`
 - `ibeo_msgs` (Messages for all Ibeo sensors)
