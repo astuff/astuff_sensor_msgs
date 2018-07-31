@@ -40,24 +40,24 @@ add_message_files(
   LrosFordSpecific.msg
   IFVStatusVFPCANVersion.msg
   IFVStatusHostCANVersion.msg
-  MRRHeaderSensorPosition.msg
-  MRRHeaderSensorCoverage.msg
-  MRRHeaderTimestamps.msg
-  MRRHeaderInformationDetections.msg
-  MRRControlAlignment.msg
-  MRRStatusTempVolt.msg
+  MrrHeaderSensorPosition.msg
+  MrrHeaderSensorCoverage.msg
+  MrrHeaderTimestamps.msg
+  MrrHeaderInformationDetections.msg
+  MrrControlAlignment.msg
+  MrrStatusTempVolt.msg
   SystemStatus.msg
   SystemAlignFactory2.msg
   SystemAlignFactory1.msg
   SystemAlignment2.msg
   SystemAlignment1.msg
-  MRRControlMsgNR.msg
+  MrrControlMsgNR.msg
   MrrStatusSerialNumber.msg
   MrrStatusSwVersion.msg
   IfvStatusCompensated.msg
   LrosOdometerValue.msg
-  MRRHeaderAlignmentState.msg
-  MRRControlMsgFR.msg
+  MrrHeaderAlignmentState.msg
+  MrrControlMsgFR.msg
   SystemControl.msg
 )
 
