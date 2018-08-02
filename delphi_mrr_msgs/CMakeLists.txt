@@ -54,7 +54,7 @@ add_message_files(
   MrrControlMsgNR.msg
   MrrStatusSerialNumber.msg
   MrrStatusSwVersion.msg
-  IfvStatusCompensated.msg
+  IFVStatusCompensated.msg
   LrosOdometerValue.msg
   MrrHeaderAlignmentState.msg
   MrrControlMsgFR.msg
