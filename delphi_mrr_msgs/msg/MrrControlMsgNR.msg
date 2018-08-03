@@ -1,4 +1,7 @@
- uint16 	canStopFrequencyNrml
+Header header
+
+
+uint16 	canStopFrequencyNrml
  uint16 	canPrpFactorNrml
  uint8  	canDesiredSweepBwNrml
  bool   	canRadiationCtrl

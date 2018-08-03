@@ -13,21 +13,7 @@ find_package(catkin REQUIRED COMPONENTS
 ## Generate messages in the 'msg' folder
 add_message_files(
   FILES
-  EsrEthTx.msg
   # can Tx
-  EsrStatus1.msg
-  EsrStatus2.msg
-  EsrStatus3.msg
-  EsrStatus4.msg
-  EsrStatus5.msg
-  EsrStatus6.msg
-  EsrStatus7.msg
-  EsrStatus8.msg
-  EsrStatus9.msg
-  EsrValid1.msg
-  EsrValid2.msg
-  EsrTrack.msg
-  EsrTrackMotionPower.msg
   TrackMotionPower.msg
   Detection.msg
   IVFTracksChange.msg
@@ -45,7 +31,7 @@ add_message_files(
   VehicleStateMsg3.msg
   VehicleStateMsg2.msg
   VehicleStateMsg1.msg
-  LROSCarCfgFord.msg
+  LrosCarCfgFord.msg
   SystemTDBlockage.msg
   LrosVinPart3.msg
   LrosVinPart2.msg
@@ -54,19 +40,25 @@ add_message_files(
   LrosFordSpecific.msg
   IFVStatusVFPCANVersion.msg
   IFVStatusHostCANVersion.msg
-  MRRHeaderSensorPosition.msg
-  MRRHeaderSensorCoverage.msg
-  MRRHeaderTimestamps.msg
-  MRRHeaderInformationDetections.msg
-  MRRControlAlignment.msg
-  MRRStatusTempVolt.msg
+  MrrHeaderSensorPosition.msg
+  MrrHeaderSensorCoverage.msg
+  MrrHeaderTimestamps.msg
+  MrrHeaderInformationDetections.msg
+  MrrControlAlignment.msg
+  MrrStatusTempVolt.msg
   SystemStatus.msg
   SystemAlignFactory2.msg
   SystemAlignFactory1.msg
   SystemAlignment2.msg
   SystemAlignment1.msg
-  MRRControlMsgNR.msg
-  
+  MrrControlMsgNR.msg
+  MrrStatusSerialNumber.msg
+  MrrStatusSwVersion.msg
+  IFVStatusCompensated.msg
+  LrosOdometerValue.msg
+  MrrHeaderAlignmentState.msg
+  MrrControlMsgFR.msg
+  SystemControl.msg
 )
 
 generate_messages(DEPENDENCIES std_msgs)

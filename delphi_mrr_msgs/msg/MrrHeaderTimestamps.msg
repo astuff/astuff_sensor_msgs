@@ -1,0 +1,4 @@
+Header header
+
+float32 canDetTimeSinceMeas
+float32 canSensorTimeStamp
