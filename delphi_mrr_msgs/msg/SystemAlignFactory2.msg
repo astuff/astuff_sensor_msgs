@@ -1,0 +1,7 @@
+Header header
+
+float32 canLateralMountingOffset 
+uint8 canFacPlateTiltNumber
+float32 canFacPlateTiltAngle
+uint8 canFacPlatePositionsTotal
+uint8 canFacAlignMaxNt
