@@ -2,8 +2,8 @@
 Changelog for package delphi_mrr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.2.0 (2018-08-07)
+------------------
 * Merge pull request `#20 <https://github.com/astuff/astuff_sensor_msgs/issues/20>`_ from ASDeveloper00/master
   MRR clean up : ESR, styling, bug fixes
 * MRR - Initial commit
