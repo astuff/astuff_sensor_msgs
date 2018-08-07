@@ -2,6 +2,10 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.0 (2018-08-07)
+------------------
+
+
 2.1.0 (2018-05-14)
 ------------------
 * Fixed typo in message definition for turn.
