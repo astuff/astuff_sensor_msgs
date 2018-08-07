@@ -21,6 +21,7 @@
   <exec_depend>neobotix_usboard_msgs</exec_depend>
   <exec_depend>pacmod_msgs</exec_depend>
   <exec_depend>radar_msgs</exec_depend>
+  <exec_depend>perception_msgs</exec_depend>
 
   <export>
     <metapackage />
