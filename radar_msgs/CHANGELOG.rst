@@ -2,6 +2,9 @@
 Changelog for package radar_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.1 (2018-08-08)
+------------------
+
 2.2.0 (2018-08-07)
 ------------------
 * Moving radar_msgs from platform_automation_msgs.
