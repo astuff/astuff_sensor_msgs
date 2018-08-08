@@ -14,6 +14,6 @@ A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_msgs` 
 - `neobotix_usboard_msgs`
 - `pacmod_msgs`
 - `radar_msgs` (generic radar output messages not currently available in `sensor_msgs`)
-- `perception_msgs` (generic messages for things like Objects and Closest In-Path Vehicles)
+- `derived_object_msgs` (abstracted sensor messages for like Objects and Closest In-Path Vehicles)
 
 For more information on the individual drivers, see the [AutonomouStuff Wiki](https://autonomoustuff.atlassian.net/wiki/spaces/RW/pages/17478581/Supported+Devices).

@@ -31,7 +31,7 @@ geometry_msgs/AccelWithCovariance accel
 geometry_msgs/Polygon polygon
 
 # A shape conforming to the outer bounding edges of the object.
-perception_msgs/SolidPrimitiveWithCovariance shape
+derived_object_msgs/SolidPrimitiveWithCovariance shape
 
 # The type of classification given to this object.
 uint8 classification

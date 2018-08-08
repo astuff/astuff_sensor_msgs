@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>astuff_sensor_msgs</name>
-  <version>2.2.0</version>
+  <version>2.2.1</version>
   <description>Messages specific to AStuff-provided sensors.</description>
   <license>MIT</license>
 
@@ -21,7 +21,7 @@
   <exec_depend>neobotix_usboard_msgs</exec_depend>
   <exec_depend>pacmod_msgs</exec_depend>
   <exec_depend>radar_msgs</exec_depend>
-  <exec_depend>perception_msgs</exec_depend>
+  <exec_depend>derived_object_msgs</exec_depend>
 
   <export>
     <metapackage />
