@@ -13,15 +13,12 @@ find_package(catkin REQUIRED
 ## Declare ROS messages and services
 add_message_files(DIRECTORY msg FILES
   CipvTrack.msg
-  LaneBoundary.msg
-  LaneBoundaryArray.msg
   LaneModels.msg
   Lane.msg
   ObjectArray.msg
   Object.msg
   ObjectWithCovarianceArray.msg
   ObjectWithCovariance.msg
-  RouteBoundaries.msg
   SolidPrimitiveWithCovariance.msg
 )
 
