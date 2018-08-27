@@ -16,4 +16,3 @@ uint16 SHIFT_NEUTRAL = 2
 uint16 SHIFT_FORWARD = 3
 uint16 SHIFT_HIGH = 3 # For Polaris Ranger
 uint16 SHIFT_LOW = 4
-uint16 SHIFT_NONE = 7
