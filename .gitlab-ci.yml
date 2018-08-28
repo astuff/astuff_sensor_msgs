@@ -1,50 +1,12 @@
-image: docker:git
-
-services:
-  - docker:dind
-
 before_script:
-  - apk add --update bash coreutils tar
-  - git clone https://github.com/ros-industrial/industrial_ci .industrial_ci
+  - apt-get update && apt-get install -y openssh-client python-catkin-tools build-essential
+  - source `find /opt/ros -name setup.bash | sort | head -1` && echo $ROS_DISTRO
+  - mkdir src && mv `find -maxdepth 1 -not -name . -not -name src` src/
+  - rosdep update
 
 indigo:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "indigo"
-    ROS_REPO: "ros"
-    DOCKER_BASE_IMAGE: "ros:indigo-ros-core"
-
-indigo-shadow:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "indigo"
-    ROS_REPO: "ros-shadow-fixed"
-    DOCKER_BASE_IMAGE: "ros:indigo-ros-core"
-
-kinetic:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "kinetic"
-    ROS_REPO: "ros"
-    DOCKER_BASE_IMAGE: "ros:kinetic-ros-core"
-
-kinetic-shadow:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "kinetic"
-    ROS_REPO: "ros-shadow-fixed"
-    DOCKER_BASE_IMAGE: "ros:kinetic-ros-core"
-
-lunar:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "lunar"
-    ROS_REPO: "ros"
-    DOCKER_BASE_IMAGE: "ros:lunar-ros-core"
-
-lunar-shadow:
-  script: .industrial_ci/gitlab.sh
-  variables:
-    ROS_DISTRO: "lunar"
-    ROS_REPO: "ros-shadow-fixed"
-    DOCKER_BASE_IMAGE: "ros:lunar-ros-core"
+  image: "ros:indigo-ros-core"
+  script:
+    - rosdep install --from-paths src --ignore-src -y
+    - catkin init
+    - catkin build
