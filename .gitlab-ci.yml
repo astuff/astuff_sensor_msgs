@@ -5,4 +5,8 @@ before_script:
   - apk add --update bash coreutils tar
   - git clone https://github.com/ros-industrial/industrial_ci .industrial_ci
 indigo:
-  script: .industrial_ci/gitlab.sh ROS_DISTRO=indigo
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "indigo"
+    ROS_REPO: "ros"
+    DOCKER_BASE_IMAGE: "ros:indigo-ros-core"
