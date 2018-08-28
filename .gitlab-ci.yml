@@ -1,12 +1,50 @@
 image: docker:git
+
 services:
   - docker:dind
+
 before_script:
   - apk add --update bash coreutils tar
   - git clone https://github.com/ros-industrial/industrial_ci .industrial_ci
+
 indigo:
   script: .industrial_ci/gitlab.sh
   variables:
     ROS_DISTRO: "indigo"
     ROS_REPO: "ros"
     DOCKER_BASE_IMAGE: "ros:indigo-ros-core"
+
+indigo-shadow:
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "indigo"
+    ROS_REPO: "ros-shadow-fixed"
+    DOCKER_BASE_IMAGE: "ros:indigo-ros-core"
+
+kinetic:
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "kinetic"
+    ROS_REPO: "ros"
+    DOCKER_BASE_IMAGE: "ros:kinetic-ros-core"
+
+kinetic-shadow:
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "kinetic"
+    ROS_REPO: "ros-shadow-fixed"
+    DOCKER_BASE_IMAGE: "ros:kinetic-ros-core"
+
+lunar:
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "lunar"
+    ROS_REPO: "ros"
+    DOCKER_BASE_IMAGE: "ros:lunar-ros-core"
+
+lunar-shadow:
+  script: .industrial_ci/gitlab.sh
+  variables:
+    ROS_DISTRO: "lunar"
+    ROS_REPO: "ros-shadow-fixed"
+    DOCKER_BASE_IMAGE: "ros:lunar-ros-core"
