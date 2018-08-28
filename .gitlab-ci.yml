@@ -9,23 +9,23 @@ before_script:
 indigo:
   image: "ros:indigo-ros-core"
   script:
-    - catkin build -j2
-    - catkin run_tests -j2
+    - catkin build
+    - catkin run_tests
 
 kinetic:
   image: "ros:kinetic-ros-core"
   script:
-    - catkin build -j2
-    - catkin run_tests -j2
+    - catkin build
+    - catkin run_tests
 
 lunar:
   image: "ros:lunar-ros-core"
   script:
-    - catkin build -j2
-    - catkin run_tests -j2
+    - catkin build
+    - catkin run_tests
 
 melodic:
   image: "ros:melodic-ros-core"
   script:
-    - catkin build -j2
-    - catkin run_tests -j2
+    - catkin build
+    - catkin run_tests
