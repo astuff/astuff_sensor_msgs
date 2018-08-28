@@ -3,10 +3,21 @@ before_script:
   - source `find /opt/ros -name setup.bash | sort | head -1` && echo $ROS_DISTRO
   - mkdir src && mv `find -maxdepth 1 -not -name . -not -name src` src/
   - rosdep update
+  - rosdep install --from-paths src --ignore-src -y
+  - catkin init
 
 indigo:
   image: "ros:indigo-ros-core"
-  script:
-    - rosdep install --from-paths src --ignore-src -y
-    - catkin init
-    - catkin build
+  script: catkin build
+
+kinetic:
+  image: "ros:kinetic-ros-core"
+  script: catkin build
+
+lunar:
+  image: "ros:lunar-ros-core"
+  script: catkin build
+
+melodic:
+  image: "ros:melodic-ros-core"
+  script: catkin build
