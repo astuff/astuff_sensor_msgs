@@ -1,6 +1,6 @@
 # ROS Messages for AutonomouStuff-provided Drivers #
 
-[![Build Status](https://travis-ci.org/astuff/astuff_sensor_msgs.svg?branch=master)](https://travis-ci.org/astuff/astuff_sensor_msgs)
+[![CircleCI](https://circleci.com/gh/astuff/astuff_sensor_msgs/tree/master.svg?style=svg)](https://circleci.com/gh/astuff/astuff_sensor_msgs/tree/master)
 
 A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_msgs` contains:
 
