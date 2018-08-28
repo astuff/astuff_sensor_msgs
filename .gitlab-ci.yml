@@ -1,0 +1,8 @@
+image: docker:git
+services:
+  - docker:dind
+before_script:
+  - apk add --update bash coreutils tar
+  - git clone https://github.com/ros-industrial/industrial_ci .industrial_ci
+indigo:
+  script: .industrial_ci/gitlab.sh ROS_DISTRO=indigo
