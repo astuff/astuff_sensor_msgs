@@ -6,8 +6,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Set Up Environment
-          working_directory: ~/src
+          name: Set Up Container
           command: |
             apt-get update && apt-get install openssh-client python-catkin-tools build-essential -y
             source `find /opt/ros -name setup.bash | sort | head -1`
@@ -18,11 +17,14 @@ jobs:
       - run:
           name: Build
           command: |
+            cd ..
             catkin build
       - run:
           name: Run Tests
           command: |
+            cd ..
             catkin run_tests
+    working_directory: ~/src
 
   kinetic:
     docker:
@@ -30,8 +32,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Set Up Environment
-          working_directory: ~/src
+          name: Set Up Container
           command: |
             apt-get update && apt-get install openssh-client python-catkin-tools build-essential -y
             source `find /opt/ros -name setup.bash | sort | head -1`
@@ -42,11 +43,14 @@ jobs:
       - run:
           name: Build
           command: |
+            cd ..
             catkin build
       - run:
           name: Run Tests
           command: |
+            cd ..
             catkin run_tests
+    working_directory: ~/src
 
   lunar:
     docker:
@@ -54,8 +58,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Set Up Environment
-          working_directory: ~/src
+          name: Set Up Container
           command: |
             apt-get update && apt-get install openssh-client python-catkin-tools build-essential -y
             source `find /opt/ros -name setup.bash | sort | head -1`
@@ -66,11 +69,14 @@ jobs:
       - run:
           name: Build
           command: |
+            cd ..
             catkin build
       - run:
           name: Run Tests
           command: |
+            cd ..
             catkin run_tests
+    working_directory: ~/src
 
   melodic:
     docker:
@@ -78,8 +84,7 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Set Up Environment
-          working_directory: ~/src
+          name: Set Up Container
           command: |
             apt-get update && apt-get install openssh-client python-catkin-tools build-essential -y
             source `find /opt/ros -name setup.bash | sort | head -1`
@@ -90,11 +95,14 @@ jobs:
       - run:
           name: Build
           command: |
+            cd ..
             catkin build
       - run:
           name: Run Tests
           command: |
+            cd ..
             catkin run_tests
+    working_directory: ~/src
 
 workflows:
   version: 2
