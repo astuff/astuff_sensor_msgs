@@ -2,6 +2,9 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.2 (2018-08-30)
+------------------
+
 2.2.1 (2018-08-08)
 ------------------
 * Renamed perception_msgs to dervied_object_msgs for clarification.

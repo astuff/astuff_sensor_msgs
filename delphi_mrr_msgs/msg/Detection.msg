@@ -6,7 +6,7 @@ bool    superResTarget
 bool    ndTarget
 bool    hostVehClutter
 bool    validLevel
-uint16  azimuth
+float64  azimuth
 uint16  range
 uint16  rangeRate
 uint8   amplitude

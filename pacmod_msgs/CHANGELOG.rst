@@ -2,6 +2,13 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.2.2 (2018-08-30)
+------------------
+* Merge pull request `#24 <https://github.com/astuff/astuff_sensor_msgs/issues/24>`_ from astuff/maint/add_none_shift_cmd
+* PACMod: Removing unused report values.
+* MKZ: Adding NONE value to shift states.
+* Contributors: Joshua Whitley, driscoll85
+
 2.2.1 (2018-08-08)
 ------------------
 
