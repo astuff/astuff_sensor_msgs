@@ -15,6 +15,7 @@ add_message_files(
   AccelAuxRpt.msg
   AllSystemStatuses.msg
   BrakeAuxRpt.msg
+  ComponentRpt.msg
   DateTimeRpt.msg
   DetectedObjectRpt.msg
   DoorRpt.msg
