@@ -2,6 +2,9 @@
 Changelog for package kartech_linear_actuator_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.2 (2018-08-30)
 ------------------
 

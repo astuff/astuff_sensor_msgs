@@ -2,6 +2,9 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 2.2.2 (2018-08-30)
 ------------------
 
