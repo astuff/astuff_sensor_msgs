@@ -3,6 +3,7 @@ Header header
 bool enable
 bool ignore_overrides
 bool clear_override
+bool clear_faults
 
 uint16 command
 
@@ -43,9 +44,9 @@ uint16 SHIFT_FORWARD = 3
 uint16 SHIFT_LOW = 4
 uint16 SHIFT_NONE = 7
 
-uint16 TURN_LEFT = 0
+uint16 TURN_RIGHT = 0
 uint16 TURN_NONE = 1
-uint16 TURN_RIGHT = 2
+uint16 TURN_LEFT = 2
 uint16 TURN_HAZARDS = 3
 
 uint16 WIPERS_OFF = 0
