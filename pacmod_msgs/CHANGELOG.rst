@@ -2,8 +2,8 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.3.0 (2018-10-04)
+------------------
 * PACMod: Add COMPONENT_RPT and CLEAR_FAULTS flag. (`#28 <https://github.com/astuff/astuff_sensor_msgs/issues/28>`_)
 * Merge pull request `#27 <https://github.com/astuff/astuff_sensor_msgs/issues/27>`_ from astuff/fix/turn_signal_values
 * PACMod: Making message def. match DBC.
