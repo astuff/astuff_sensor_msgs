@@ -5,6 +5,10 @@
   <description>Message definitions for the Delphi SRR</description>
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/delphi_srr_msgs</url>
+  <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
+
   <maintainer email="support@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Josh Whitley</author>
 
