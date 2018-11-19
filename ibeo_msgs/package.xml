@@ -5,6 +5,10 @@
   <description>Package containing messages for Ibeo sensors.</description>
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/ibeo_msgs</url>
+  <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
+
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
   <author email="jwhitley@autonomoustuff.com">Joshua Whitley</author>
   <author email="jkale@autonomoustuff.com">Joe Kale</author>

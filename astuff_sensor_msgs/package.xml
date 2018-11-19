@@ -5,6 +5,7 @@
   <description>Messages specific to AStuff-provided sensors.</description>
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/astuff_sensor_msgs</url>
   <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
   <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
 

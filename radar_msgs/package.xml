@@ -5,6 +5,10 @@
   <description>Generic Radar Messages</description>
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/radar_msgs</url>
+  <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
+
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Development Team</maintainer>
   <author email="dstanek@autonomoustuff.com">Daniel Stanek</author>
   <author email="jwhitley@autonomoustuff.com">Josh Whitley</author>

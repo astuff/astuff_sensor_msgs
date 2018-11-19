@@ -5,6 +5,10 @@
   <description>neobotix_usboard package</description>
   <license>MIT</license>
 
+  <url type="website">http://wiki.ros.org/neobotix_usboard_msgs</url>
+  <url type="repository">https://github.com/astuff/astuff_sensor_msgs</url>
+  <url type="bugtracker">https://github.com/astuff/astuff_sensor_msgs/issues</url>
+
   <maintainer email="software@autonomoustuff.com">AutonomouStuff Software Team</maintainer>
   <author email="srustan@autonomoustuff.com">Sam Rustan</author>
 
