@@ -2,6 +2,12 @@
 Changelog for package ibeo_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge pull request `#31 <https://github.com/astuff/astuff_sensor_msgs/issues/31>`_ from astuff/maint/add_urls
+* Adding URLs to package.xml files.
+* Contributors: Daniel-Stanek, Joshua Whitley
+
 2.3.0 (2018-10-04)
 ------------------
 
