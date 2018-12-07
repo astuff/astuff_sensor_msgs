@@ -2,8 +2,8 @@
 Changelog for package radar_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+2.3.1 (2018-12-07)
+------------------
 * Merge pull request `#31 <https://github.com/astuff/astuff_sensor_msgs/issues/31>`_ from astuff/maint/add_urls
 * Adding URLs to package.xml files.
 * Contributors: Daniel-Stanek, Joshua Whitley

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
   <name>astuff_sensor_msgs</name>
-  <version>2.3.0</version>
+  <version>2.3.1</version>
   <description>Messages specific to AStuff-provided sensors.</description>
   <license>MIT</license>
 
