@@ -39,12 +39,15 @@ add_message_files(FILES
   ScanData2204.msg
   ScanData2205.msg
   ScanData2208.msg
+  ScanData2209.msg
   ScannerInfo2204.msg
   ScannerInfo2205.msg
+  ScannerInfo2209.msg
   ScanPoint2202.msg
   ScanPoint2204.msg
   ScanPoint2205.msg
   ScanPoint2208.msg
+  ScanPoint2209.msg
   Sigma2D.msg
   Size2D.msg
   TrackedProperties.msg
