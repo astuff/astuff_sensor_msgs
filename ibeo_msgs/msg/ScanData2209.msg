@@ -7,7 +7,7 @@ bool fused_scan
 uint8 mirror_side
 uint8 coordinate_system
 uint16 scan_number
-uint16 scan_points
+uint32 scan_points
 uint8 number_of_scanner_infos
 ScannerInfo2209[] scanner_info_list
 ScanPoint2209[] scan_point_list
