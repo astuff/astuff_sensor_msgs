@@ -1,6 +1,6 @@
-Header header
+std_msgs/Header header
 
- uint16 canSpeedFrontLeftWheel
- uint16 canSpeedFrontRightWheel
- uint16 canSpeedRearLeftWheel
- uint16 canSpeedRearRightWheel
+uint16 can_speed_front_left_wheel
+uint16 can_speed_front_right_wheel
+uint16 can_speed_rear_left_wheel
+uint16 can_speed_rear_right_wheel

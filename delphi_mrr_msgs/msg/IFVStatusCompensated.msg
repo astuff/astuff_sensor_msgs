@@ -1,8 +1,7 @@
-Header header
+std_msgs/Header header
 
-
-uint8 canYawRateCalcQf
-float32 canYawRateCalc
-float32 canYawRateBias
-float32 canVehicleSpeedCalc
-float32 canVehSpdCompFactor 
+uint8 can_yaw_rate_calc_qf
+float32 can_yaw_rate_calc
+float32 can_yaw_rate_bias
+float32 can_vehicle_speed_calc
+float32 can_veh_spd_comp_factor

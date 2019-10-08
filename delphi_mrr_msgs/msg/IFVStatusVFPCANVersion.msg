@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
-uint8 canPcanMinorIfvVfp
-uint8 canPcanMajorIfvVfp
+uint8 can_pcan_minor_ifv_vfp
+uint8 can_pcan_major_ifv_vfp

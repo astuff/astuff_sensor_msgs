@@ -1,8 +1,8 @@
-Header header
+std_msgs/Header header
 
-bool   fsmYawRateValid
-float32  fsmYawRate
-uint16 canVehicleIndex4fa
-float32  fsmVehicleVelocity
-bool   canSteeringWhlAngleQf
-uint16 canSteeringWhlAngle
+bool    fsm_yaw_rate_valid
+float32 fsm_yaw_rate
+uint16  can_vehicle_index4fa
+float32 fsm_vehicle_velocity
+bool    can_steering_whl_angle_qf
+uint16  can_steering_whl_angle

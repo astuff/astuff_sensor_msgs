@@ -1,8 +1,8 @@
-Header header
+std_msgs/Header header
 
-bool    canMrrUpsideDown
-uint8 	canBlockageFilterOutput
-float32   canAngleMisalignmentHdr
-bool    canUseAngleMisalignment
-bool    canBlockageDisable
-uint16  canScanIndexAck 
+bool     can_mrr_upside_down
+uint8 	 can_blockage_filter_output
+float32  can_angle_misalignment_hdr
+bool     can_use_angle_misalignment
+bool     can_blockage_disable
+uint16   can_scan_index_ack 

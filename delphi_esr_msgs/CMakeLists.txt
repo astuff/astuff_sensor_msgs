@@ -39,6 +39,7 @@ set(msg_files
   "msg/EsrVehicle4.msg"
   "msg/EsrVehicle5.msg"
 )
+
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   DEPENDENCIES builtin_interfaces std_msgs
