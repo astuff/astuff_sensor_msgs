@@ -1,45 +1,50 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(delphi_esr_msgs)
 
-add_definitions(-std=c++11)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
-set(CMAKE_CXX_FLAGS "-std=c++0x ${CMAKE_CXX_FLAGS}")
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
-find_package(catkin REQUIRED COMPONENTS
-    message_generation
-    std_msgs
-)
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
-## Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  EsrEthTx.msg
+set(msg_files
+  "msg/EsrEthTx.msg"
   # can Tx
-  EsrStatus1.msg
-  EsrStatus2.msg
-  EsrStatus3.msg
-  EsrStatus4.msg
-  EsrStatus5.msg
-  EsrStatus6.msg
-  EsrStatus7.msg
-  EsrStatus8.msg
-  EsrStatus9.msg
-  EsrValid1.msg
-  EsrValid2.msg
-  EsrTrack.msg
-  EsrTrackMotionPower.msg
-  TrackMotionPower.msg
+  "msg/EsrStatus1.msg"
+  "msg/EsrStatus2.msg"
+  "msg/EsrStatus3.msg"
+  "msg/EsrStatus4.msg"
+  "msg/EsrStatus5.msg"
+  "msg/EsrStatus6.msg"
+  "msg/EsrStatus7.msg"
+  "msg/EsrStatus8.msg"
+  "msg/EsrStatus9.msg"
+  "msg/EsrValid1.msg"
+  "msg/EsrValid2.msg"
+  "msg/EsrTrack.msg"
+  "msg/EsrTrackMotionPower.msg"
+  "msg/TrackMotionPower.msg"
   # can Rx
-  EsrVehicle1.msg
-  EsrVehicle2.msg
-  EsrVehicle3.msg
-  EsrVehicle4.msg
-  EsrVehicle5.msg
+  "msg/EsrVehicle1.msg"
+  "msg/EsrVehicle2.msg"
+  "msg/EsrVehicle3.msg"
+  "msg/EsrVehicle4.msg"
+  "msg/EsrVehicle5.msg"
+)
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES builtin_interfaces std_msgs
+  ADD_LINTER_TESTS
 )
 
-generate_messages(DEPENDENCIES std_msgs)
+ament_export_dependencies(rosidl_default_runtime)
 
-catkin_package(CATKIN_DEPENDS
-  message_runtime
-  std_msgs
-)
+ament_package()

@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
 # ESR TrackMotionPower Msg
-string                canmsg
-uint8                 rollingCount
-uint8                 groupId
-TrackMotionPower[]  tracks
+string                              canmsg
+uint8                               rolling_count
+uint8                               group_id
+delphi_esr_msgs/TrackMotionPower[]  tracks
