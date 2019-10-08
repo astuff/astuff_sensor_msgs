@@ -1,96 +1,50 @@
 # Message file for srr_debug4
 
-Header header
+std_msgs/Header header
 
-bool      Timer_Create_Error                      
-
-bool      Thread_Create_Error                     
-
-bool      ARM_Calibration_Error                   
-
-bool      SPI_FEE_Error                           
-
-bool      SPI_Comm_Error                          
-
-bool      Socket_Write_Error                      
-
-bool      DSP_Cal_Obsolete_62_Error               
-
-bool      Socket_Read_error                       
-
-bool      Socket_Init_Error                       
-
-bool      Signal_Wait_Error                       
-
-bool      Signal_Send_Error                       
-
-bool      Signal_Create_Error                     
-
-bool      Shared_Mem_Write_Error                  
-
-bool      Shared_Mem_Read_Error                   
-
-bool      Shared_Mem_Config_Error                 
-
-bool      Share_Mem_Init_Error                    
-
-bool      RAM_Test_Error                          
-
-bool      Num_Errors                              
-
-bool      MMAP_Memory_Error                       
-
-bool      ISR_Attach_Error                        
-
-bool      IPC_DRV_Write_Error                     
-
-bool      IPC_DRV_Trigger_Error                   
-
-bool      IPC_DRV_Sync_Error                      
-
-bool      IPC_DRV_Read_Error                      
-
-bool      IPC_DRV_Init_Error                      
-
-bool      Interrupt_Enable_Error                  
-
-bool      HIL_Format_Error                        
-
-bool      Flash_Filesystem_Error                  
-
-bool      Error_none                              
-
-bool      DSP_Load_Read_Error                     
-
-bool      DSP_Load_Open_Error                     
-
-bool      DSP_Load_Address_Error                  
-
-bool      DSP_ISP_Write_Error                     
-
-bool      DSP_IPC_Read_Error                      
-
-bool      DSP_IPC_Init                            
-
-bool      DSP_Init_Error                          
-
-bool      DSP_DRV_Start_Error                     
-
-bool      DSP_DRV_Load_Error                      
-
-bool      DSP_DRV_Init_Error                      
-
-bool      DSP_DRV_Init2_error                     
-
-bool      DSP_DRV_Init1_error                     
-
-bool      DSP_Calibration_Error                   
-
-bool      CAN_XMT_Error                           
-
-bool      CAN_RCV_Error                           
-
-bool      CAN_Hardware_Error                      
-
-bool      Always_True                             
-
+bool      timer_create_error
+bool      thread_create_error
+bool      arm_calibration_error
+bool      spi_fee_error
+bool      spi_comm_error
+bool      socket_write_error
+bool      dsp_cal_obsolete_62_error
+bool      socket_read_error
+bool      socket_init_error
+bool      signal_wait_error
+bool      signal_send_error
+bool      signal_create_error
+bool      shared_mem_write_error
+bool      shared_mem_read_error
+bool      shared_mem_config_error
+bool      share_mem_init_error
+bool      ram_test_error
+bool      num_errors
+bool      mmap_memory_error
+bool      isr_attach_error
+bool      ipc_drv_write_error
+bool      ipc_drv_trigger_error
+bool      ipc_drv_sync_error
+bool      ipc_drv_read_error
+bool      ipc_drv_init_error
+bool      interrupt_enable_error
+bool      hil_format_error
+bool      flash_filesystem_error
+bool      error_none
+bool      dsp_load_read_error
+bool      dsp_load_open_error
+bool      dsp_load_address_error
+bool      dsp_isp_write_error
+bool      dsp_ipc_read_error
+bool      dsp_ipc_init
+bool      dsp_init_error
+bool      dsp_drv_start_error
+bool      dsp_drv_load_error
+bool      dsp_drv_init_error
+bool      dsp_drv_init2_error
+bool      dsp_drv_init1_error
+bool      dsp_calibration_error
+bool      can_xmt_error
+bool      can_rcv_error
+bool      can_hardware_error
+bool      always_true
