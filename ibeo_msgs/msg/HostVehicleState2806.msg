@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
-time timestamp
+ibeo_msgs/IbeoDataHeader ibeo_header
+builtin_interfaces/Time timestamp
 int32 distance_x
 int32 distance_y
 float32 course_angle

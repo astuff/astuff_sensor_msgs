@@ -1,11 +1,11 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
+ibeo_msgs/IbeoDataHeader ibeo_header
 uint16 image_format
 uint32 us_since_power_on
-time timestamp
+builtin_interfaces/Time timestamp
 uint8 device_id
-MountingPositionF mounting_position
+ibeo_msgs/MountingPositionF mounting_position
 float64 horizontal_opening_angle
 float64 vertical_opening_angle
 uint16 image_width

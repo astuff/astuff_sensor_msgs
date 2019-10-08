@@ -28,7 +28,7 @@ bool track_valid
 uint16 classification_age
 uint16 classification_confidence
 uint16 number_of_contour_points
-Point2Di[] contour_point_list
+ibeo_msgs/Point2Di[] contour_point_list
 
 # reference_point_location values
 uint8 CENTER_OF_GRAVITY=0
