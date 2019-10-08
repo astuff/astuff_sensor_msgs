@@ -1,6 +1,6 @@
 # This represents a detected or tracked object with reference coordinate frame and timestamp.
 
-Header header
+std_msgs/Header header
 
 # The id of the object (presumably from the detecting sensor).
 uint32 id
@@ -10,7 +10,6 @@ uint32 id
 # An object which is detected can only be assumed to have valid pose and shape properties.
 # An object which is tracked should also be assumed to have valid twist and accel properties.
 uint8 detection_level
-
 uint8 OBJECT_DETECTED=0
 uint8 OBJECT_TRACKED=1
 
@@ -35,7 +34,6 @@ shape_msgs/SolidPrimitive shape
 
 # The type of classification given to this object.
 uint8 classification
-
 uint8 CLASSIFICATION_UNKNOWN=0
 uint8 CLASSIFICATION_UNKNOWN_SMALL=1
 uint8 CLASSIFICATION_UNKNOWN_MEDIUM=2

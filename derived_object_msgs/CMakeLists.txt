@@ -1,40 +1,46 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(derived_object_msgs)
 
-find_package(catkin REQUIRED
-  COMPONENTS
-  message_generation
-  std_msgs
-  geometry_msgs
-  shape_msgs
-  radar_msgs
-)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
+
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(geometry_msgs REQUIRED)
+find_package(shape_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(radar_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 ## Declare ROS messages and services
-add_message_files(DIRECTORY msg FILES
-  CipvTrack.msg
-  LaneModels.msg
-  Lane.msg
-  ObjectArray.msg
-  Object.msg
-  ObjectWithCovarianceArray.msg
-  ObjectWithCovariance.msg
-  SolidPrimitiveWithCovariance.msg
+set(msg_files
+  "msg/CipvTrack.msg"
+  "msg/LaneModels.msg"
+  "msg/Lane.msg"
+  "msg/ObjectArray.msg"
+  "msg/Object.msg"
+  "msg/ObjectWithCovarianceArray.msg"
+  "msg/ObjectWithCovariance.msg"
+  "msg/SolidPrimitiveWithCovariance.msg"
 )
 
-## Generate added messages and services
-generate_messages(DEPENDENCIES
-  std_msgs
-  geometry_msgs
-  shape_msgs
-  radar_msgs
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES
+    builtin_interfaces
+    geometry_msgs
+    shape_msgs
+    std_msgs
+    radar_msgs
+  ADD_LINTER_TESTS
 )
 
-## Declare a catkin package
-catkin_package(CATKIN_DEPENDS
-  message_runtime
-  std_msgs
-  geometry_msgs
-  shape_msgs
-  radar_msgs
-)
+ament_export_dependencies(rosidl_default_runtime)
+
+ament_package()

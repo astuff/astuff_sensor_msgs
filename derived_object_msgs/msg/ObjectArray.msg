@@ -1,3 +1,3 @@
-Header header
+std_msgs/Header header
 
-Object[] objects
+derived_object_msgs/Object[] objects
