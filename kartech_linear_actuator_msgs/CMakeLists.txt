@@ -1,52 +1,51 @@
-cmake_minimum_required(VERSION 2.8.3)
+cmake_minimum_required(VERSION 3.5)
 project(kartech_linear_actuator_msgs)
 
-## Add support for C++11, supported in ROS Kinetic and newer
-# add_definitions(-std=c++11)
+if(NOT CMAKE_CXX_STANDARD)
+  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_STANDARD 14)
+endif()
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
-find_package(catkin REQUIRED
-  message_generation
-  std_msgs
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
+
+find_package(ament_cmake REQUIRED)
+find_package(builtin_interfaces REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+set(msg_files
+  "msg/ActuatorUniqueIdReq.msg"
+  "msg/AutoZeroCalCmd.msg"
+  "msg/ConfigureOutputsKdFreqDeadbandCmd.msg"
+  "msg/ConfigureOutputsKpKiCmd.msg"
+  "msg/ConfigureOutputsPwmFreqCmd.msg"
+  "msg/EnhancedPositionRpt.msg"
+  "msg/MotorCurrentRpt.msg"
+  "msg/MotorOverCurrentConfigCmd.msg"
+  "msg/PositionCmd.msg"
+  "msg/PositionReachErrorTimeConfigCmd.msg"
+  "msg/PositionRpt.msg"
+  "msg/PriorityConfigCmd.msg"
+  "msg/ReassignCommandIdCmd.msg"
+  "msg/ReassignReportIdCmd.msg"
+  "msg/ReportIndex.msg"
+  "msg/ReportPollReq.msg"
+  "msg/ResetCmd.msg"
+  "msg/ScheduledReportRatesReq.msg"
+  "msg/SoftwareRevisionRpt.msg"
+  "msg/SoftwareVersionReq.msg"
+  "msg/UniqueDeviceIdRpt.msg"
+  "msg/ZeroingMessageRpt.msg"
 )
 
-## Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  ActuatorUniqueIdReq.msg
-  AutoZeroCalCmd.msg
-  ConfigureOutputsKdFreqDeadbandCmd.msg
-  ConfigureOutputsKpKiCmd.msg
-  ConfigureOutputsPwmFreqCmd.msg
-  EnhancedPositionRpt.msg
-  MotorCurrentRpt.msg
-  MotorOverCurrentConfigCmd.msg
-  PositionCmd.msg
-  PositionReachErrorTimeConfigCmd.msg
-  PositionRpt.msg
-  PriorityConfigCmd.msg
-  ReassignCommandIdCmd.msg
-  ReassignReportIdCmd.msg
-  ReportIndex.msg
-  ReportPollReq.msg
-  ResetCmd.msg
-  ScheduledReportRatesReq.msg
-  SoftwareRevisionRpt.msg
-  SoftwareVersionReq.msg
-  UniqueDeviceIdRpt.msg
-  ZeroingMessageRpt.msg
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  DEPENDENCIES builtin_interfaces std_msgs
+  ADD_LINTER_TESTS
 )
 
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-)
+ament_export_dependencies(rosidl_default_runtime)
 
-catkin_package(
- CATKIN_DEPENDS
- std_msgs
- message_runtime
-)
+ament_package()

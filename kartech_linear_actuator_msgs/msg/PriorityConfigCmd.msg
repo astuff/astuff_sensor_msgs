@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 bool confirm
 
 # Priority values for different types of reports. Lower value = higher priority.
