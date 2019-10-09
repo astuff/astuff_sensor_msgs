@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float64 raw_pedal_pos
 bool raw_pedal_pos_is_valid

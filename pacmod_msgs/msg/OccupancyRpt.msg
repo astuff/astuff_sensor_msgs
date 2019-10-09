@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool driver_seat_occupied
 bool driver_seat_occupied_is_valid

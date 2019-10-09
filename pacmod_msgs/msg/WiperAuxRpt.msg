@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool front_wiping
 bool front_wiping_is_valid

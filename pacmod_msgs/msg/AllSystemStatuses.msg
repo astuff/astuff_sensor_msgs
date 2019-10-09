@@ -1,5 +1,5 @@
-Header header
+std_msgs/Header header
 
-KeyValuePair[] enabled_status
-KeyValuePair[] overridden_status
-KeyValuePair[] fault_status
+pacmod_msgs/KeyValuePair[] enabled_status
+pacmod_msgs/KeyValuePair[] overridden_status
+pacmod_msgs/KeyValuePair[] fault_status
