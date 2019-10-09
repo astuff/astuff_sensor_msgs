@@ -1,5 +1,5 @@
 # Message file for SensorData
 
-Header header
+std_msgs/Header header
 
-SensorData[] sensors
+neobotix_usboard_msgs/SensorData[] sensors
