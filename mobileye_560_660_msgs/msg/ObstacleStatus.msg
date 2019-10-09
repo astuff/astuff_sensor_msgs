@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 uint16 num_obstacles
 uint16 timestamp

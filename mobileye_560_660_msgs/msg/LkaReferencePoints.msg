@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float64 ref_point_1_position
 float64 ref_point_1_distance

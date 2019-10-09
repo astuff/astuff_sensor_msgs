@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 uint8 SIGN_TYPE_REGULAR_10 = 0
 uint8 SIGN_TYPE_REGULAR_20 = 1
