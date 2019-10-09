@@ -2,8 +2,8 @@
 Changelog for package derived_object_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2019-10-08)
+------------------
 * Ported to ROS2 Dashing.
 * Contributors: Joshua Whitley
 
