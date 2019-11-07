@@ -1,70 +1,115 @@
-cmake_minimum_required(VERSION 3.5)
 project(pacmod_msgs)
 
-if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD_REQUIRED ON)
-  set(CMAKE_CXX_STANDARD 14)
-endif()
+set(ROS_VERSION $ENV{ROS_VERSION})
 
-if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-  add_compile_options(-Wall -Wextra -Wpedantic)
-endif()
-
-find_package(ament_cmake REQUIRED)
-find_package(builtin_interfaces REQUIRED)
-find_package(std_msgs REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
-
-set(msg_files
-  "msg/AccelAuxRpt.msg"
-  "msg/AllSystemStatuses.msg"
-  "msg/BrakeAuxRpt.msg"
-  "msg/ComponentRpt.msg"
-  "msg/DateTimeRpt.msg"
-  "msg/DetectedObjectRpt.msg"
-  "msg/DoorRpt.msg"
-  "msg/GlobalRpt.msg"
-  "msg/HeadlightAuxRpt.msg"
-  "msg/InteriorLightsRpt.msg"
-  "msg/KeyValuePair.msg"
-  "msg/LatLonHeadingRpt.msg"
-  "msg/MotorRpt1.msg"
-  "msg/MotorRpt2.msg"
-  "msg/MotorRpt3.msg"
-  "msg/OccupancyRpt.msg"
-  "msg/PacmodCmd.msg"
-  "msg/ParkingBrakeStatusRpt.msg"
-  "msg/PositionWithSpeed.msg"
-  "msg/RearLightsRpt.msg"
-  "msg/ShiftAuxRpt.msg"
-  "msg/SteerAuxRpt.msg"
-  "msg/SteerSystemCmd.msg"
-  "msg/SteeringPIDRpt1.msg"
-  "msg/SteeringPIDRpt2.msg"
-  "msg/SteeringPIDRpt3.msg"
-  "msg/SteeringPIDRpt4.msg"
-  "msg/SystemCmdBool.msg"
-  "msg/SystemCmdFloat.msg"
-  "msg/SystemCmdInt.msg"
-  "msg/SystemRptBool.msg"
-  "msg/SystemRptFloat.msg"
-  "msg/SystemRptInt.msg"
-  "msg/TurnAuxRpt.msg"
-  "msg/VehicleDynamicsRpt.msg"
-  "msg/VehicleSpecificRpt1.msg"
-  "msg/VehicleSpeedRpt.msg"
-  "msg/VinRpt.msg"
-  "msg/WheelSpeedRpt.msg"
-  "msg/WiperAuxRpt.msg"
-  "msg/YawRateRpt.msg"
+set(MSG_FILES
+  "AccelAuxRpt.msg"
+  "AllSystemStatuses.msg"
+  "BrakeAuxRpt.msg"
+  "ComponentRpt.msg"
+  "DateTimeRpt.msg"
+  "DetectedObjectRpt.msg"
+  "DoorRpt.msg"
+  "GlobalRpt.msg"
+  "HeadlightAuxRpt.msg"
+  "InteriorLightsRpt.msg"
+  "KeyValuePair.msg"
+  "LatLonHeadingRpt.msg"
+  "MotorRpt1.msg"
+  "MotorRpt2.msg"
+  "MotorRpt3.msg"
+  "OccupancyRpt.msg"
+  "PacmodCmd.msg"
+  "ParkingBrakeStatusRpt.msg"
+  "PositionWithSpeed.msg"
+  "RearLightsRpt.msg"
+  "ShiftAuxRpt.msg"
+  "SteerAuxRpt.msg"
+  "SteerSystemCmd.msg"
+  "SteeringPIDRpt1.msg"
+  "SteeringPIDRpt2.msg"
+  "SteeringPIDRpt3.msg"
+  "SteeringPIDRpt4.msg"
+  "SystemCmdBool.msg"
+  "SystemCmdFloat.msg"
+  "SystemCmdInt.msg"
+  "SystemRptBool.msg"
+  "SystemRptFloat.msg"
+  "SystemRptInt.msg"
+  "TurnAuxRpt.msg"
+  "VehicleDynamicsRpt.msg"
+  "VehicleSpecificRpt1.msg"
+  "VehicleSpeedRpt.msg"
+  "VinRpt.msg"
+  "WheelSpeedRpt.msg"
+  "WiperAuxRpt.msg"
+  "YawRateRpt.msg"
 )
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  ${msg_files}
-  DEPENDENCIES builtin_interfaces std_msgs
-  ADD_LINTER_TESTS
-)
+if(${ROS_VERSION} EQUAL 1)
 
-ament_export_dependencies(rosidl_default_runtime)
+  cmake_minimum_required(VERSION 2.8.3)
 
-ament_package()
+  # Default to C++11
+  if(NOT CMAKE_CXX_STANDARD)
+    set(CMAKE_CXX_STANDARD 11)
+  endif()
+
+  find_package(catkin REQUIRED
+    COMPONENTS
+    message_generation
+    std_msgs
+  )
+
+  add_message_files(FILES
+    ${MSG_FILES}
+    DIRECTORY msg
+  )
+
+  generate_messages(DEPENDENCIES std_msgs)
+
+  catkin_package(
+    CATKIN_DEPENDS message_runtime
+  )
+
+elseif(${ROS_VERSION} EQUAL 2)
+
+  cmake_minimum_required(VERSION 3.5)
+
+  if(NOT CMAKE_CXX_STANDARD)
+    set(CMAKE_CXX_STANDARD_REQUIRED ON)
+    set(CMAKE_CXX_STANDARD 14)
+  endif()
+
+  if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic)
+  endif()
+
+  find_package(ament_cmake REQUIRED)
+  find_package(builtin_interfaces REQUIRED)
+  find_package(std_msgs REQUIRED)
+  find_package(rosidl_default_generators REQUIRED)
+
+  # Apend "msg/" to each file name
+  set(TEMP_LIST "")
+  foreach(MSG_FILE ${MSG_FILES})
+    list(APPEND TEMP_LIST "msg/${MSG_FILE}")
+  endforeach()
+  set(MSG_FILES ${TEMP_LIST})
+
+  rosidl_generate_interfaces(${PROJECT_NAME}
+    ${MSG_FILES}
+    DEPENDENCIES builtin_interfaces std_msgs
+    ADD_LINTER_TESTS
+  )
+
+  ament_export_dependencies(rosidl_default_runtime)
+
+  if(BUILD_TESTING)
+    find_package(ament_lint_auto REQUIRED)
+    ament_lint_auto_find_test_dependencies()
+  endif()
+
+  ament_package()
+
+endif()
