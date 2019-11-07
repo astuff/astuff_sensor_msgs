@@ -56,9 +56,38 @@ jobs:
             catkin_test_results
     working_directory: ~/src
 
+  dashing:
+    docker:
+      - image: autonomoustuff/docker-builds:dashing-ros-base
+    steps:
+      - checkout
+      - run:
+          name: Set Up Container
+          command: |
+            apt-get update -qq
+            source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
+            rosdep update
+            rosdep install --from-paths . --ignore-src -y
+            cd ..
+      - run:
+          name: Build
+          command: |
+            source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
+            cd ..
+            colcon build --packages-up-to delphi_esr_msgs
+      - run:
+          name: Run Tests
+          command: |
+            source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
+            cd ..
+            colcon test --packages-up-to delphi_esr_msgs
+            colcon test-result
+    working_directory: ~/src
+
 workflows:
   version: 2
   ros_build:
     jobs:
       - kinetic
       - melodic
+      - dashing
