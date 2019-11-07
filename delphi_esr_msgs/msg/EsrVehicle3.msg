@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 # ESR vehicle3
 bool        long_accel_valid

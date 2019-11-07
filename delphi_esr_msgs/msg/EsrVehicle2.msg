@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 # ESR vehicle2
 uint16      scan_index_ack
