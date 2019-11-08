@@ -1,0 +1,96 @@
+class update_delphi_esr_msgs_EsrTrack_0a9beb5caea714982a56115450f110c7(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrTrack"
+	old_full_text = """
+Header header
+
+# ESR Track Msg
+string        canmsg
+uint8         track_ID
+float32       track_lat_rate
+bool          track_group_changed
+uint8         track_status
+float32       track_angle
+float32       track_range
+bool          track_bridge_object
+bool          track_rolling_count
+float32       track_width
+float32       track_range_accel
+uint8         track_med_range_mode
+float32       track_range_rate
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrTrack"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR Track Msg
+string        canmsg
+uint8         track_id
+float32       track_lat_rate
+bool          track_group_changed
+uint8         track_status
+float32       track_angle
+float32       track_range
+bool          track_bridge_object
+bool          track_rolling_count
+float32       track_width
+float32       track_range_accel
+uint8         track_med_range_mode
+float32       track_range_rate
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.track_id = old_msg.track_ID
+		new_msg.track_lat_rate = old_msg.track_lat_rate
+		new_msg.track_group_changed = old_msg.track_group_changed
+		new_msg.track_status = old_msg.track_status
+		new_msg.track_angle = old_msg.track_angle
+		new_msg.track_range = old_msg.track_range
+		new_msg.track_bridge_object = old_msg.track_bridge_object
+		new_msg.track_rolling_count = old_msg.track_rolling_count
+		new_msg.track_width = old_msg.track_width
+		new_msg.track_range_accel = old_msg.track_range_accel
+		new_msg.track_med_range_mode = old_msg.track_med_range_mode
+		new_msg.track_range_rate = old_msg.track_range_rate

@@ -1,0 +1,75 @@
+class update_delphi_esr_msgs_EsrStatus3_d267bafb7654adc3b6ab9a341e242e48(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus3"
+	old_full_text = """
+Header header
+
+# ESR status3
+string      canmsg
+uint8      hwVersion
+uint8      interfaceVersion
+uint8      swVersionPld
+string      swVersionHost
+string      serialNum
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus3"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status3
+string      canmsg
+uint8       hw_version
+uint8       interface_version
+uint8       sw_version_pld
+string      sw_version_host
+string      serial_num
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.hw_version = old_msg.hwVersion
+		new_msg.interface_version = old_msg.interfaceVersion
+		new_msg.sw_version_pld = old_msg.swVersionPld
+		new_msg.sw_version_host = old_msg.swVersionHost
+		new_msg.serial_num = old_msg.serialNum

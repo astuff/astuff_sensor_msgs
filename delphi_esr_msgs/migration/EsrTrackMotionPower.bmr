@@ -1,0 +1,109 @@
+class update_delphi_esr_msgs_EsrTrackMotionPower_0e70b42d5a6083ffa1a12dcd74ab9d45(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrTrackMotionPower"
+	old_full_text = """
+Header header
+
+# ESR TrackMotionPower Msg
+string                canmsg
+uint8                 rollingCount
+uint8                 groupId
+TrackMotionPower[]  tracks
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+
+================================================================================
+MSG: delphi_esr_msgs/TrackMotionPower
+bool  movableFast
+bool  movableSlow
+bool  moving
+int8 power
+"""
+
+	new_type = "delphi_esr_msgs/EsrTrackMotionPower"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR TrackMotionPower Msg
+string                              canmsg
+uint8                               rolling_count
+uint8                               group_id
+delphi_esr_msgs/TrackMotionPower[]  tracks
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+
+================================================================================
+MSG: delphi_esr_msgs/TrackMotionPower
+bool  movable_fast
+bool  movable_slow
+bool  moving
+int8  power
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),
+		("TrackMotionPower","TrackMotionPower"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.rolling_count = old_msg.rollingCount
+		new_msg.group_id = old_msg.groupId
+		self.migrate_array(old_msg.tracks, new_msg.tracks, "delphi_esr_msgs/TrackMotionPower")
+class update_delphi_esr_msgs_TrackMotionPower_bc0039fe6b619538bc897d0433ea31a8(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/TrackMotionPower"
+	old_full_text = """
+bool  movableFast
+bool  movableSlow
+bool  moving
+int8 power
+"""
+
+	new_type = "delphi_esr_msgs/TrackMotionPower"
+	new_full_text = """
+bool  movable_fast
+bool  movable_slow
+bool  moving
+int8  power
+"""
+
+	order = 0
+	migrated_types = []
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		new_msg.movable_fast = old_msg.movableFast
+		new_msg.movable_slow = old_msg.movableSlow
+		new_msg.moving = old_msg.moving
+		new_msg.power = old_msg.power

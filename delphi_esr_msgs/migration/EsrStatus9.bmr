@@ -1,0 +1,81 @@
+class update_delphi_esr_msgs_EsrStatus9_fc4ded94c686bdf234c4ceb10632e67c(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus9"
+	old_full_text = """
+Header header
+
+# ESR status9
+string      canmsg
+uint16      avgPwrCwblkg
+float32     sideSlipAngle
+uint8       serialNum3rdByte
+uint8       waterSprayTargetID
+float32     filteredXohpAccCIPV
+uint8       pathIDACC2
+uint8       pathIDACC3
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus9"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status9
+string      canmsg
+uint16      avg_pwr_cwblkg
+float32     side_slip_angle
+uint8       serial_num3rd_byte
+uint8       water_spray_target_id
+float32     filtered_xohp_acc_cipv
+uint8       path_id_acc2
+uint8       path_id_acc3
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.avg_pwr_cwblkg = old_msg.avgPwrCwblkg
+		new_msg.side_slip_angle = old_msg.sideSlipAngle
+		new_msg.serial_num3rd_byte = old_msg.serialNum3rdByte
+		new_msg.water_spray_target_id = old_msg.waterSprayTargetID
+		new_msg.filtered_xohp_acc_cipv = old_msg.filteredXohpAccCIPV
+		new_msg.path_id_acc2 = old_msg.pathIDACC2
+		new_msg.path_id_acc3 = old_msg.pathIDACC3

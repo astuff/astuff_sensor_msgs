@@ -19,6 +19,7 @@
   <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
   <build_depend condition="$ROS_VERSION == 2">rosidl_default_generators</build_depend>
 
+  <depend condition="$ROS_VERSION == 1">rosbag_migration_rule</depend>
   <depend condition="$ROS_VERSION == 2">builtin_interfaces</depend>
   <depend>std_msgs</depend>
 
@@ -33,5 +34,20 @@
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+    <rosbag_migration_rule rule_file="migration/EsrStatus1.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus2.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus3.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus4.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus5.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus6.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus7.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus8.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrStatus9.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrTrack.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrTrackMotionPower.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrValid1.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrValid2.bmr" />
+    <rosbag_migration_rule rule_file="migration/EsrVehicle4.bmr" />
+    <rosbag_migration_rule rule_file="migration/TrackMotionPower.bmr" />
   </export>
 </package>

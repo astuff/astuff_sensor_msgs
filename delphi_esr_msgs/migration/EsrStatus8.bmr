@@ -1,0 +1,84 @@
+class update_delphi_esr_msgs_EsrStatus8_cf0bfab7682c50ee2545f1e97677b621(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus8"
+	old_full_text = """
+Header header
+
+# ESR status8
+string      canmsg
+uint8       historyFault0
+uint8       historyFault1
+uint8       historyFault2
+uint8       historyFault3
+uint8       historyFault4
+uint8       historyFault5
+uint8       historyFault6
+uint8       historyFault7
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus8"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status8
+string      canmsg
+uint8       history_fault0
+uint8       history_fault1
+uint8       history_fault2
+uint8       history_fault3
+uint8       history_fault4
+uint8       history_fault5
+uint8       history_fault6
+uint8       history_fault7
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.history_fault0 = old_msg.historyFault0
+		new_msg.history_fault1 = old_msg.historyFault1
+		new_msg.history_fault2 = old_msg.historyFault2
+		new_msg.history_fault3 = old_msg.historyFault3
+		new_msg.history_fault4 = old_msg.historyFault4
+		new_msg.history_fault5 = old_msg.historyFault5
+		new_msg.history_fault6 = old_msg.historyFault6
+		new_msg.history_fault7 = old_msg.historyFault7

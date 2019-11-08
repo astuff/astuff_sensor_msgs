@@ -1,0 +1,74 @@
+class update_delphi_esr_msgs_EsrValid1_c4abfbd505e6dac4796d76d198d45785(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrValid1"
+	old_full_text = """
+Header header
+
+# ESR valid1
+string      canmsg
+uint8       lrSN
+float32     lrRange
+float32     lrRangeRate
+float32     lrAngle
+int8        lrPower
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrValid1"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR valid1
+string      canmsg
+uint8       lr_sn
+float32     lr_range
+float32     lr_range_rate
+float32     lr_angle
+int8        lr_power
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.lr_sn = old_msg.lrSN
+		new_msg.lr_range = old_msg.lrRange
+		new_msg.lr_range_rate = old_msg.lrRangeRate
+		new_msg.lr_angle = old_msg.lrAngle
+		new_msg.lr_power = old_msg.lrPower
