@@ -1,0 +1,101 @@
+class update_delphi_esr_msgs_EsrStatus4_abec2ac03bbfc0ae47f593463cff96cc(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus4"
+	old_full_text = """
+Header header
+
+# ESR status4
+string      canmsg
+uint8       rollingCount3
+uint8       mrlrMode
+bool        patialBlockage
+bool        sideLobeBlockage
+bool        lrOnlyGratingLobeDet
+bool        truckTargetDet
+uint8       pathIdAcc
+uint8       pathIdCmmbMove
+uint8       pathIdCmmbStat
+uint8       pathIdFcwMove
+uint8       pathIdFcwStat
+uint8       pathIdAccStat
+float32     autoAlginAngle
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus4"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status4
+string      canmsg
+uint8       rolling_count3
+uint8       mrlr_mode
+bool        patial_blockage
+bool        side_lobe_blockage
+bool        lr_only_grating_lobe_det
+bool        truck_target_det
+uint8       path_id_acc
+uint8       path_id_cmmb_move
+uint8       path_id_cmmb_stat
+uint8       path_id_fcw_move
+uint8       path_id_fcw_stat
+uint8       path_id_acc_stat
+float32     auto_algin_angle
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.rolling_count3 = old_msg.rollingCount3
+		new_msg.mrlr_mode = old_msg.mrlrMode
+		new_msg.patial_blockage = old_msg.patialBlockage
+		new_msg.side_lobe_blockage = old_msg.sideLobeBlockage
+		new_msg.lr_only_grating_lobe_det = old_msg.lrOnlyGratingLobeDet
+		new_msg.truck_target_det = old_msg.truckTargetDet
+		new_msg.path_id_acc = old_msg.pathIdAcc
+		new_msg.path_id_cmmb_move = old_msg.pathIdCmmbMove
+		new_msg.path_id_cmmb_stat = old_msg.pathIdCmmbStat
+		new_msg.path_id_fcw_move = old_msg.pathIdFcwMove
+		new_msg.path_id_fcw_stat = old_msg.pathIdFcwStat
+		new_msg.path_id_acc_stat = old_msg.pathIdAccStat
+		new_msg.auto_algin_angle = old_msg.autoAlginAngle

@@ -1,11 +1,9 @@
-Header header
+std_msgs/Header header
 
 # ESR valid2
 string      canmsg
-uint8       mrSN
-float32     mrRange
-float32     mrRangeRate
-float32     mrAngle
-int8        mrPower
-
-
+uint8       mr_sn
+float32     mr_range
+float32     mr_range_rate
+float32     mr_angle
+int8        mr_power

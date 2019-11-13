@@ -1,0 +1,81 @@
+class update_delphi_esr_msgs_EsrStatus1_2bab6477be87782f9154c54c75ec5117(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus1"
+	old_full_text = """
+Header header
+
+# ESR status1
+string      canmsg
+uint8       timeStamp
+uint8       rollingCount
+bool        commError
+int16       curvature
+uint16      scanId
+float32     yawRate
+float32     vehicleSpeedCalc
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus1"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status1
+string      canmsg
+uint8       time_stamp
+uint8       rolling_count
+bool        comm_error
+int16       curvature
+uint16      scan_id
+float32     yaw_rate
+float32     vehicle_speed_calc
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.time_stamp = old_msg.timeStamp
+		new_msg.rolling_count = old_msg.rollingCount
+		new_msg.comm_error = old_msg.commError
+		new_msg.curvature = old_msg.curvature
+		new_msg.scan_id = old_msg.scanId
+		new_msg.yaw_rate = old_msg.yawRate
+		new_msg.vehicle_speed_calc = old_msg.vehicleSpeedCalc

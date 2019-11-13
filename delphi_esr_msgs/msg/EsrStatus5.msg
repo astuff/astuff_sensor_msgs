@@ -1,14 +1,14 @@
-Header header
+std_msgs/Header header
 
 # ESR status5
 string      canmsg
-uint8       swbattA2D
-uint8       ignpA2D
-uint8       temp1A2D
-uint8       temp2A2D
-uint8       supply5VA
-uint8       supply5VDX
-uint8       supply53P3V
-uint8       supply10V
+uint8       swbatt_a2d
+uint8       ignp_a2d
+uint8       temp1_a2d
+uint8       temp2_a2d
+uint8       supply_5v_a
+uint8       supply_5v_dx
+uint8       supply_53p_3v
+uint8       supply_10_v
 
 

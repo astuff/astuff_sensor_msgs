@@ -1,0 +1,27 @@
+class update_delphi_esr_msgs_TrackMotionPower_bc0039fe6b619538bc897d0433ea31a8(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/TrackMotionPower"
+	old_full_text = """
+bool  movableFast
+bool  movableSlow
+bool  moving
+int8 power
+"""
+
+	new_type = "delphi_esr_msgs/TrackMotionPower"
+	new_full_text = """
+bool  movable_fast
+bool  movable_slow
+bool  moving
+int8  power
+"""
+
+	order = 1
+	migrated_types = []
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		new_msg.movable_fast = old_msg.movableFast
+		new_msg.movable_slow = old_msg.movableSlow
+		new_msg.moving = old_msg.moving
+		new_msg.power = old_msg.power

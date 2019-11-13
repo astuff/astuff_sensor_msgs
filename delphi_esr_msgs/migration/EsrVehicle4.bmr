@@ -1,0 +1,85 @@
+class update_delphi_esr_msgs_EsrVehicle4_0805b9094a6d63c8c5d196257252ccdb(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrVehicle4"
+	old_full_text = """
+Header header
+
+# ESR vehicle4
+bool        fac_align_cmd_1
+bool        fac_align_cmd_2
+uint8       fac_align_max_nt
+uint8       fac_align_samp_req
+int8        fac_tgt_mtg_offset
+int8        fac_tgt_mtg_space_hor
+int8        fac_tgt_mtg_space_ver
+float32     fac_tgt_range_1
+float32     fac_tgt_range_r2m
+float32     fac_tgt_range_m2t
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrVehicle4"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR vehicle4
+bool        fac_align_cmd1
+bool        fac_align_cmd2
+uint8       fac_align_max_nt
+uint8       fac_align_samp_req
+int8        fac_tgt_mtg_offset
+int8        fac_tgt_mtg_space_hor
+int8        fac_tgt_mtg_space_ver
+float32     fac_tgt_range1
+float32     fac_tgt_range_r2m
+float32     fac_tgt_range_m2t
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.fac_align_cmd1 = old_msg.fac_align_cmd_1
+		new_msg.fac_align_cmd2 = old_msg.fac_align_cmd_2
+		new_msg.fac_align_max_nt = old_msg.fac_align_max_nt
+		new_msg.fac_align_samp_req = old_msg.fac_align_samp_req
+		new_msg.fac_tgt_mtg_offset = old_msg.fac_tgt_mtg_offset
+		new_msg.fac_tgt_mtg_space_hor = old_msg.fac_tgt_mtg_space_hor
+		new_msg.fac_tgt_mtg_space_ver = old_msg.fac_tgt_mtg_space_ver
+		new_msg.fac_tgt_range1 = old_msg.fac_tgt_range_1
+		new_msg.fac_tgt_range_r2m = old_msg.fac_tgt_range_r2m
+		new_msg.fac_tgt_range_m2t = old_msg.fac_tgt_range_m2t

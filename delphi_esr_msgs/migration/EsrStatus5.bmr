@@ -1,0 +1,86 @@
+class update_delphi_esr_msgs_EsrStatus5_aae12ba774492012b782362919f8cb63(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus5"
+	old_full_text = """
+Header header
+
+# ESR status5
+string      canmsg
+uint8       swbattA2D
+uint8       ignpA2D
+uint8       temp1A2D
+uint8       temp2A2D
+uint8       supply5VA
+uint8       supply5VDX
+uint8       supply53P3V
+uint8       supply10V
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus5"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status5
+string      canmsg
+uint8       swbatt_a2d
+uint8       ignp_a2d
+uint8       temp1_a2d
+uint8       temp2_a2d
+uint8       supply_5v_a
+uint8       supply_5v_dx
+uint8       supply_53p_3v
+uint8       supply_10_v
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.swbatt_a2d = old_msg.swbattA2D
+		new_msg.ignp_a2d = old_msg.ignpA2D
+		new_msg.temp1_a2d = old_msg.temp1A2D
+		new_msg.temp2_a2d = old_msg.temp2A2D
+		new_msg.supply_5v_a = old_msg.supply5VA
+		new_msg.supply_5v_dx = old_msg.supply5VDX
+		new_msg.supply_53p_3v = old_msg.supply53P3V
+		new_msg.supply_10_v = old_msg.supply10V

@@ -1,0 +1,98 @@
+class update_delphi_esr_msgs_EsrStatus6_fab6045bfaa2bc768f235e17159502ea(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus6"
+	old_full_text = """
+Header header
+
+# ESR status6
+string      canmsg
+uint8       supply1P8V
+uint8       supplyN5V
+uint8       waveDiffA2D
+uint8       swVersionDSP3rdByte
+bool        verticalAlginUpdated
+uint8       systemPowerMode
+bool        foundTarget
+bool        recommendUnconverge
+uint8       factoryAlginStatus1
+uint8       factoryAlginStatus2
+float32     factoryMisAlginment
+uint8       servAlginUpdatesDone
+float32     verticalMisAlginment
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus6"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status6
+string      canmsg
+uint8       supply_1p_8v
+uint8       supply_n_5v
+uint8       wave_diff_a2d
+uint8       sw_version_dsp_3rd_byte
+bool        vertical_algin_updated
+uint8       system_power_mode
+bool        found_target
+bool        recommend_unconverge
+uint8       factory_algin_status1
+uint8       factory_algin_status2
+float32     factory_mis_alginment
+uint8       serv_algin_updates_done
+float32     vertical_mis_alginment
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.supply_1p_8v = old_msg.supply1P8V
+		new_msg.supply_n_5v = old_msg.supplyN5V
+		new_msg.wave_diff_a2d = old_msg.waveDiffA2D
+		new_msg.sw_version_dsp_3rd_byte = old_msg.swVersionDSP3rdByte
+		new_msg.vertical_algin_updated = old_msg.verticalAlginUpdated
+		new_msg.system_power_mode = old_msg.systemPowerMode
+		new_msg.found_target = old_msg.foundTarget
+		new_msg.recommend_unconverge = old_msg.recommendUnconverge
+		new_msg.factory_algin_status1 = old_msg.factoryAlginStatus1
+		new_msg.factory_algin_status2 = old_msg.factoryAlginStatus2
+		new_msg.factory_mis_alginment = old_msg.factoryMisAlginment
+		new_msg.serv_algin_updates_done = old_msg.servAlginUpdatesDone
+		new_msg.vertical_mis_alginment = old_msg.verticalMisAlginment

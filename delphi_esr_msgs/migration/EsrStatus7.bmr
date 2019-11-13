@@ -1,0 +1,84 @@
+class update_delphi_esr_msgs_EsrStatus7_b04af575c0721e778fa727e03d332233(MessageUpdateRule):
+	old_type = "delphi_esr_msgs/EsrStatus7"
+	old_full_text = """
+Header header
+
+# ESR status7
+string      canmsg
+uint8       activeFault0
+uint8       activeFault1
+uint8       activeFault2
+uint8       activeFault3
+uint8       activeFault4
+uint8       activeFault5
+uint8       activeFault6
+uint8       activeFault7
+
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_esr_msgs/EsrStatus7"
+	new_full_text = """
+std_msgs/Header header
+
+# ESR status7
+string      canmsg
+uint8       active_fault0
+uint8       active_fault1
+uint8       active_fault2
+uint8       active_fault3
+uint8       active_fault4
+uint8       active_fault5
+uint8       active_fault6
+uint8       active_fault7
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.canmsg = old_msg.canmsg
+		new_msg.active_fault0 = old_msg.activeFault0
+		new_msg.active_fault1 = old_msg.activeFault1
+		new_msg.active_fault2 = old_msg.activeFault2
+		new_msg.active_fault3 = old_msg.activeFault3
+		new_msg.active_fault4 = old_msg.activeFault4
+		new_msg.active_fault5 = old_msg.activeFault5
+		new_msg.active_fault6 = old_msg.activeFault6
+		new_msg.active_fault7 = old_msg.activeFault7

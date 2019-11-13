@@ -1,8 +1,8 @@
-Header header
+std_msgs/Header header
 
 # ESR Track Msg
 string        canmsg
-uint8         track_ID
+uint8         track_id
 float32       track_lat_rate
 bool          track_group_changed
 uint8         track_status
