@@ -1,5 +1,5 @@
-Header header
+std_msgs/Header header
 
-bool canFacAlignCmd3
-bool canFacAlignCmd2
-bool canFacAlignCmd1
+bool can_fac_align_cmd3
+bool can_fac_align_cmd2
+bool can_fac_align_cmd1

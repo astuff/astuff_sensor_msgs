@@ -1,5 +1,5 @@
-Header header
+std_msgs/Header header
 
-uint8 canSensorFovHor
-uint8 canDopplerCoverage
-uint8 canRangeCoverage
+uint8 can_sensor_fov_hor
+uint8 can_doppler_coverage
+uint8 can_range_coverage

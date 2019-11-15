@@ -1,7 +1,6 @@
-Header header
+std_msgs/Header header
 
-
-bool  movableFast
-bool  movableSlow
+bool  movable_fast
+bool  movable_slow
 bool  moving
-int8 power
+int8  power

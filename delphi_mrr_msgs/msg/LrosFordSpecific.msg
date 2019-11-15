@@ -1,5 +1,5 @@
-Header header
+std_msgs/Header header
 
-float32 canGlobalrealtimeFord
-float32 canVehSpeedFord
-float32 canVehYawFord
+float32 can_globalrealtime_ford
+float32 can_veh_speed_ford
+float32 can_veh_yaw_ford

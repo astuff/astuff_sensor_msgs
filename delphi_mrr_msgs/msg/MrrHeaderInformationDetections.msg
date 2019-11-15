@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
-uint16 canAlignUodatesDone
-uint16 canScanIndex
-uint8  canNumberOfDet 
-uint8  canLookId
-uint16 canLookIndex 
+uint16 can_align_uodates_done
+uint16 can_scan_index
+uint8  can_number_of_det 
+uint8  can_look_id
+uint16 can_look_index

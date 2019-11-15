@@ -1,11 +1,10 @@
-Header header
+std_msgs/Header header
 
-uint8 	canMmicTemp1
-uint8 	canProcessorThermistor
-uint8 	canProcessorTemp1
-
-float32  can_1_25_v
-float32  can5v
-float32  can3_3_v_Raw
-float32  can_3_3_v_Dac
-float32	 canBattVolts
+uint8    can_mmic_temp1
+uint8    can_processor_thermistor
+uint8    can_processor_temp1
+float32  can_12_5v
+float32  can_5v
+float32  can_3v3_raw
+float32  can_3v3_dac
+float32  can_batt_volts
