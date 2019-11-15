@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
-uint8 canPblFieldRevision
-uint8 canPblPromoteRevision 
-uint8 canSwFieldRevision
-uint8 canSwPromoteRevision
-uint8 canPblReleaseRevision
+uint8 can_pbl_field_revision
+uint8 can_pbl_promote_revision
+uint8 can_sw_field_revision
+uint8 can_sw_promote_revision
+uint8 can_pbl_release_revision

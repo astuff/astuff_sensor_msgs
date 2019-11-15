@@ -1,9 +1,9 @@
-Header header
+std_msgs/Header header
 
-uint8 	canPowerSuppFord
-uint8 	canPowerMotiveFord
-float32   canCruiseStatusFord
-uint8 	canVehBattVolt
-uint16 	canGearPosition
-float32   canAmbientTemp
-uint8 	canIgnStatus
+uint8 	  can_power_supp_ford
+uint8 	  can_power_motive_ford
+float32   can_cruise_status_ford
+uint8 	  can_veh_batt_volt
+uint16 	  can_gear_position
+float32   can_ambient_temp
+uint8 	  can_ign_status

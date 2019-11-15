@@ -1,6 +1,6 @@
-Header header
+std_msgs/Header header
 
- bool    yawRateReferenceValid
- uint16  yawRateReference
- uint8   canVehLongAccelQf
- uint16  canVehLongAccel
+bool    yaw_rate_reference_valid
+uint16  yaw_rate_reference
+uint8   can_veh_long_accel_qf
+uint16  can_veh_long_accel

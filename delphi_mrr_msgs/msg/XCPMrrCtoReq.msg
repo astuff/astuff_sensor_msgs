@@ -1,10 +1,10 @@
-Header header
+std_msgs/Header header
 
-uint8 mrrXcpCtoCmdByte7
-uint8 mrrXcpCtoCmdByte6
-uint8 mrrXcpCtoCmdByte5
-uint8 mrrXcpCtoCmdByte4
-uint8 mrrXcpCtoCmdByte3
-uint8 mrrXcpCtoCmdByte2
-uint8 mrrXcpCtoCmdByte1
-uint8 mrrXcpCtoCmdByte0
+uint8 mrr_xcp_cto_cmd_byte7
+uint8 mrr_xcp_cto_cmd_byte6
+uint8 mrr_xcp_cto_cmd_byte5
+uint8 mrr_xcp_cto_cmd_byte4
+uint8 mrr_xcp_cto_cmd_byte3
+uint8 mrr_xcp_cto_cmd_byte2
+uint8 mrr_xcp_cto_cmd_byte1
+uint8 mrr_xcp_cto_cmd_byte0

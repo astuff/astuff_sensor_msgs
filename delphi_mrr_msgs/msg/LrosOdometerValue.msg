@@ -1,3 +1,3 @@
-Header header
+std_msgs/Header header
 
-uint32 canOdometerFord
+uint32 can_odometer_ford

@@ -1,3 +1,3 @@
-Header header
+std_msgs/Header header
 
-uint16 canInstMODE
+uint16 can_inst_mode

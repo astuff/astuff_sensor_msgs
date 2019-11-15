@@ -1,10 +1,10 @@
-Header header
+std_msgs/Header header
 
-uint8 mrrXcpDaqRespByte7
-uint8 mrrXcpDaqRespByte6
-uint8 mrrXcpDaqRespByte5
-uint8 mrrXcpDaqRespByte4
-uint8 mrrXcpDaqRespByte3
-uint8 mrrXcpDaqRespByte2
-uint8 mrrXcpDaqRespByte1
-uint8 mrrXcpDaqRespByte0
+uint8 mrr_xcp_daq_resp_byte7
+uint8 mrr_xcp_daq_resp_byte6
+uint8 mrr_xcp_daq_resp_byte5
+uint8 mrr_xcp_daq_resp_byte4
+uint8 mrr_xcp_daq_resp_byte3
+uint8 mrr_xcp_daq_resp_byte2
+uint8 mrr_xcp_daq_resp_byte1
+uint8 mrr_xcp_daq_resp_byte0

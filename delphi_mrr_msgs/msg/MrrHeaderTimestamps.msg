@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
-float32 canDetTimeSinceMeas
-float32 canSensorTimeStamp
+float32 can_det_time_since_meas
+float32 can_sensor_time_stamp
