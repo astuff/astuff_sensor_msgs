@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 bool confirm
 bool auto_reply
 float64 position    # Position in 0.001" increments.
