@@ -1,0 +1,77 @@
+class update_delphi_srr_msgs_SrrStatus4_5888431f2fe93e9b1c17ca7520274fa9(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrStatus4"
+	old_full_text = """
+# Message file for srr_status4
+
+Header header
+
+uint16    CAN_TX_SW_VERSION_HOST                  
+
+uint8     CAN_TX_PATH_ID_BLIS_IGNORE              
+
+uint8     CAN_TX_PATH_ID_BLIS                     
+
+float32   CAN_TX_ANGLE_MISALIGNMENT               
+
+float32   CAN_TX_AUTO_ALIGN_ANGLE                 
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrStatus4"
+	new_full_text = """
+# Message file for srr_status4
+
+std_msgs/Header header
+
+uint16    can_tx_sw_version_host
+uint8     can_tx_path_id_blis_ignore
+uint8     can_tx_path_id_blis
+float32   can_tx_angle_misalignment
+float32   can_tx_auto_align_angle
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.can_tx_sw_version_host = old_msg.CAN_TX_SW_VERSION_HOST
+		new_msg.can_tx_path_id_blis_ignore = old_msg.CAN_TX_PATH_ID_BLIS_IGNORE
+		new_msg.can_tx_path_id_blis = old_msg.CAN_TX_PATH_ID_BLIS
+		new_msg.can_tx_angle_misalignment = old_msg.CAN_TX_ANGLE_MISALIGNMENT
+		new_msg.can_tx_auto_align_angle = old_msg.CAN_TX_AUTO_ALIGN_ANGLE

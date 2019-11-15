@@ -1,0 +1,83 @@
+class update_delphi_srr_msgs_SrrStatus1_7218c3cadae8e234a3242d37de450233(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrStatus1"
+	old_full_text = """
+# Message file for srr_status1
+
+Header header
+
+bool      CAN_TX_LOOK_TYPE                        
+bool          CAN_TX_LOOK_TYPE_Medium_Look=0
+bool          CAN_TX_LOOK_TYPE_Long_Look=1
+
+uint32    CAN_TX_DSP_TIMESTAMP                     # ms
+
+float32   CAN_TX_YAW_RATE_CALC                     # deg/s
+
+float32   CAN_TX_VEHICLE_SPEED_CALC                # m/s
+
+uint16    CAN_TX_SCAN_INDEX                       
+
+float32   CAN_TX_CURVATURE                         # 1/m
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrStatus1"
+	new_full_text = """
+# Message file for srr_status1
+
+std_msgs/Header header
+
+bool      can_tx_look_type
+uint32    can_tx_dsp_timestamp                     # ms
+float32   can_tx_yaw_rate_calc                     # deg/s
+float32   can_tx_vehicle_speed_calc                # m/s
+uint16    can_tx_scan_index
+float32   can_tx_curvature                         # 1/m
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.can_tx_look_type = old_msg.CAN_TX_LOOK_TYPE
+		new_msg.can_tx_dsp_timestamp = old_msg.CAN_TX_DSP_TIMESTAMP
+		new_msg.can_tx_yaw_rate_calc = old_msg.CAN_TX_YAW_RATE_CALC
+		new_msg.can_tx_vehicle_speed_calc = old_msg.CAN_TX_VEHICLE_SPEED_CALC
+		new_msg.can_tx_scan_index = old_msg.CAN_TX_SCAN_INDEX
+		new_msg.can_tx_curvature = old_msg.CAN_TX_CURVATURE

@@ -1,0 +1,105 @@
+class update_delphi_srr_msgs_SrrFeatureAlert_7ccc2c20c174aa66456bfbd940c23205(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrFeatureAlert"
+	old_full_text = """
+# Message file for srr_feature_alert
+
+Header header
+
+uint8     LCMA_blis_ignored_track_id              
+
+uint8     LCMA_blis_track_id                      
+
+float32   LCMA_cvw_TTC                             # seconds
+
+bool      CTA_TTC_Alert                           
+
+float32   CTA_selected_track_ttc                   # seconds
+
+uint16    CTA_selected_track                      
+
+uint8     CTA_Alert                                # binary
+
+bool      CTA_Active                               # binary
+
+uint8     LCMA_cvw_cipv                           
+
+uint8     LCMA_cvw_alert_state                    
+
+uint8     LCMA_blis_alert_state                   
+
+bool      LCMA_Active                             
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrFeatureAlert"
+	new_full_text = """
+# Message file for srr_feature_alert
+
+std_msgs/Header header
+
+uint8     lcma_blis_ignored_track_id
+uint8     lcma_blis_track_id
+float32   lcma_cvw_ttc                             # seconds
+bool      cta_ttc_alert
+float32   cta_selected_track_ttc                   # seconds
+uint16    cta_selected_track
+uint8     cta_alert                                # binary
+bool      cta_active                               # binary
+uint8     lcma_cvw_cipv
+uint8     lcma_cvw_alert_state
+uint8     lcma_blis_alert_state
+bool      lcma_active
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.lcma_blis_ignored_track_id = old_msg.LCMA_blis_ignored_track_id
+		new_msg.lcma_blis_track_id = old_msg.LCMA_blis_track_id
+		new_msg.lcma_cvw_ttc = old_msg.LCMA_cvw_TTC
+		new_msg.cta_ttc_alert = old_msg.CTA_TTC_Alert
+		new_msg.cta_selected_track_ttc = old_msg.CTA_selected_track_ttc
+		new_msg.cta_selected_track = old_msg.CTA_selected_track
+		new_msg.cta_alert = old_msg.CTA_Alert
+		new_msg.cta_active = old_msg.CTA_Active
+		new_msg.lcma_cvw_cipv = old_msg.LCMA_cvw_cipv
+		new_msg.lcma_cvw_alert_state = old_msg.LCMA_cvw_alert_state
+		new_msg.lcma_blis_alert_state = old_msg.LCMA_blis_alert_state
+		new_msg.lcma_active = old_msg.LCMA_Active

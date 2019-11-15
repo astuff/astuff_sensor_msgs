@@ -1,0 +1,103 @@
+class update_delphi_srr_msgs_SrrTrack_fe266d1721e555c55d5d9c747938f98b(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrTrack"
+	old_full_text = """
+# Message file for srr_track
+
+Header header
+
+uint8     CAN_TX_DETECT_VALID_LEVEL               
+uint8         CAN_TX_DETECT_VALID_LEVEL_Suspect_Detection=0
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_1=1
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_2=2
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_3=3
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_4=4
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_5=5
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_6=6
+uint8         CAN_TX_DETECT_VALID_LEVEL_Level_7=7
+
+bool      CAN_TX_DETECT_STATUS                    
+bool          CAN_TX_DETECT_STATUS_No_Data=0
+bool          CAN_TX_DETECT_STATUS_Valid_Data_Present=1
+
+float32   CAN_TX_DETECT_RANGE_RATE                 # m/s
+
+float32   CAN_TX_DETECT_RANGE                      # m
+
+float32   CAN_TX_DETECT_ANGLE                      # deg
+
+float32   CAN_TX_DETECT_AMPLITUDE                  # dBsm
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrTrack"
+	new_full_text = """
+# Message file for srr_track
+
+std_msgs/Header header
+
+uint8     can_tx_detect_valid_level
+uint8     CAN_TX_DETECT_VALID_LEVEL_SUSPECT_DETECTION=0
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_1=1
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_2=2
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_3=3
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_4=4
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_5=5
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_6=6
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_7=7
+
+bool      can_tx_detect_status
+bool      CAN_TX_DETECT_STATUS_NO_DATA=0
+bool      CAN_TX_DETECT_STATUS_VALID_DATA_PRESENT=1
+
+float32   can_tx_detect_range_rate                 # m/s
+float32   can_tx_detect_range                      # m
+float32   can_tx_detect_angle                      # deg
+float32   can_tx_detect_amplitude                  # dbsm
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.can_tx_detect_valid_level = old_msg.CAN_TX_DETECT_VALID_LEVEL
+		new_msg.can_tx_detect_status = old_msg.CAN_TX_DETECT_STATUS
+		new_msg.can_tx_detect_range_rate = old_msg.CAN_TX_DETECT_RANGE_RATE
+		new_msg.can_tx_detect_range = old_msg.CAN_TX_DETECT_RANGE
+		new_msg.can_tx_detect_angle = old_msg.CAN_TX_DETECT_ANGLE
+		new_msg.can_tx_detect_amplitude = old_msg.CAN_TX_DETECT_AMPLITUDE
