@@ -1,11 +1,11 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
+ibeo_msgs/IbeoDataHeader ibeo_header
 uint16 scan_number
 uint16 scanner_status
 uint16 sync_phase_offset
-time scan_start_time
-time scan_end_time
+builtin_interfaces/Time scan_start_time
+builtin_interfaces/Time scan_end_time
 uint16 angle_ticks_per_rotation
 int16 start_angle_ticks
 int16 end_angle_ticks
@@ -20,7 +20,7 @@ bool ground_labeled
 bool dirt_labeled
 bool rain_labeled
 uint8 mirror_side
-ScanPoint2202[] scan_point_list
+ibeo_msgs/ScanPoint2202[] scan_point_list
 
 # mirror_side values
 uint8 FRONT=0

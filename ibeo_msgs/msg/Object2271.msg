@@ -1,5 +1,5 @@
 uint32 id
 bool tracked_properties_available
 bool untracked_properties_available
-TrackedProperties tracked_properties
-UntrackedProperties untracked_properties
+ibeo_msgs/TrackedProperties tracked_properties
+ibeo_msgs/UntrackedProperties untracked_properties

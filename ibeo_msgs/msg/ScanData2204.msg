@@ -1,6 +1,6 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
+ibeo_msgs/IbeoDataHeader ibeo_header
 uint64 scan_start_time
 uint32 scan_end_time_offset
 bool ground_labeled
@@ -12,8 +12,8 @@ uint8 coordinate_system
 uint16 scan_number
 uint16 scan_points
 uint16 number_of_scanner_infos
-ScannerInfo2204[] scanner_info_list
-ScanPoint2204[] scan_point_list
+ibeo_msgs/ScannerInfo2204[] scanner_info_list
+ibeo_msgs/ScanPoint2204[] scan_point_list
 
 # mirror_side values
 uint8 FRONT=0
