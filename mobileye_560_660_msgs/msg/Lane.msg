@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float64 lane_curvature
 float64 lane_heading
