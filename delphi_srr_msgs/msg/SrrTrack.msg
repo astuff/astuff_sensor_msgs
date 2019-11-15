@@ -1,26 +1,22 @@
 # Message file for srr_track
 
-Header header
+std_msgs/Header header
 
-uint8     CAN_TX_DETECT_VALID_LEVEL               
-uint8         CAN_TX_DETECT_VALID_LEVEL_Suspect_Detection=0
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_1=1
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_2=2
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_3=3
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_4=4
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_5=5
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_6=6
-uint8         CAN_TX_DETECT_VALID_LEVEL_Level_7=7
+uint8     can_tx_detect_valid_level
+uint8     CAN_TX_DETECT_VALID_LEVEL_SUSPECT_DETECTION=0
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_1=1
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_2=2
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_3=3
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_4=4
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_5=5
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_6=6
+uint8     CAN_TX_DETECT_VALID_LEVEL_LEVEL_7=7
 
-bool      CAN_TX_DETECT_STATUS                    
-bool          CAN_TX_DETECT_STATUS_No_Data=0
-bool          CAN_TX_DETECT_STATUS_Valid_Data_Present=1
+bool      can_tx_detect_status
+bool      CAN_TX_DETECT_STATUS_NO_DATA=0
+bool      CAN_TX_DETECT_STATUS_VALID_DATA_PRESENT=1
 
-float32   CAN_TX_DETECT_RANGE_RATE                 # m/s
-
-float32   CAN_TX_DETECT_RANGE                      # m
-
-float32   CAN_TX_DETECT_ANGLE                      # deg
-
-float32   CAN_TX_DETECT_AMPLITUDE                  # dBsm
-
+float32   can_tx_detect_range_rate                 # m/s
+float32   can_tx_detect_range                      # m
+float32   can_tx_detect_angle                      # deg
+float32   can_tx_detect_amplitude                  # dbsm
