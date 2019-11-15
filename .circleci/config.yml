@@ -74,13 +74,13 @@ jobs:
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build --packages-up-to delphi_esr_msgs delphi_mrr_msgs kartech_linear_actuator_msgs radar_msgs
+            colcon build --packages-up-to delphi_esr_msgs delphi_mrr_msgs derived_object_msgs kartech_linear_actuator_msgs radar_msgs
       - run:
           name: Run Tests
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon test --packages-up-to delphi_esr_msgs delphi_mrr_msgs kartech_linear_actuator_msgs radar_msgs
+            colcon test --packages-up-to delphi_esr_msgs delphi_mrr_msgs derived_object_msgs kartech_linear_actuator_msgs radar_msgs
             colcon test-result
     working_directory: ~/src
 
