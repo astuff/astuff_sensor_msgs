@@ -1,0 +1,65 @@
+class update_pacmod_msgs_SteeringPIDRpt1_7d86880faae06366294b6ade0660000a(MessageUpdateRule):
+	old_type = "pacmod_msgs/SteeringPIDRpt1"
+	old_full_text = """
+Header header
+
+float64 dt         # time since last PID iteration
+float64 Kp         # proportional gain term
+float64 Ki         # integral gain term
+float64 Kd         # differential gain term
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "pacmod_msgs/SteeringPIDRpt1"
+	new_full_text = """
+std_msgs/Header header
+
+float64 dt         # time since last PID iteration
+float64 kp         # proportional gain term
+float64 ki         # integral gain term
+float64 kd         # differential gain term
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.dt = old_msg.dt
+		new_msg.kp = old_msg.Kp
+		new_msg.ki = old_msg.Ki
+		new_msg.kd = old_msg.Kd

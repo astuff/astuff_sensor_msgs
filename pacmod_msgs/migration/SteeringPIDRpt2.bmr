@@ -1,0 +1,65 @@
+class update_pacmod_msgs_SteeringPIDRpt2_f1f83d8c039cc71a4428f154e85e90eb(MessageUpdateRule):
+	old_type = "pacmod_msgs/SteeringPIDRpt2"
+	old_full_text = """
+Header header
+
+float64 P_term         
+float64 I_term  
+float64 D_term         
+float64 all_terms      # sum of P, I, and D terms
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "pacmod_msgs/SteeringPIDRpt2"
+	new_full_text = """
+std_msgs/Header header
+
+float64 p_term
+float64 i_term
+float64 d_term
+float64 all_terms      # sum of P, I, and D terms
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.p_term = old_msg.P_term
+		new_msg.i_term = old_msg.I_term
+		new_msg.d_term = old_msg.D_term
+		new_msg.all_terms = old_msg.all_terms
