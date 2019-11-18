@@ -1,7 +1,7 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
-time start_scan_timestamp
+ibeo_msgs/IbeoDataHeader ibeo_header
+builtin_interfaces/Time start_scan_timestamp
 uint16 object_list_number
 uint16 number_of_objects
-Object2270[] object_list
+ibeo_msgs/Object2270[] object_list

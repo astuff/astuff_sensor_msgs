@@ -1,6 +1,6 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
+ibeo_msgs/IbeoDataHeader ibeo_header
 uint16 scan_number
 uint16 scanner_type
 bool motor_on
@@ -16,13 +16,13 @@ int16 mounting_position_x
 int16 mounting_position_y
 int16 mounting_position_z
 uint8 device_id
-time scan_start_time
-time scan_end_time
+builtin_interfaces/Time scan_start_time
+builtin_interfaces/Time scan_end_time
 int16 start_angle_ticks
 int16 end_angle_ticks
 uint8 mirror_side
 int16 mirror_tilt
-ScanPoint2208[] scan_point_list
+ibeo_msgs/ScanPoint2208[] scan_point_list
 
 # scanner_type values
 uint16 SCALA_B2=11520

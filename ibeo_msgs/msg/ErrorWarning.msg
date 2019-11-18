@@ -1,6 +1,6 @@
-Header header
+std_msgs/Header header
 
-IbeoDataHeader ibeo_header
+ibeo_msgs/IbeoDataHeader ibeo_header
 bool err_internal_error
 bool err_motor_1_fault
 bool err_buffer_error_xmt_incomplete

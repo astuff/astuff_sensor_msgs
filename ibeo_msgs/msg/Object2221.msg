@@ -2,23 +2,23 @@ uint16 id
 uint16 age
 uint16 prediction_age
 uint16 relative_timestamp
-Point2Di reference_point
-Point2Di reference_point_sigma
-Point2Di closest_point
-Point2Di bounding_box_center
+ibeo_msgs/Point2Di reference_point
+ibeo_msgs/Point2Di reference_point_sigma
+ibeo_msgs/Point2Di closest_point
+ibeo_msgs/Point2Di bounding_box_center
 uint16 bounding_box_width
 uint16 bounding_box_length
-Point2Di object_box_center
-Size2D object_box_size
+ibeo_msgs/Point2Di object_box_center
+ibeo_msgs/Size2D object_box_size
 int16 object_box_orientation
-Point2Di absolute_velocity
-Size2D absolute_velocity_sigma
-Point2Di relative_velocity
+ibeo_msgs/Point2Di absolute_velocity
+ibeo_msgs/Size2D absolute_velocity_sigma
+ibeo_msgs/Point2Di relative_velocity
 uint8 classification
 uint16 classification_age
 uint16 classification_certainty
 uint16 number_of_contour_points
-Point2Di[] contour_point_list
+ibeo_msgs/Point2Di[] contour_point_list
 
 # classification values
 uint8 UNCLASSIFIED=0
