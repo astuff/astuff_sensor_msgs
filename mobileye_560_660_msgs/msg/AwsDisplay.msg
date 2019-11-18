@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool suppress_sound
 bool night_time
