@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float64 f64_cmd
 uint16 ui16_cmd

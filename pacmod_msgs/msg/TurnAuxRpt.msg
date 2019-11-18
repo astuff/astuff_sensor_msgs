@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool driver_blinker_bulb_on
 bool driver_blinker_bulb_on_is_valid

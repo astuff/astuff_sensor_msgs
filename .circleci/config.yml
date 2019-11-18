@@ -74,13 +74,13 @@ jobs:
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build --packages-skip astuff_sensor_msgs pacmod_msgs
+            colcon build
       - run:
           name: Run Tests
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build --packages-skip astuff_sensor_msgs pacmod_msgs
+            colcon build
             colcon test-result
     working_directory: ~/src
 

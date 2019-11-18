@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool headlights_on
 bool headlights_on_is_valid

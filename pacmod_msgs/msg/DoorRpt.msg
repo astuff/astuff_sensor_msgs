@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool driver_door_open
 bool driver_door_open_is_valid

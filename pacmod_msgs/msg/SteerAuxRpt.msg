@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float64 raw_position
 bool raw_position_is_valid
