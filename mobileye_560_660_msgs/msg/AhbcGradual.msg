@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 float32 boundary_domain_bottom_non_glare_hlb
 float32 boundary_domain_non_glare_left_hand_hlb

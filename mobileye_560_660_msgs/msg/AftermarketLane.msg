@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 uint8 LANE_CONFIDENCE_NONE = 0
 uint8 LANE_CONFIDENCE_LOW = 1
