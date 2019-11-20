@@ -74,13 +74,13 @@ jobs:
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build --packages-skip astuff_sensor_msgs delphi_srr_msgs neobotix_usboard_msgs pacmod_msgs
+            colcon build --packages-skip astuff_sensor_msgs delphi_srr_msgs pacmod_msgs
       - run:
           name: Run Tests
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build --packages-skip astuff_sensor_msgs delphi_srr_msgs neobotix_usboard_msgs pacmod_msgs
+            colcon build --packages-skip astuff_sensor_msgs delphi_srr_msgs pacmod_msgs
             colcon test-result
     working_directory: ~/src
 
