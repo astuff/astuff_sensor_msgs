@@ -1,0 +1,200 @@
+class update_delphi_srr_msgs_SrrStatus5_8ac0881115410e342c76d82d29edaf36(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrStatus5"
+	old_full_text = """
+# Message file for srr_status5
+
+Header header
+
+bool      Disable_Auto_Align                      
+
+uint8     CAN_TX_YAW_RATE_REF_QF                  
+uint8         CAN_TX_YAW_RATE_REF_QF_Undefined=0
+uint8         CAN_TX_YAW_RATE_REF_QF_Temp_Undefined=1
+uint8         CAN_TX_YAW_RATE_REF_QF_Not_Accurate=2
+uint8         CAN_TX_YAW_RATE_REF_QF_Accurate=3
+
+uint8     CAN_TX_YAW_RATE_RAW_QF                  
+uint8         CAN_TX_YAW_RATE_RAW_QF_Undefined=0
+uint8         CAN_TX_YAW_RATE_RAW_QF_Temp_Undefined=1
+uint8         CAN_TX_YAW_RATE_RAW_QF_Not_Accurate=2
+uint8         CAN_TX_YAW_RATE_RAW_QF_Accurate=3
+
+float32   CAN_TX_YAW_RATE_REFERENCE                # deg/s
+
+float32   CAN_TX_YAW_RATE_RAW                      # deg/s
+
+uint8     CAN_TX_SYSTEM_STATUS                    
+uint8         CAN_TX_SYSTEM_STATUS_Configuration=0
+uint8         CAN_TX_SYSTEM_STATUS_StartUp=1
+uint8         CAN_TX_SYSTEM_STATUS_Running=2
+uint8         CAN_TX_SYSTEM_STATUS_Blocked=3
+uint8         CAN_TX_SYSTEM_STATUS_Faulty=4
+uint8         CAN_TX_SYSTEM_STATUS_ShutDown=5
+uint8         CAN_TX_SYSTEM_STATUS_Hot=6
+
+int16     CAN_TX_OUTSIDE_TEMPERATURE               # degC
+
+bool      CAN_BLOCKAGE_MNR_BLOCKED                
+
+bool      CAN_BLOCKAGE_BB_BLOCKED                 
+
+bool      CAN_BLOCKAGE_RADAR_BLOCKED              
+
+bool      CAN_TD_BLOCKED                          
+
+bool      Radar_TX_Power_Error                    
+
+bool      Radar_LO_Power_Error                    
+
+bool      Radar_Data_sync_error                   
+
+bool      Linearizer_SPI_Transfer_Error           
+
+bool      Saturated_Tuning_Freq_Error             
+
+bool      RTN_SPI_Transfer_Error                  
+
+bool      RRN_SPI_Transfer_Error                  
+
+bool      Video_Port_Capture_Error                
+
+bool      Vertical_Misalignment_error             
+
+bool      TX_Temperature_Fault                    
+
+bool      Transmitter_ID_Error                    
+
+bool      DSP_Unit_Cal_Checksum_Error             
+
+bool      DSP_Unit_Cal_Block_Chcksm_Error         
+
+bool      DSP_Tuning_Sensitivity_Error            
+
+bool      DSP_Loop_Overrun_Error                  
+
+bool      ADC_SPI_Transfer_Error                  
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrStatus5"
+	new_full_text = """
+# Message file for srr_status5
+
+std_msgs/Header header
+
+bool      disable_auto_align
+
+uint8     can_tx_yaw_rate_ref_qf
+uint8     CAN_TX_YAW_RATE_REF_QF_UNDEFINED=0
+uint8     CAN_TX_YAW_RATE_REF_QF_TEMP_UNDEFINED=1
+uint8     CAN_TX_YAW_RATE_REF_QF_NOT_ACCURATE=2
+uint8     CAN_TX_YAW_RATE_REF_QF_ACCURATE=3
+
+uint8     can_tx_yaw_rate_raw_qf
+uint8     CAN_TX_YAW_RATE_RAW_QF_UNDEFINED=0
+uint8     CAN_TX_YAW_RATE_RAW_QF_TEMP_UNDEFINED=1
+uint8     CAN_TX_YAW_RATE_RAW_QF_NOT_ACCURATE=2
+uint8     CAN_TX_YAW_RATE_RAW_QF_ACCURATE=3
+
+float32   can_tx_yaw_rate_reference                # deg/s
+float32   can_tx_yaw_rate_raw                      # deg/s
+
+uint8     can_tx_system_status
+uint8     CAN_TX_SYSTEM_STATUS_CONFIGURATION=0
+uint8     CAN_TX_SYSTEM_STATUS_STARTUP=1
+uint8     CAN_TX_SYSTEM_STATUS_RUNNING=2
+uint8     CAN_TX_SYSTEM_STATUS_BLOCKED=3
+uint8     CAN_TX_SYSTEM_STATUS_FAULTY=4
+uint8     CAN_TX_SYSTEM_STATUS_SHUTDOWN=5
+uint8     CAN_TX_SYSTEM_STATUS_HOT=6
+
+int16     can_tx_outside_temperature               # degc
+bool      can_blockage_mnr_blocked
+bool      can_blockage_bb_blocked
+bool      can_blockage_radar_blocked
+bool      can_td_blocked
+bool      radar_tx_power_error
+bool      radar_lo_power_error
+bool      radar_data_sync_error
+bool      linearizer_spi_transfer_error
+bool      saturated_tuning_freq_error
+bool      rtn_spi_transfer_error
+bool      rrn_spi_transfer_error
+bool      video_port_capture_error
+bool      vertical_misalignment_error
+bool      tx_temperature_fault
+bool      transmitter_id_error
+bool      dsp_unit_cal_checksum_error
+bool      dsp_unit_cal_block_chcksm_error
+bool      dsp_tuning_sensitivity_error
+bool      dsp_loop_overrun_error
+bool      adc_spi_transfer_error
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.disable_auto_align = old_msg.Disable_Auto_Align
+		new_msg.can_tx_yaw_rate_ref_qf = old_msg.CAN_TX_YAW_RATE_REF_QF
+		new_msg.can_tx_yaw_rate_raw_qf = old_msg.CAN_TX_YAW_RATE_RAW_QF
+		new_msg.can_tx_yaw_rate_reference = old_msg.CAN_TX_YAW_RATE_REFERENCE
+		new_msg.can_tx_yaw_rate_raw = old_msg.CAN_TX_YAW_RATE_RAW
+		new_msg.can_tx_system_status = old_msg.CAN_TX_SYSTEM_STATUS
+		new_msg.can_tx_outside_temperature = old_msg.CAN_TX_OUTSIDE_TEMPERATURE
+		new_msg.can_blockage_mnr_blocked = old_msg.CAN_BLOCKAGE_MNR_BLOCKED
+		new_msg.can_blockage_bb_blocked = old_msg.CAN_BLOCKAGE_BB_BLOCKED
+		new_msg.can_blockage_radar_blocked = old_msg.CAN_BLOCKAGE_RADAR_BLOCKED
+		new_msg.can_td_blocked = old_msg.CAN_TD_BLOCKED
+		new_msg.radar_tx_power_error = old_msg.Radar_TX_Power_Error
+		new_msg.radar_lo_power_error = old_msg.Radar_LO_Power_Error
+		new_msg.radar_data_sync_error = old_msg.Radar_Data_sync_error
+		new_msg.linearizer_spi_transfer_error = old_msg.Linearizer_SPI_Transfer_Error
+		new_msg.saturated_tuning_freq_error = old_msg.Saturated_Tuning_Freq_Error
+		new_msg.rtn_spi_transfer_error = old_msg.RTN_SPI_Transfer_Error
+		new_msg.rrn_spi_transfer_error = old_msg.RRN_SPI_Transfer_Error
+		new_msg.video_port_capture_error = old_msg.Video_Port_Capture_Error
+		new_msg.vertical_misalignment_error = old_msg.Vertical_Misalignment_error
+		new_msg.tx_temperature_fault = old_msg.TX_Temperature_Fault
+		new_msg.transmitter_id_error = old_msg.Transmitter_ID_Error
+		new_msg.dsp_unit_cal_checksum_error = old_msg.DSP_Unit_Cal_Checksum_Error
+		new_msg.dsp_unit_cal_block_chcksm_error = old_msg.DSP_Unit_Cal_Block_Chcksm_Error
+		new_msg.dsp_tuning_sensitivity_error = old_msg.DSP_Tuning_Sensitivity_Error
+		new_msg.dsp_loop_overrun_error = old_msg.DSP_Loop_Overrun_Error
+		new_msg.adc_spi_transfer_error = old_msg.ADC_SPI_Transfer_Error

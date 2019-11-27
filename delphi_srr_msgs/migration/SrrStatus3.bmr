@@ -1,0 +1,92 @@
+class update_delphi_srr_msgs_SrrStatus3_b101ee95bfdae3b068ba15b3a182b1e2(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrStatus3"
+	old_full_text = """
+# Message file for srr_status3
+
+Header header
+
+uint8     CAN_TX_ALIGNMENT_STATE                  
+uint8         CAN_TX_ALIGNMENT_STATE_Off=0
+uint8         CAN_TX_ALIGNMENT_STATE_Init=1
+uint8         CAN_TX_ALIGNMENT_STATE_Automatic_Alignment=2
+uint8         CAN_TX_ALIGNMENT_STATE_Factory_Alignment=3
+uint8         CAN_TX_ALIGNMENT_STATE_Service_Alignment=4
+
+uint8     CAN_TX_INTERFACE_VER_MINOR              
+
+uint32    CAN_TX_SW_VERSION_ARM                   
+
+uint8     CAN_TX_HW_VERSION                       
+
+uint8     CAN_TX_INTERFACE_VERSION                
+
+uint32    CAN_TX_SERIAL_NUM                       
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrStatus3"
+	new_full_text = """
+# Message file for srr_status3
+
+std_msgs/Header header
+
+uint8     can_tx_alignment_state
+uint8     CAN_TX_ALIGNMENT_STATE_OFF=0
+uint8     CAN_TX_ALIGNMENT_STATE_INIT=1
+uint8     CAN_TX_ALIGNMENT_STATE_AUTOMATIC_ALIGNMENT=2
+uint8     CAN_TX_ALIGNMENT_STATE_FACTORY_ALIGNMENT=3
+uint8     CAN_TX_ALIGNMENT_STATE_SERVICE_ALIGNMENT=4
+
+uint8     can_tx_interface_ver_minor
+uint32    can_tx_sw_version_arm
+uint8     can_tx_hw_version
+uint8     can_tx_interface_version
+uint32    can_tx_serial_num
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.can_tx_alignment_state = old_msg.CAN_TX_ALIGNMENT_STATE
+		new_msg.can_tx_interface_ver_minor = old_msg.CAN_TX_INTERFACE_VER_MINOR
+		new_msg.can_tx_sw_version_arm = old_msg.CAN_TX_SW_VERSION_ARM
+		new_msg.can_tx_hw_version = old_msg.CAN_TX_HW_VERSION
+		new_msg.can_tx_interface_version = old_msg.CAN_TX_INTERFACE_VERSION
+		new_msg.can_tx_serial_num = old_msg.CAN_TX_SERIAL_NUM

@@ -1,73 +1,51 @@
 # Message file for srr_status5
 
-Header header
+std_msgs/Header header
 
-bool      Disable_Auto_Align                      
+bool      disable_auto_align
 
-uint8     CAN_TX_YAW_RATE_REF_QF                  
-uint8         CAN_TX_YAW_RATE_REF_QF_Undefined=0
-uint8         CAN_TX_YAW_RATE_REF_QF_Temp_Undefined=1
-uint8         CAN_TX_YAW_RATE_REF_QF_Not_Accurate=2
-uint8         CAN_TX_YAW_RATE_REF_QF_Accurate=3
+uint8     can_tx_yaw_rate_ref_qf
+uint8     CAN_TX_YAW_RATE_REF_QF_UNDEFINED=0
+uint8     CAN_TX_YAW_RATE_REF_QF_TEMP_UNDEFINED=1
+uint8     CAN_TX_YAW_RATE_REF_QF_NOT_ACCURATE=2
+uint8     CAN_TX_YAW_RATE_REF_QF_ACCURATE=3
 
-uint8     CAN_TX_YAW_RATE_RAW_QF                  
-uint8         CAN_TX_YAW_RATE_RAW_QF_Undefined=0
-uint8         CAN_TX_YAW_RATE_RAW_QF_Temp_Undefined=1
-uint8         CAN_TX_YAW_RATE_RAW_QF_Not_Accurate=2
-uint8         CAN_TX_YAW_RATE_RAW_QF_Accurate=3
+uint8     can_tx_yaw_rate_raw_qf
+uint8     CAN_TX_YAW_RATE_RAW_QF_UNDEFINED=0
+uint8     CAN_TX_YAW_RATE_RAW_QF_TEMP_UNDEFINED=1
+uint8     CAN_TX_YAW_RATE_RAW_QF_NOT_ACCURATE=2
+uint8     CAN_TX_YAW_RATE_RAW_QF_ACCURATE=3
 
-float32   CAN_TX_YAW_RATE_REFERENCE                # deg/s
+float32   can_tx_yaw_rate_reference                # deg/s
+float32   can_tx_yaw_rate_raw                      # deg/s
 
-float32   CAN_TX_YAW_RATE_RAW                      # deg/s
+uint8     can_tx_system_status
+uint8     CAN_TX_SYSTEM_STATUS_CONFIGURATION=0
+uint8     CAN_TX_SYSTEM_STATUS_STARTUP=1
+uint8     CAN_TX_SYSTEM_STATUS_RUNNING=2
+uint8     CAN_TX_SYSTEM_STATUS_BLOCKED=3
+uint8     CAN_TX_SYSTEM_STATUS_FAULTY=4
+uint8     CAN_TX_SYSTEM_STATUS_SHUTDOWN=5
+uint8     CAN_TX_SYSTEM_STATUS_HOT=6
 
-uint8     CAN_TX_SYSTEM_STATUS                    
-uint8         CAN_TX_SYSTEM_STATUS_Configuration=0
-uint8         CAN_TX_SYSTEM_STATUS_StartUp=1
-uint8         CAN_TX_SYSTEM_STATUS_Running=2
-uint8         CAN_TX_SYSTEM_STATUS_Blocked=3
-uint8         CAN_TX_SYSTEM_STATUS_Faulty=4
-uint8         CAN_TX_SYSTEM_STATUS_ShutDown=5
-uint8         CAN_TX_SYSTEM_STATUS_Hot=6
-
-int16     CAN_TX_OUTSIDE_TEMPERATURE               # degC
-
-bool      CAN_BLOCKAGE_MNR_BLOCKED                
-
-bool      CAN_BLOCKAGE_BB_BLOCKED                 
-
-bool      CAN_BLOCKAGE_RADAR_BLOCKED              
-
-bool      CAN_TD_BLOCKED                          
-
-bool      Radar_TX_Power_Error                    
-
-bool      Radar_LO_Power_Error                    
-
-bool      Radar_Data_sync_error                   
-
-bool      Linearizer_SPI_Transfer_Error           
-
-bool      Saturated_Tuning_Freq_Error             
-
-bool      RTN_SPI_Transfer_Error                  
-
-bool      RRN_SPI_Transfer_Error                  
-
-bool      Video_Port_Capture_Error                
-
-bool      Vertical_Misalignment_error             
-
-bool      TX_Temperature_Fault                    
-
-bool      Transmitter_ID_Error                    
-
-bool      DSP_Unit_Cal_Checksum_Error             
-
-bool      DSP_Unit_Cal_Block_Chcksm_Error         
-
-bool      DSP_Tuning_Sensitivity_Error            
-
-bool      DSP_Loop_Overrun_Error                  
-
-bool      ADC_SPI_Transfer_Error                  
-
+int16     can_tx_outside_temperature               # degc
+bool      can_blockage_mnr_blocked
+bool      can_blockage_bb_blocked
+bool      can_blockage_radar_blocked
+bool      can_td_blocked
+bool      radar_tx_power_error
+bool      radar_lo_power_error
+bool      radar_data_sync_error
+bool      linearizer_spi_transfer_error
+bool      saturated_tuning_freq_error
+bool      rtn_spi_transfer_error
+bool      rrn_spi_transfer_error
+bool      video_port_capture_error
+bool      vertical_misalignment_error
+bool      tx_temperature_fault
+bool      transmitter_id_error
+bool      dsp_unit_cal_checksum_error
+bool      dsp_unit_cal_block_chcksm_error
+bool      dsp_tuning_sensitivity_error
+bool      dsp_loop_overrun_error
+bool      adc_spi_transfer_error

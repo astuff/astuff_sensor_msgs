@@ -1,0 +1,65 @@
+class update_delphi_srr_msgs_SrrFeatureSwVersion_69ecccf75547bc51f3acc0bf173d48f7(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrFeatureSwVersion"
+	old_full_text = """
+# Message file for srr_feature_sw_version
+
+Header header
+
+uint8     LCMA_sw_version                         
+
+uint8     CTA_sw_version                          
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrFeatureSwVersion"
+	new_full_text = """
+# Message file for srr_feature_sw_version
+
+std_msgs/Header header
+
+uint8     lcma_sw_version
+uint8     cta_sw_version
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.lcma_sw_version = old_msg.LCMA_sw_version
+		new_msg.cta_sw_version = old_msg.CTA_sw_version

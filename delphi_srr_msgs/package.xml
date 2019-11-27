@@ -17,6 +17,7 @@
   <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
   <build_depend condition="$ROS_VERSION == 2">rosidl_default_generators</build_depend>
 
+  <depend condition="$ROS_VERSION == 1">rosbag_migration_rule</depend>
   <depend condition="$ROS_VERSION == 2">builtin_interfaces</depend>
   <depend>std_msgs</depend>
 
@@ -31,5 +32,16 @@
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+    <rosbag_migration_rule rule_file="migration/SrrDebug3.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrDebug4.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrDebug5.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrFeatureAlert.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrFeatureSwVersion.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrStatus1.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrStatus2.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrStatus3.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrStatus4.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrStatus5.bmr" />
+    <rosbag_migration_rule rule_file="migration/SrrTrack.bmr" />
   </export>
 </package>

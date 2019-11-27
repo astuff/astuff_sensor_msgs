@@ -1,14 +1,9 @@
 # Message file for srr_status4
 
-Header header
+std_msgs/Header header
 
-uint16    CAN_TX_SW_VERSION_HOST                  
-
-uint8     CAN_TX_PATH_ID_BLIS_IGNORE              
-
-uint8     CAN_TX_PATH_ID_BLIS                     
-
-float32   CAN_TX_ANGLE_MISALIGNMENT               
-
-float32   CAN_TX_AUTO_ALIGN_ANGLE                 
-
+uint16    can_tx_sw_version_host
+uint8     can_tx_path_id_blis_ignore
+uint8     can_tx_path_id_blis
+float32   can_tx_angle_misalignment
+float32   can_tx_auto_align_angle

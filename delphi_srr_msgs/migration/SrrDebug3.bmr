@@ -1,0 +1,241 @@
+class update_delphi_srr_msgs_SrrDebug3_83af517ae6abcdcf6b4e46f417ccd4f7(MessageUpdateRule):
+	old_type = "delphi_srr_msgs/SrrDebug3"
+	old_full_text = """
+# Message file for srr_debug3
+
+Header header
+
+bool      Timer_Create_Error                      
+
+bool      Thread_Create_Error                     
+
+bool      ARM_Calibration_Error                   
+
+bool      SPI_FEE_Error                           
+
+bool      SPI_Comm_Error                          
+
+bool      Socket_Write_Error                      
+
+bool      DSP_Cal_Obsolete_62_Error               
+
+bool      Socket_Read_error                       
+
+bool      Socket_Init_Error                       
+
+bool      Signal_Wait_Error                       
+
+bool      Signal_Send_Error                       
+
+bool      Signal_Create_Error                     
+
+bool      Shared_Mem_Write_Error                  
+
+bool      Shared_Mem_Read_Error                   
+
+bool      Shared_Mem_Config_Error                 
+
+bool      Share_Mem_Init_Error                    
+
+bool      RAM_Test_Error                          
+
+bool      Num_Errors                              
+
+bool      MMAP_Memory_Error                       
+
+bool      ISR_Attach_Error                        
+
+bool      IPC_DRV_Write_Error                     
+
+bool      IPC_DRV_Trigger_Error                   
+
+bool      IPC_DRV_Sync_Error                      
+
+bool      IPC_DRV_Read_Error                      
+
+bool      IPC_DRV_Init_Error                      
+
+bool      Interrupt_Enable_Error                  
+
+bool      HIL_Format_Error                        
+
+bool      Flash_Filesystem_Error                  
+
+bool      Error_none                              
+
+bool      DSP_Load_Read_Error                     
+
+bool      DSP_Load_Open_Error                     
+
+bool      DSP_Load_Address_Error                  
+
+bool      DSP_ISP_Write_Error                     
+
+bool      DSP_IPC_Read_Error                      
+
+bool      DSP_IPC_Init                            
+
+bool      DSP_Init_Error                          
+
+bool      DSP_DRV_Start_Error                     
+
+bool      DSP_DRV_Load_Error                      
+
+bool      DSP_DRV_Init_Error                      
+
+bool      DSP_DRV_Init2_error                     
+
+bool      DSP_DRV_Init1_error                     
+
+bool      DSP_Calibration_Error                   
+
+bool      CAN_XMT_Error                           
+
+bool      CAN_RCV_Error                           
+
+bool      CAN_Hardware_Error                      
+
+bool      Always_True                             
+
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	new_type = "delphi_srr_msgs/SrrDebug3"
+	new_full_text = """
+# Message file for srr_debug3
+
+std_msgs/Header header
+
+bool      timer_create_error
+bool      thread_create_error
+bool      arm_calibration_error
+bool      spi_fee_error
+bool      spi_comm_error
+bool      socket_write_error
+bool      dsp_cal_obsolete_62_error
+bool      socket_read_error
+bool      socket_init_error
+bool      signal_wait_error
+bool      signal_send_error
+bool      signal_create_error
+bool      shared_mem_write_error
+bool      shared_mem_read_error
+bool      shared_mem_config_error
+bool      share_mem_init_error
+bool      ram_test_error
+bool      num_errors
+bool      mmap_memory_error
+bool      isr_attach_error
+bool      ipc_drv_write_error
+bool      ipc_drv_trigger_error
+bool      ipc_drv_sync_error
+bool      ipc_drv_read_error
+bool      ipc_drv_init_error
+bool      interrupt_enable_error
+bool      hil_format_error
+bool      flash_filesystem_error
+bool      error_none
+bool      dsp_load_read_error
+bool      dsp_load_open_error
+bool      dsp_load_address_error
+bool      dsp_isp_write_error
+bool      dsp_ipc_read_error
+bool      dsp_ipc_init
+bool      dsp_init_error
+bool      dsp_drv_start_error
+bool      dsp_drv_load_error
+bool      dsp_drv_init_error
+bool      dsp_drv_init2_error
+bool      dsp_drv_init1_error
+bool      dsp_calibration_error
+bool      can_xmt_error
+bool      can_rcv_error
+bool      can_hardware_error
+bool      always_true
+
+================================================================================
+MSG: std_msgs/Header
+# Standard metadata for higher-level stamped data types.
+# This is generally used to communicate timestamped data 
+# in a particular coordinate frame.
+# 
+# sequence ID: consecutively increasing ID 
+uint32 seq
+#Two-integer timestamp that is expressed as:
+# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')
+# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')
+# time-handling sugar is provided by the client library
+time stamp
+#Frame this data is associated with
+string frame_id
+"""
+
+	order = 0
+	migrated_types = [
+		("Header","Header"),]
+
+	valid = True
+
+	def update(self, old_msg, new_msg):
+		self.migrate(old_msg.header, new_msg.header)
+		new_msg.timer_create_error = old_msg.Timer_Create_Error
+		new_msg.thread_create_error = old_msg.Thread_Create_Error
+		new_msg.arm_calibration_error = old_msg.ARM_Calibration_Error
+		new_msg.spi_fee_error = old_msg.SPI_FEE_Error
+		new_msg.spi_comm_error = old_msg.SPI_Comm_Error
+		new_msg.socket_write_error = old_msg.Socket_Write_Error
+		new_msg.dsp_cal_obsolete_62_error = old_msg.DSP_Cal_Obsolete_62_Error
+		new_msg.socket_read_error = old_msg.Socket_Read_error
+		new_msg.socket_init_error = old_msg.Socket_Init_Error
+		new_msg.signal_wait_error = old_msg.Signal_Wait_Error
+		new_msg.signal_send_error = old_msg.Signal_Send_Error
+		new_msg.signal_create_error = old_msg.Signal_Create_Error
+		new_msg.shared_mem_write_error = old_msg.Shared_Mem_Write_Error
+		new_msg.shared_mem_read_error = old_msg.Shared_Mem_Read_Error
+		new_msg.shared_mem_config_error = old_msg.Shared_Mem_Config_Error
+		new_msg.share_mem_init_error = old_msg.Share_Mem_Init_Error
+		new_msg.ram_test_error = old_msg.RAM_Test_Error
+		new_msg.num_errors = old_msg.Num_Errors
+		new_msg.mmap_memory_error = old_msg.MMAP_Memory_Error
+		new_msg.isr_attach_error = old_msg.ISR_Attach_Error
+		new_msg.ipc_drv_write_error = old_msg.IPC_DRV_Write_Error
+		new_msg.ipc_drv_trigger_error = old_msg.IPC_DRV_Trigger_Error
+		new_msg.ipc_drv_sync_error = old_msg.IPC_DRV_Sync_Error
+		new_msg.ipc_drv_read_error = old_msg.IPC_DRV_Read_Error
+		new_msg.ipc_drv_init_error = old_msg.IPC_DRV_Init_Error
+		new_msg.interrupt_enable_error = old_msg.Interrupt_Enable_Error
+		new_msg.hil_format_error = old_msg.HIL_Format_Error
+		new_msg.flash_filesystem_error = old_msg.Flash_Filesystem_Error
+		new_msg.error_none = old_msg.Error_none
+		new_msg.dsp_load_read_error = old_msg.DSP_Load_Read_Error
+		new_msg.dsp_load_open_error = old_msg.DSP_Load_Open_Error
+		new_msg.dsp_load_address_error = old_msg.DSP_Load_Address_Error
+		new_msg.dsp_isp_write_error = old_msg.DSP_ISP_Write_Error
+		new_msg.dsp_ipc_read_error = old_msg.DSP_IPC_Read_Error
+		new_msg.dsp_ipc_init = old_msg.DSP_IPC_Init
+		new_msg.dsp_init_error = old_msg.DSP_Init_Error
+		new_msg.dsp_drv_start_error = old_msg.DSP_DRV_Start_Error
+		new_msg.dsp_drv_load_error = old_msg.DSP_DRV_Load_Error
+		new_msg.dsp_drv_init_error = old_msg.DSP_DRV_Init_Error
+		new_msg.dsp_drv_init2_error = old_msg.DSP_DRV_Init2_error
+		new_msg.dsp_drv_init1_error = old_msg.DSP_DRV_Init1_error
+		new_msg.dsp_calibration_error = old_msg.DSP_Calibration_Error
+		new_msg.can_xmt_error = old_msg.CAN_XMT_Error
+		new_msg.can_rcv_error = old_msg.CAN_RCV_Error
+		new_msg.can_hardware_error = old_msg.CAN_Hardware_Error
+		new_msg.always_true = old_msg.Always_True

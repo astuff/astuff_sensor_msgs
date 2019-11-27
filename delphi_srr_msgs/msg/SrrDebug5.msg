@@ -1,6 +1,5 @@
 # Message file for srr_debug5
 
-Header header
+std_msgs/Header header
 
-uint16    CAN_TX_ALIGN_UPDATES                    
-
+uint16    can_tx_align_updates
