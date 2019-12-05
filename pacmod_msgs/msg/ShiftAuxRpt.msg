@@ -8,3 +8,5 @@ bool brake_interlock_active
 bool brake_interlock_active_is_valid
 bool speed_interlock_active
 bool speed_interlock_active_is_valid
+bool gear_number_avail
+int8 gear_number
