@@ -19,6 +19,7 @@ add_message_files(
   DateTimeRpt.msg
   DetectedObjectRpt.msg
   DoorRpt.msg
+  EngineRpt.msg
   GlobalRpt.msg
   HeadlightAuxRpt.msg
   InteriorLightsRpt.msg
