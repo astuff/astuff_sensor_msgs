@@ -1,0 +1,8 @@
+std_msgs/Header header
+
+float64 engine_speed
+float64 engine_torque
+int16 engine_coolant_temp
+bool engine_speed_avail
+bool engine_torque_avail
+bool engine_coolant_temp_avail
