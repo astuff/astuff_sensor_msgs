@@ -16,6 +16,8 @@
   <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
   <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
 
+  <build_depend>ros_environment</build_depend>
+
   <exec_depend>delphi_esr_msgs</exec_depend>
   <exec_depend>delphi_srr_msgs</exec_depend>
   <exec_depend>derived_object_msgs</exec_depend>
