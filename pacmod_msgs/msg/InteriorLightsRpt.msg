@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool front_dome_lights_on
 bool front_dome_lights_on_is_valid

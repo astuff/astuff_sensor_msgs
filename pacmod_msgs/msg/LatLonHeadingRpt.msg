@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 int8 latitude_degrees
 uint8 latitude_minutes

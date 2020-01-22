@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool enable
 bool ignore_overrides

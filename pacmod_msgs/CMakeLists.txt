@@ -1,67 +1,118 @@
-cmake_minimum_required(VERSION 2.8.3)
 project(pacmod_msgs)
 
-## Add support for C++11, supported in ROS Kinetic and newer
-# add_definitions(-std=c++11)
+find_package(ros_environment REQUIRED)
 
-find_package(catkin REQUIRED COMPONENTS
-  std_msgs
-  message_generation
+set(ROS_VERSION $ENV{ROS_VERSION})
+
+set(MSG_FILES
+  "AccelAuxRpt.msg"
+  "AllSystemStatuses.msg"
+  "BrakeAuxRpt.msg"
+  "ComponentRpt.msg"
+  "DateTimeRpt.msg"
+  "DetectedObjectRpt.msg"
+  "DoorRpt.msg"
+  "EngineRpt.msg"
+  "GlobalRpt.msg"
+  "HeadlightAuxRpt.msg"
+  "InteriorLightsRpt.msg"
+  "KeyValuePair.msg"
+  "LatLonHeadingRpt.msg"
+  "MotorRpt1.msg"
+  "MotorRpt2.msg"
+  "MotorRpt3.msg"
+  "OccupancyRpt.msg"
+  "PacmodCmd.msg"
+  "ParkingBrakeStatusRpt.msg"
+  "PositionWithSpeed.msg"
+  "RearLightsRpt.msg"
+  "ShiftAuxRpt.msg"
+  "SteerAuxRpt.msg"
+  "SteerSystemCmd.msg"
+  "SteeringPIDRpt1.msg"
+  "SteeringPIDRpt2.msg"
+  "SteeringPIDRpt3.msg"
+  "SteeringPIDRpt4.msg"
+  "SystemCmdBool.msg"
+  "SystemCmdFloat.msg"
+  "SystemCmdInt.msg"
+  "SystemRptBool.msg"
+  "SystemRptFloat.msg"
+  "SystemRptInt.msg"
+  "TurnAuxRpt.msg"
+  "VehicleDynamicsRpt.msg"
+  "VehicleSpecificRpt1.msg"
+  "VehicleSpeedRpt.msg"
+  "VinRpt.msg"
+  "WheelSpeedRpt.msg"
+  "WiperAuxRpt.msg"
+  "YawRateRpt.msg"
 )
 
-## Generate messages in the 'msg' folder
-add_message_files(
-  FILES
-  AccelAuxRpt.msg
-  AllSystemStatuses.msg
-  BrakeAuxRpt.msg
-  ComponentRpt.msg
-  DateTimeRpt.msg
-  DetectedObjectRpt.msg
-  DoorRpt.msg
-  EngineRpt.msg
-  GlobalRpt.msg
-  HeadlightAuxRpt.msg
-  InteriorLightsRpt.msg
-  KeyValuePair.msg
-  LatLonHeadingRpt.msg
-  MotorRpt1.msg
-  MotorRpt2.msg
-  MotorRpt3.msg
-  OccupancyRpt.msg
-  PacmodCmd.msg
-  ParkingBrakeStatusRpt.msg
-  PositionWithSpeed.msg
-  RearLightsRpt.msg
-  ShiftAuxRpt.msg
-  SteerAuxRpt.msg
-  SteeringPIDRpt1.msg
-  SteeringPIDRpt2.msg
-  SteeringPIDRpt3.msg
-  SteeringPIDRpt4.msg
-  SteerSystemCmd.msg
-  SystemCmdBool.msg
-  SystemCmdFloat.msg
-  SystemCmdInt.msg
-  SystemRptBool.msg
-  SystemRptFloat.msg
-  SystemRptInt.msg
-  TurnAuxRpt.msg
-  VehicleSpecificRpt1.msg
-  VehicleDynamicsRpt.msg
-  VehicleSpeedRpt.msg
-  VinRpt.msg
-  WheelSpeedRpt.msg
-  WiperAuxRpt.msg
-  YawRateRpt.msg
-)
+if(${ROS_VERSION} EQUAL 1)
 
-## Generate added messages and services with any dependencies listed here
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-)
+  cmake_minimum_required(VERSION 2.8.3)
 
-catkin_package(CATKIN_DEPENDS
-  std_msgs
-)
+  # Default to C++11
+  if(NOT CMAKE_CXX_STANDARD)
+    set(CMAKE_CXX_STANDARD 11)
+  endif()
+
+  find_package(catkin REQUIRED
+    COMPONENTS
+    message_generation
+    std_msgs
+  )
+
+  add_message_files(FILES
+    ${MSG_FILES}
+    DIRECTORY msg
+  )
+
+  generate_messages(DEPENDENCIES std_msgs)
+
+  catkin_package(
+    CATKIN_DEPENDS message_runtime
+  )
+
+elseif(${ROS_VERSION} EQUAL 2)
+
+  cmake_minimum_required(VERSION 3.5)
+
+  if(NOT CMAKE_CXX_STANDARD)
+    set(CMAKE_CXX_STANDARD_REQUIRED ON)
+    set(CMAKE_CXX_STANDARD 14)
+  endif()
+
+  if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+    add_compile_options(-Wall -Wextra -Wpedantic)
+  endif()
+
+  find_package(ament_cmake REQUIRED)
+  find_package(builtin_interfaces REQUIRED)
+  find_package(std_msgs REQUIRED)
+  find_package(rosidl_default_generators REQUIRED)
+
+  # Apend "msg/" to each file name
+  set(TEMP_LIST "")
+  foreach(MSG_FILE ${MSG_FILES})
+    list(APPEND TEMP_LIST "msg/${MSG_FILE}")
+  endforeach()
+  set(MSG_FILES ${TEMP_LIST})
+
+  rosidl_generate_interfaces(${PROJECT_NAME}
+    ${MSG_FILES}
+    DEPENDENCIES builtin_interfaces std_msgs
+    ADD_LINTER_TESTS
+  )
+
+  ament_export_dependencies(rosidl_default_runtime)
+
+  if(BUILD_TESTING)
+    find_package(ament_lint_auto REQUIRED)
+    ament_lint_auto_find_test_dependencies()
+  endif()
+
+  ament_package()
+
+endif()

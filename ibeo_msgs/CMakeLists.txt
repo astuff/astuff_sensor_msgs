@@ -1,5 +1,7 @@
 project(ibeo_msgs)
 
+find_package(ros_environment REQUIRED)
+
 set(ROS_VERSION $ENV{ROS_VERSION})
 
 set(MSG_FILES

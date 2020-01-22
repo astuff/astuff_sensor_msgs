@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool between_gears
 bool between_gears_is_valid

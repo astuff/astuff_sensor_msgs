@@ -1,4 +1,4 @@
-Header header
+std_msgs/Header header
 
 bool enabled                # Indicates whether any system on the PACMod is enabled or disabled.
 bool override_active        # Indicates whether an override has been triggered on any system.
