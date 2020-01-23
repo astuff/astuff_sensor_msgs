@@ -2,7 +2,7 @@
 Changelog for package delphi_mrr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.4.0 (2020-01-23)
+3.0.1 (2020-01-23)
 ------------------
 * Adding ros_environment as required package to all packages.
 * Hybridizing delphi_mrr_msgs. (`#39 <https://github.com/astuff/astuff_sensor_msgs/issues/39>`_)
