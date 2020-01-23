@@ -2,6 +2,16 @@
 Changelog for package delphi_esr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.4.0 (2020-01-23)
+------------------
+* Adding ros_environment as required package to all packages.
+* ROS1/2 Hybrid: delphi_esr_msgs (`#37 <https://github.com/astuff/astuff_sensor_msgs/issues/37>`_)
+  * Adding hybrid CI.
+  * Hybridizing delphi_esr_msgs.
+  * Updating package.xml files for ROS2 rosdep.
+  * Adding message migration rules.
+* Contributors: Joshua Whitley
+
 2.3.1 (2018-12-07)
 ------------------
 * Merge pull request `#31 <https://github.com/astuff/astuff_sensor_msgs/issues/31>`_ from astuff/maint/add_urls

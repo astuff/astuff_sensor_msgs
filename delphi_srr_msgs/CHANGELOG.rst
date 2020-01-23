@@ -2,6 +2,17 @@
 Changelog for package delphi_srr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.4.0 (2020-01-23)
+------------------
+* Adding ros_environment as required package to all packages.
+* ROS1/ROS2 Hybrid: delphi_srr_msgs (`#40 <https://github.com/astuff/astuff_sensor_msgs/issues/40>`_)
+  * Hybridizing delphi_srr_msgs.
+  * Adding message migration rules.
+* Adding hybrid CI.
+* Updating package.xml files for ROS2 rosdep.
+* Adding message migration rules.
+* Contributors: Joshua Whitley
+
 2.3.1 (2018-12-07)
 ------------------
 * Merge pull request `#31 <https://github.com/astuff/astuff_sensor_msgs/issues/31>`_ from astuff/maint/add_urls

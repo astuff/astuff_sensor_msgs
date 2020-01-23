@@ -2,6 +2,26 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+2.4.0 (2020-01-23)
+------------------
+* ROS1/ROS2 Hybrid: pacmod_msgs (`#47 <https://github.com/astuff/astuff_sensor_msgs/issues/47>`_)
+  * Hybridizing pacmod_msgs.
+  * pacmod_msgs: Adding migration rules.
+  * Hybridizing astuff_sensor_msgs package.
+  * Adding ros_environment as required package to all packages.
+* Merge pull request `#50 <https://github.com/astuff/astuff_sensor_msgs/issues/50>`_ from astuff/maint/add_engine_rpt
+  Adding Engine Report Message
+* Changing coolant temp from float to int16.
+* Maint/update shiftauxrpt (`#49 <https://github.com/astuff/astuff_sensor_msgs/issues/49>`_)
+  * Adding Gear Number Avail and Gear Number.
+* adding turn_hazards to PacmodCmd.msg (`#48 <https://github.com/astuff/astuff_sensor_msgs/issues/48>`_)
+* Adding hybrid CI.
+* Updating package.xml files for ROS2 rosdep.
+* Adding message migration rules.
+* adding rear_pass_door (`#38 <https://github.com/astuff/astuff_sensor_msgs/issues/38>`_)
+  * adding rear_pass_door
+* Contributors: Joshua Whitley, Sanaz Fattahalhosseini, as-snehagn, mlemm99, snehagn
+
 2.3.1 (2018-12-07)
 ------------------
 * Merge pull request `#31 <https://github.com/astuff/astuff_sensor_msgs/issues/31>`_ from astuff/maint/add_urls
