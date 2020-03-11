@@ -1,4 +1,6 @@
+# Motor feedback data as reported
+
 std_msgs/Header header
 
-float64 current         # Motor current in Ampres
-float64 position        # Motor position in Radians
+float64 current         # Measured motor current in A
+float64 position        # Measured motor shaft position in rad
