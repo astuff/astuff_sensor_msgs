@@ -33,7 +33,5 @@
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
-    <rosbag_migration_rule rule_file="migration/SteeringPIDRpt1.bmr" />
-    <rosbag_migration_rule rule_file="migration/SteeringPIDRpt2.bmr" />
   </export>
 </package>
