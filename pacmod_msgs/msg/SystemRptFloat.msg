@@ -1,6 +1,7 @@
 # Feedback report for float systems
 # For accel and brake system unit used is "%".
 # For steering system unit used is "rad" in the range defined in platform user manual.
+# For brake deccel system unit used is "m/s^2" in the range [0,10.0]
 
 std_msgs/Header header
 

@@ -14,6 +14,18 @@ uint8 DIM_LEVEL_9 = 9
 uint8 DIM_LEVEL_10 = 10
 uint8 DIM_LEVEL_11 = 11
 uint8 DIM_LEVEL_MAX = 12
+uint8 DIM_LEVEL_12 = 13
+uint8 DIM_LEVEL_13 = 14
+uint8 DIM_LEVEL_14 = 15
+uint8 DIM_LEVEL_15 = 16
+uint8 DIM_LEVEL_16 = 17
+uint8 DIM_LEVEL_17 = 18
+uint8 DIM_LEVEL_18 = 19
+uint8 DIM_LEVEL_19 = 20
+uint8 DIM_LEVEL_20 = 21
+uint8 DIM_LEVEL_21 = 22
+uint8 DIM_LEVEL_22 = 23
+uint8 DIM_LEVEL_23 = 24
 
 std_msgs/Header header
 

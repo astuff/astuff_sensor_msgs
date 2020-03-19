@@ -3,8 +3,8 @@ std_msgs/Header header
 
 bool between_gears                 # True if gear is in "between gears" state
 bool stay_in_neutral_mode          # True if ON
-bool brake_interlock_active        # True if active
-bool speed_interlock_active        # True if active
+bool brake_interlock_active        # True if interlock is active
+bool speed_interlock_active        # True if interlock is active
 bool write_to_config               # True if CONFIG.TXT is being updated
 bool between_gears_avail           # True if this information is available on the platform.
                                    # Does not change during operation.

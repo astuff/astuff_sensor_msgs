@@ -11,7 +11,6 @@ set(MSG_FILES
   "BrakeAuxRpt.msg"
   "BrakeDeccelAuxRpt.msg"
   "BrakeDeccelCmd.msg"
-  "BrakeDeccelRpt.msg"
   "ComponentRpt.msg"
   "DateTimeRpt.msg"
   "DetectedObjectRpt.msg"
