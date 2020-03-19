@@ -14,5 +14,5 @@ bool fault_active                # True if a fault is active on any system
 bool supervisory_enable_required # True if the platform supports Supervisory Enablement Rules
 bool config_fault_active         # True if the CONFIG.TXT file on any component is absent or 
                                  # is read incorrectly
-bool user_can_read_errors        # The number of read errors encoutered by the PACMod on the user 
+uint16 user_can_read_errors      # The number of read errors encoutered by the PACMod on the user 
                                  # CAN interface

@@ -2,7 +2,7 @@
 
 # MAJOR, MINOR, and PATCH shall be the software version number 
 # and shall be defined by Sematic Versioning 2.0. 
-# For build numbers other than 0000, it shall be the most recent software release.
+# For build number 0000, it shall be the most recent software release.
 
 std_msgs/Header header
 
