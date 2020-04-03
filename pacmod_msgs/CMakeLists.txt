@@ -44,6 +44,7 @@ set(MSG_FILES
   "VehicleSpecificRpt1.msg"
   "VehicleSpeedRpt.msg"
   "VinRpt.msg"
+  "WatchdogRpt.msg"
   "WheelSpeedRpt.msg"
   "WiperAuxRpt.msg"
   "YawRateRpt.msg"
