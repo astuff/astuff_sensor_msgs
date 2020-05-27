@@ -4,7 +4,6 @@
 uint8 COMPONENT_TYPE_PACMOD = 0
 uint8 COMPONENT_TYPE_PACMINI = 1
 uint8 COMPONENT_TYPE_PACMICRO = 2
-uint8 COMPONENT_TYPE_NONE = 255
 
 std_msgs/Header header
 
@@ -22,7 +21,7 @@ bool horn
 bool media_controls
 bool parking_brake
 bool shift
-bool spray
+bool sprayer
 bool steering
 bool turn
 bool wiper
@@ -31,6 +30,9 @@ bool brake_deccel
 bool rear_pass_door
 bool engine_brake
 bool marker_lamp
+bool cabin_climate
+bool cabin_fan_speed
+bool cabin_temp
 
 uint8 counter                      # Message transmission counter which increases by 1 with every 
                                    # subsequent transmission up to and including 0xF. After this value 
@@ -44,3 +46,4 @@ bool internal_supply_voltage_fault # True if any fault has occurred in power sup
 
 bool supervisory_timeout           # True if timeout occurred on SUPERVISORY_CTRL message when supervisory enable is required 
 bool supervisory_sanity_fault      # True if a fault occurred in SUPERVISORY_CTRL message by customer ECU.
+bool watchdog_sanity_fault         # True if a counter fault has occurred in COMPONENT_RPT of watchdog

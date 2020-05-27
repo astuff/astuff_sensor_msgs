@@ -1,5 +1,18 @@
 # User command to control int systems
 
+# Cabin Fan Speed Constants
+uint16 FAN_OFF = 0
+uint16 FAN_SPEED_1 = 1
+uint16 FAN_SPEED_2 = 2
+uint16 FAN_SPEED_3 = 3
+uint16 FAN_SPEED_4 = 4
+uint16 FAN_SPEED_5 = 5
+uint16 FAN_SPEED_6 = 6
+uint16 FAN_SPEED_7 = 7
+uint16 FAN_SPEED_8 = 8
+uint16 FAN_SPEED_9 = 9
+uint16 FAN_SPEED_10 = 10
+
 # Cruise Control Button Command Constants
 uint16 CRUISE_CONTROL_NONE = 0
 uint16 CRUISE_CONTROL_CNCL = 1

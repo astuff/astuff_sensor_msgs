@@ -8,4 +8,3 @@ uint8 day     # Day in the range [1,31]
 uint8 hour    # Hour in the range [0,23] 
 uint8 minute  # Minute in the range [0,60]
 uint8 second  # Second in the range [0,60]
-                     
