@@ -29,7 +29,7 @@ bool input_output_fault       # True if fault is active
 bool output_reported_fault    # True if fault is active
 bool pacmod_fault             # True if fault is active
 bool vehicle_fault            # True if fault is active
-bool command_timeout          # True if timeout has occurred on command while enabled
+bool command_timeout          # True if timeout has occurred on command message while enabled
 bool manual_input             # Measured value on vehicle stalk/sensor. Values defined above
 bool command                  # Echoed user command value. Values defined above
-bool output                   # Measured value as reported by vehicle. Values defined above
+bool output                   # Measured value of PACMod output. Values defined above

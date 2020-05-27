@@ -1,5 +1,18 @@
 # Feedback report for int systems
 
+# Cabin Fan Speed Constants
+uint16 FAN_OFF = 0
+uint16 FAN_SPEED_1 = 1
+uint16 FAN_SPEED_2 = 2
+uint16 FAN_SPEED_3 = 3
+uint16 FAN_SPEED_4 = 4
+uint16 FAN_SPEED_5 = 5
+uint16 FAN_SPEED_6 = 6
+uint16 FAN_SPEED_7 = 7
+uint16 FAN_SPEED_8 = 8
+uint16 FAN_SPEED_9 = 9
+uint16 FAN_SPEED_10 = 10
+
 # Cruise Control Button Constants
 uint16 CRUISE_CONTROL_NONE = 0
 uint16 CRUISE_CONTROL_CNCL = 1
@@ -82,7 +95,7 @@ bool input_output_fault       # True if fault is active
 bool output_reported_fault    # True if fault is active
 bool pacmod_fault             # True if fault is active
 bool vehicle_fault            # True if fault is active
-bool command_timeout          # True if timeout has occurred on command while enabled
+bool command_timeout          # True if timeout has occurred on command message while enabled
 uint16 manual_input           # Measured value on vehicle stalk/sensor. Values defined above
 uint16 command                # Echoed user command value. Values defined above
-uint16 output                 # Measured value as reported by vehicle. Values defined above
+uint16 output                 # Measured value of PACMod output. Values defined above

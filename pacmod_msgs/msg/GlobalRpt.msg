@@ -10,7 +10,7 @@ bool brake_can_timeout           # True if a timeout has occurred on the brake C
 bool subsystem_can_timeout       # True if a timeout has occurred when communicating with 
                                  # a PACMod subsystem
 bool vehicle_can_timeout         # True if a timeout has occurred on a vehicle CAN interface
-bool fault_active                # True if a fault is active on any system
+bool pacmod_sys_fault_active     # True if a fault is active on any system
 bool supervisory_enable_required # True if the platform supports Supervisory Enablement Rules
 bool config_fault_active         # True if the CONFIG.TXT file on any component is absent or 
                                  # is read incorrectly
