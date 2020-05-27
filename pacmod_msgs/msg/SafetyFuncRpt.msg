@@ -61,7 +61,7 @@ bool engine_status                     # True if running
 bool pacmod_system_status              # True if enabled
 uint16 user_pc_fault                   # Values defined above in User PC Fault Constants
 uint16 pacmod_system_fault             # Values defined above in PACMod System Fault Constants
-uint16 pacmod_system_fault             # Values defined above in Vehicle Fault Constants
+uint16 vehicle_fault                   # Values defined above in Vehicle Fault Constants
 bool manual_state_obtainable           # True if obtainable    
 bool auto_ready_state_obtainable       # True if obtainable    
 bool auto_state_obtainable             # True if obtainable    
