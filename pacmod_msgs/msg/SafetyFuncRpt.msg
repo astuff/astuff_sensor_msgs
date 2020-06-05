@@ -55,7 +55,7 @@ std_msgs/Header header
 uint16 commanded_val                   # Values defined above in Safety Function Command Constants
 uint16 state                           # Values defined above in Safety Function State Constants
 uint16 automanual_opctrl               # Values defined above in Auto Manual Operator Control Constants
-uint16 cabin_ebrake_opctrl             # Values defined above in Cabin E-Brake Operator Control Constants
+uint16 cabin_safety_brake_opctrl       # Values defined above in Cabin E-Brake Operator Control Constants
 uint16 remote_stop_status              # Values defined above in Remote Stop Status Constants
 bool engine_status                     # True if running
 bool pacmod_system_status              # True if enabled

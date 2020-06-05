@@ -6,8 +6,8 @@
 
 std_msgs/Header header
 
-uint16 major
-uint16 minor
+uint16 mjr
+uint16 mnr
 uint16 patch
 char build0   # ASCII character
 char build1   # ASCII character
