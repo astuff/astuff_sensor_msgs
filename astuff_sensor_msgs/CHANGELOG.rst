@@ -2,8 +2,8 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.1.0 (2020-06-15)
+------------------
 * Remove radar_msgs (`#57 <https://github.com/astuff/astuff_sensor_msgs/issues/57>`_)
 * Contributors: icolwell-as
 
