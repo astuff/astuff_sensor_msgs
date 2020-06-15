@@ -26,7 +26,6 @@
   <exec_depend>mobileye_560_660_msgs</exec_depend>
   <exec_depend>neobotix_usboard_msgs</exec_depend>
   <exec_depend>pacmod_msgs</exec_depend>
-  <exec_depend>radar_msgs</exec_depend>
 
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
