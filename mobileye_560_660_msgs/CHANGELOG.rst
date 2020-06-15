@@ -2,6 +2,9 @@
 Changelog for package mobileye_560_660_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+
 3.0.1 (2020-01-23)
 ------------------
 * Adding ros_environment as required package to all packages.
