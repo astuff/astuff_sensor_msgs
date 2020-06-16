@@ -2,6 +2,9 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.1.0 (2020-06-15)
+------------------
+
 3.0.1 (2020-01-23)
 ------------------
 * ROS1/ROS2 Hybrid: pacmod_msgs (`#47 <https://github.com/astuff/astuff_sensor_msgs/issues/47>`_)

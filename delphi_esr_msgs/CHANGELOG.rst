@@ -2,6 +2,9 @@
 Changelog for package delphi_esr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.1.0 (2020-06-15)
+------------------
+
 3.0.1 (2020-01-23)
 ------------------
 * Adding ros_environment as required package to all packages.
