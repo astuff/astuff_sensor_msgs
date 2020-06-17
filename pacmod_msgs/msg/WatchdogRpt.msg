@@ -8,8 +8,9 @@ bool global_enabled_flag                 # Echo of enabled bit in GLOBAL_RPT. Tr
 bool global_override_active              # Echo of override_active bit in GLOBAL_RPT. True if overridden.
 bool global_command_timeout_error        # True if timeout occurred on command when enabled.
 bool global_pacmod_subsystem_timeout     # Echo of subsystem_can_timeout bit in GLOBAL_RPT. True if timeout occurred.
-bool global_pacmod_system_fault_active   # True if a timeout has occurred on a vehicle CAN interface
-bool global_config_fault_active          # True if a fault is active on any system
+bool global_vehicle_can_timeout          # True if a timeout has occurred on a vehicle CAN interface
+bool global_pacmod_system_fault_active   # True if a fault is active on any system
+bool global_config_fault_active          # True if a config fault is active on any pacmod system 
 bool global_timeout                      # True if timeout occurred on GLOBAL_RPT
 
 bool accel_enabled                       # Echo of enabled bit in ACCEL_RPT. True if enabled.
