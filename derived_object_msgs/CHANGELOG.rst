@@ -4,8 +4,7 @@ Changelog for package derived_object_msgs
 
 3.1.0 (2020-06-17)
 ------------------
-* Remove CipvTrack message (`#62 <https://github.com/astuff/astuff_sensor_msgs/issues/62>`_)
-* Remove radar_msgs (`#57 <https://github.com/astuff/astuff_sensor_msgs/issues/57>`_)
+* Remove CipvTrack message and radar_msgs dependency (`#62 <https://github.com/astuff/astuff_sensor_msgs/issues/62>`_)
 * Contributors: icolwell-as
 
 3.0.1 (2020-01-23)
