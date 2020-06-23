@@ -87,7 +87,6 @@ uint16 WIPERS_MEDIUM = 254
 uint16 WIPERS_HIGH = 255
 
 # For RPM dial system, unit used is rpm in the range [0,1000]
-# For Worklights system, refer documentation
 
 std_msgs/Header header
 
