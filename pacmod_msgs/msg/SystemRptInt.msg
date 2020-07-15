@@ -86,8 +86,6 @@ uint16 WIPERS_LOW = 253
 uint16 WIPERS_MEDIUM = 254
 uint16 WIPERS_HIGH = 255
 
-# For RPM dial system, unit used is rpm in the range [0,1000]
-
 std_msgs/Header header
 
 bool enabled                  # True if system is enabled

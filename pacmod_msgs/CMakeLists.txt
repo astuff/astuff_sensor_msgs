@@ -42,6 +42,8 @@ set(MSG_FILES
   "ParkingBrakeAuxRpt.msg"
   "PositionWithSpeed.msg"
   "RearLightsRpt.msg"
+  "RPMDialCmd.msg"
+  "RPMDialRpt.msg"
   "SafetyBrakeCmd.msg"
   "SafetyBrakeRpt.msg"
   "SafetyFuncCmd.msg"
