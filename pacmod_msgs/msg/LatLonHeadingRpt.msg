@@ -1,9 +1,11 @@
+# Latitude, longitude and heading feedback as reported by vehicle
+
 std_msgs/Header header
 
-int8 latitude_degrees
-uint8 latitude_minutes
-uint8 latitude_seconds
-int8 longitude_degrees
-uint8 longitude_minutes
-uint8 longitude_seconds
-float64 heading
+int8 latitude_degrees   # Measured in deg
+uint8 latitude_minutes  # Measured in min
+uint8 latitude_seconds  # Measured in sec
+int8 longitude_degrees  # Measured in deg
+uint8 longitude_minutes # Measured in min
+uint8 longitude_seconds # Measured in sec
+float64 heading         # Measured in deg
