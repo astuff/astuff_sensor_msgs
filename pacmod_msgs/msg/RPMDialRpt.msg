@@ -8,6 +8,6 @@ bool output_reported_fault
 bool pacmod_fault         
 bool vehicle_fault        
 bool command_timeout      
-uint16 manual_input       
-uint16 command            
-uint16 output             
+float64 manual_input       
+float64 command            
+float64 output             
