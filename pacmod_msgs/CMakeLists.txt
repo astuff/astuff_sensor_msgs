@@ -68,6 +68,7 @@ set(msg_files
   "msg/VehicleDynamicsRpt.msg"
   "msg/VehicleSpeedRpt.msg"
   "msg/VinRpt.msg"
+  "msg/WatchdogRpt.msg"
   "msg/WheelSpeedRpt.msg"
   "msg/WiperAuxRpt.msg"
   "msg/YawRateRpt.msg"
