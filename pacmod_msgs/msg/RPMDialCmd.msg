@@ -4,4 +4,4 @@ bool enable
 bool ignore_overrides
 bool clear_override  
 
-uint16 dial_cmd
+float64 dial_cmd
