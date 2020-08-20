@@ -69,6 +69,7 @@ set(MSG_FILES
   "WheelSpeedRpt.msg"
   "WiperAuxRpt.msg"
   "WorklightsRpt.msg"
+  "WorklightsCmd.msg"
   "YawRateRpt.msg"
 )
 
