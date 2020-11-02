@@ -117,7 +117,7 @@ workflows:
       - dashing
   aws_release:
     jobs:
-      - melodic_release
+      - melodic_release:
           context: ubuntu-pkg-build
           filters:
             branches:
