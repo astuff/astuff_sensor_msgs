@@ -2,6 +2,13 @@
 Changelog for package pacmod_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+devel-3.2.0 (2020-11-03)
+------------------------
+* Test AWS release
+* Added Hexagon Tractor specific messages
+* Changes related to DBC version 9.1.0
+* Contributors: Amruta Mhaske, Sneha Ganesh
+
 3.1.0 (2020-06-17)
 ------------------
 

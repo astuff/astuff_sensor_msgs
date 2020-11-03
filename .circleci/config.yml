@@ -18,7 +18,7 @@ jobs:
           name: Build
           command: |
             cd ..
-            catkin build
+            catkin build pacmod_msgs
       - run:
           name: Run Tests
           command: |
@@ -46,7 +46,7 @@ jobs:
           name: Build
           command: |
             cd ..
-            catkin build
+            catkin build pacmod_msgs
       - run:
           name: Run Tests
           command: |
@@ -74,7 +74,7 @@ jobs:
           command: |
             source `find /opt/ros -maxdepth 2 -name local_setup.bash | sort | head -1`
             cd ..
-            colcon build
+            colcon build pacmod_msgs
       - run:
           name: Run Tests
           command: |
@@ -82,6 +82,30 @@ jobs:
             cd ..
             colcon test
             colcon test-result
+    working_directory: ~/src
+
+  kinetic_release:
+    docker:
+      - image: autonomoustuff/docker-builds:kinetic-ros-base
+    steps:
+      - checkout
+      - run:
+          name: Set Up Container
+          command: |
+            apt-get update -qq && apt-get install -y dh-make python-bloom ruby
+            gem install --no-rdoc --no-ri deb-s3
+            source `find /opt/ros -name setup.bash | sort | head -1`
+            rosdep install --from-paths . --ignore-src -y
+      - run:
+          name: Build
+          command: |
+            bloom-generate rosdebian --os-name ubuntu --os-version xenial --ros-distro kinetic
+            fakeroot debian/rules binary
+      - run:
+          name: Upload
+          command: |
+            cd ..
+            deb-s3 upload -b autonomoustuff-repo -c xenial --preserve-versions $(ls *.deb) --access-key-id=$S3_ACCESS_KEY_ID --secret-access-key=$S3_SECRET_ACCESS_KEY
     working_directory: ~/src
 
   melodic_release:
@@ -117,12 +141,19 @@ workflows:
       - dashing
   aws_release:
     jobs:
+      - kinetic_release:
+          context: ubuntu-pkg-build
+          filters:
+            branches:
+              ignore:
+                - master
+                - /.*/
+            tags:
+              only: /devel-^[0-9]+\.[0-9]+\.[0-9]+$/
       - melodic_release:
           context: ubuntu-pkg-build
           filters:
             branches:
-              only:
-                - /devel/dbc_extra/
               ignore:
                 - master
                 - /.*/

@@ -2,6 +2,13 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+devel-3.2.0 (2020-11-03)
+------------------------
+* Test AWS release
+* Added Hexagon Tractor specific messages
+* Changes related to DBC version 9.1.0
+* Contributors: Amruta Mhaske, Sneha Ganesh
+
 3.1.0 (2020-06-17)
 ------------------
 * Remove radar_msgs (`#57 <https://github.com/astuff/astuff_sensor_msgs/issues/57>`_)

@@ -2,6 +2,9 @@
 Changelog for package derived_object_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+devel-3.2.0 (2020-11-03)
+------------------------
+
 3.1.0 (2020-06-17)
 ------------------
 * Remove CipvTrack message and radar_msgs dependency (`#62 <https://github.com/astuff/astuff_sensor_msgs/issues/62>`_)
