@@ -145,6 +145,8 @@ workflows:
           context: ubuntu-pkg-build
           filters:
             branches:
+              only:
+                - /devel/dbc_extra/
               ignore:
                 - master
                 - /.*/
@@ -154,6 +156,8 @@ workflows:
           context: ubuntu-pkg-build
           filters:
             branches:
+              only:
+                - /devel/dbc_extra/
               ignore:
                 - master
                 - /.*/
