@@ -105,7 +105,7 @@ jobs:
       - run:
           name: Upload
           command: |
-            deb-s3 upload -b autonomoustuff-repo -c xenial --preserve-versions $(ls *.deb) --access-key-id=$S3_ACCESS_KEY_ID --secret-access-key=$S3_SECRET_ACCESS_KEY
+            deb-s3 upload -b autonomoustuff-repo -c xenial -v private --preserve-versions $(ls *.deb) --access-key-id=$S3_ACCESS_KEY_ID --secret-access-key=$S3_SECRET_ACCESS_KEY
     working_directory: ~/src
 
   melodic_release:
@@ -129,7 +129,7 @@ jobs:
       - run:
           name: Upload
           command: |
-            deb-s3 upload -b autonomoustuff-repo -c bionic --preserve-versions $(ls *.deb) --access-key-id=$S3_ACCESS_KEY_ID --secret-access-key=$S3_SECRET_ACCESS_KEY
+            deb-s3 upload -b autonomoustuff-repo -c bionic -v private --preserve-versions $(ls *.deb) --access-key-id=$S3_ACCESS_KEY_ID --secret-access-key=$S3_SECRET_ACCESS_KEY
     working_directory: ~/src
 
 workflows:
