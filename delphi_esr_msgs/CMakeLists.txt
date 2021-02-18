@@ -17,6 +17,7 @@ set(MSG_FILES
   "EsrStatus9.msg"
   "EsrTrack.msg"
   "EsrTrackMotionPower.msg"
+  "EsrTrackMotionPowerGroup.msg"
   "EsrValid1.msg"
   "EsrValid2.msg"
   "EsrVehicle1.msg"
@@ -24,7 +25,6 @@ set(MSG_FILES
   "EsrVehicle3.msg"
   "EsrVehicle4.msg"
   "EsrVehicle5.msg"
-  "TrackMotionPower.msg"
 )
 
 if(${ROS_VERSION} EQUAL 1)
