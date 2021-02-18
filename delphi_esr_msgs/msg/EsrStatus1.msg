@@ -1,12 +1,12 @@
 std_msgs/Header header
 
-# ESR status1
+# ESR Status1
 string      canmsg
-uint8       time_stamp
-uint8       rolling_count
-bool        comm_error
-int16       curvature
-uint16      scan_id
-float32     yaw_rate
-float32     vehicle_speed_calc
 
+uint8       rolling_count_1
+uint8       dsp_timestamp
+bool        comm_error
+int16       radius_curvature_calc
+uint16      scan_index
+float32     yaw_rate_calc
+float32     vehicle_speed_calc

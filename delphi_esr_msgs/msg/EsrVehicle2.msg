@@ -1,6 +1,6 @@
 std_msgs/Header header
 
-# ESR vehicle2
+# ESR Vehicle2
 uint16      scan_index_ack
 bool        use_angle_misalignment
 bool        clear_faults
@@ -13,8 +13,8 @@ bool        radar_cmd_radiate
 bool        blockage_disable
 uint8       maximum_tracks
 uint8       turn_signal_status
-bool        vehicle_speed_valid
+bool        vehicle_speed_validity
 bool        mmr_upside_down
 uint8       grouping_mode
 bool        wiper_status
-bool        raw_data_enabled
+bool        raw_data_enable
