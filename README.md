@@ -12,7 +12,7 @@ A set of messages for each AutonomouStuff-provided driver. `astuff_sensor_msgs` 
 - `kartech_linear_actuator_msgs`
 - `mobileye_560_660_msgs`
 - `neobotix_usboard_msgs`
-- `pacmod_msgs`
+- `pacmod_msgs` (Limited usage for PACMod3 based on DBC versions)
 - `radar_msgs` (Deprecated as of ROS Noetic)
 - `derived_object_msgs` (abstracted sensor messages for like Objects and Closest In-Path Vehicles)
 

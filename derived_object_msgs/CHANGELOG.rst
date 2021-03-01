@@ -2,6 +2,10 @@
 Changelog for package derived_object_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.2.0 (2021-03-01)
+------------------
+* Adding Noetic.
+
 3.1.0 (2020-06-17)
 ------------------
 * Remove CipvTrack message and radar_msgs dependency (`#62 <https://github.com/astuff/astuff_sensor_msgs/issues/62>`_)

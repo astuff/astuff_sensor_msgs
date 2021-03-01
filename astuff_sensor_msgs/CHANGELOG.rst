@@ -2,6 +2,12 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.2.0 (2021-03-01)
+------------------
+* Adding Noetic.
+* pacmod_msgs implementation moving into driver for pacmod3 development related to newer DBC protocols,
+  this package will only receive limited updates going forward.
+
 3.1.0 (2020-06-17)
 ------------------
 * Remove radar_msgs (`#57 <https://github.com/astuff/astuff_sensor_msgs/issues/57>`_)
