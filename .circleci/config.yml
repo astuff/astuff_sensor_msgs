@@ -56,6 +56,34 @@ jobs:
             catkin_test_results
     working_directory: ~/src
 
+  noetic:
+    docker:
+      - image: autonomoustuff/docker-builds:noetic-ros-base
+    steps:
+      - checkout
+      - run:
+          name: Set Up Container
+          command: |
+            apt-get update -qq
+            source `find /opt/ros -name setup.bash | sort | head -1`
+            rosdep install --from-paths . --ignore-src -y
+            cd ..
+            catkin init
+            catkin config --extend /opt/ros/$ROS_DISTRO
+      - run:
+          name: Build
+          command: |
+            cd ..
+            catkin build
+      - run:
+          name: Run Tests
+          command: |
+            source `find /opt/ros -name setup.bash | sort | head -1`
+            cd ..
+            catkin run_tests
+            catkin_test_results
+    working_directory: ~/src
+
   dashing:
     docker:
       - image: autonomoustuff/docker-builds:dashing-ros-base
@@ -90,4 +118,5 @@ workflows:
     jobs:
       - kinetic
       - melodic
+      - noetic
       - dashing
