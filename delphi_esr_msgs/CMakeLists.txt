@@ -16,7 +16,7 @@ set(MSG_FILES
   "EsrStatus8.msg"
   "EsrStatus9.msg"
   "EsrTrack.msg"
-  "EsrTrackMotionPower.msg"
+  "EsrTrackMotionPowerTrack.msg"
   "EsrTrackMotionPowerGroup.msg"
   "EsrValid1.msg"
   "EsrValid2.msg"
