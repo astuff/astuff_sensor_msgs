@@ -53,6 +53,10 @@ if(${ROS_VERSION} EQUAL 1)
     CATKIN_DEPENDS message_runtime
   )
 
+  install(DIRECTORY migration
+    DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/migration
+  )
+
 elseif(${ROS_VERSION} EQUAL 2)
 
   cmake_minimum_required(VERSION 3.5)
@@ -91,6 +95,9 @@ elseif(${ROS_VERSION} EQUAL 2)
     ament_lint_auto_find_test_dependencies()
   endif()
 
-  ament_package()
+  ament_auto_package(
+    INSTALL_TO_SHARE
+      migration
+  )
 
 endif()
