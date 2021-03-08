@@ -15,7 +15,7 @@ bool  moving
 int8  power
 """
 
-	order = 1
+	order = 0
 	migrated_types = []
 
 	valid = True
