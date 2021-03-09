@@ -50,5 +50,6 @@
     <rosbag_migration_rule rule_file="migration/EsrValid2.bmr" />
     <rosbag_migration_rule rule_file="migration/EsrVehicle4.bmr" />
     <rosbag_migration_rule rule_file="migration/TrackMotionPower.bmr" />
+    <rosbag_migration_rule rule_file="migration/1_3.1.0-3.2.0.bmr" />
   </export>
 </package>
