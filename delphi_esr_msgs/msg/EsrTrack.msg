@@ -1,17 +1,18 @@
 std_msgs/Header header
 
-# ESR Track Msg
+# ESR Track
 string        canmsg
-uint8         track_id
-float32       track_lat_rate
-bool          track_group_changed
-uint8         track_status
-float32       track_angle
-float32       track_range
-bool          track_bridge_object
-bool          track_rolling_count
-float32       track_width
-float32       track_range_accel
-uint8         track_med_range_mode
-float32       track_range_rate
 
+uint8         id
+float32       lat_rate
+bool          grouping_changed
+bool          oncoming
+uint8         status
+float32       angle
+float32       range
+bool          bridge_object
+bool          rolling_count
+float32       width
+float32       range_accel
+uint8         med_range_mode
+float32       range_rate

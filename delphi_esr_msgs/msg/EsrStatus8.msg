@@ -1,12 +1,13 @@
 std_msgs/Header header
 
-# ESR status8
+# ESR Status8
 string      canmsg
-uint8       history_fault0
-uint8       history_fault1
-uint8       history_fault2
-uint8       history_fault3
-uint8       history_fault4
-uint8       history_fault5
-uint8       history_fault6
-uint8       history_fault7
+
+uint8       history_fault_0
+uint8       history_fault_1
+uint8       history_fault_2
+uint8       history_fault_3
+uint8       history_fault_4
+uint8       history_fault_5
+uint8       history_fault_6
+uint8       history_fault_7
