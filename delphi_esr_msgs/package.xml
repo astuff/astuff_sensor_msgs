@@ -35,21 +35,7 @@
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
-    <rosbag_migration_rule rule_file="migration/EsrStatus1.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus2.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus3.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus4.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus5.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus6.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus7.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus8.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrStatus9.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrTrack.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrTrackMotionPower.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrValid1.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrValid2.bmr" />
-    <rosbag_migration_rule rule_file="migration/EsrVehicle4.bmr" />
-    <rosbag_migration_rule rule_file="migration/TrackMotionPower.bmr" />
+    <rosbag_migration_rule rule_file="migration/0_2.3.1-3.0.1.bmr" />
     <rosbag_migration_rule rule_file="migration/1_3.1.0-3.2.0.bmr" />
   </export>
 </package>

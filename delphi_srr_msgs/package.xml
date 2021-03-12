@@ -33,16 +33,6 @@
   <export>
     <build_type condition="$ROS_VERSION == 1">catkin</build_type>
     <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
-    <rosbag_migration_rule rule_file="migration/SrrDebug3.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrDebug4.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrDebug5.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrFeatureAlert.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrFeatureSwVersion.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrStatus1.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrStatus2.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrStatus3.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrStatus4.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrStatus5.bmr" />
-    <rosbag_migration_rule rule_file="migration/SrrTrack.bmr" />
+    <rosbag_migration_rule rule_file="migration/0_2.3.1-3.0.1.bmr" />
   </export>
 </package>
