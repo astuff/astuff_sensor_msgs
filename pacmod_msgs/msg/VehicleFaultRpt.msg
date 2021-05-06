@@ -1,0 +1,34 @@
+# Vehicle Diagnostic information as reported by vehicle
+
+std_msgs/Header header
+
+bool engine_check_light
+bool engine_check_light_avail
+bool trc_fault_light
+bool trc_fault_light_avail
+bool trc_off_fault_light
+bool trc_off_fault_light_avail
+bool antilock_brake_fault_light
+bool antilock_brake_fault_light_avail
+bool tire_fault_light
+bool tire_fault_light_avail
+bool air_bags_fault_light
+bool air_bags_fault_light_avail
+bool low_engine_oil_pressure
+bool low_engine_oil_pressure_avail
+bool brake_fault
+bool brake_fault_avail
+bool brake_applied_power_reduced
+bool brake_applied_power_reduced_avail
+bool steering_loss_stop_safely
+bool steering_loss_stop_safely_avail
+bool steering_fault_service_now
+bool steering_fault_service_now_avail
+bool xmsn_fault_service_now
+bool xmsn_fault_service_now_avail
+bool xmsn_over_temp_stop_safely
+bool xmsn_over_temp_stop_safely_avail
+bool low_battery_features_off
+bool low_battery_features_off_avail
+bool charging_system_fault
+bool charging_system_fault_avail

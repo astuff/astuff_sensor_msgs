@@ -1,8 +1,8 @@
 # Feedback report for float systems
 # For accel and brake system, unit used is "%".
 # For steering system, unit used is "rad" in the range defined in platform user manual.
-# For brake deccel system, unit used is "m/s^2" in the range [0,10.0]
-# For cabin temperature system, unit used is deg_c in the range [10.0,35.0]
+# For brake decel system, unit used is "m/s^2" in the range [0,10.0]
+# For cabin temperature system, unit used is "deg_c" in the range [10.0,35.0]
 
 std_msgs/Header header
 

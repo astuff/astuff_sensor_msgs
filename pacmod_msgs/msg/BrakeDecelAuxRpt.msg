@@ -1,4 +1,4 @@
-# Auxiliary feedback data related to brake deccel system
+# Auxiliary feedback data related to brake decel system
 
 # XBR Active Control Mode Constants
 uint16 NO_BRAKE_DEMAND = 0
@@ -15,10 +15,10 @@ uint16 FOUNDATION_BRAKES_NOT_IN_USE = 0
 uint16 FOUNDATION_BRAKES_IN_USE = 1
 
 # Hill Holder Mode Constants 
-uint16 INACTIVE = 0
-uint16 ACTIVE = 1
-uint16 ACTIVE_BUT_INACTIVE_SOON = 2
-uint16 ERROR = 6
+uint16 HH_INACTIVE = 0
+uint16 HH_ACTIVE = 1
+uint16 HH_ACTIVE_BUT_INACTIVE_SOON = 2
+uint16 HH_ERROR = 6
 
 std_msgs/Header header
 

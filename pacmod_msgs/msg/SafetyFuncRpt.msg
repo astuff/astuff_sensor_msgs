@@ -2,28 +2,28 @@
 
 # Safety Function Command Constants
 uint16 CMD_NONE = 0
-uint16 CMD_AUTO_READY = 1
-uint16 CMD_AUTO = 2
+uint16 CMD_AUTOMS_READY = 1
+uint16 CMD_AUTOMS = 2
 uint16 CMD_MANUAL_READY = 3
 uint16 CMD_CRITICAL_STOP1 = 4
 uint16 CMD_CRITICAL_STOP2 = 5
 
 # Safety Function State Constants
-uint16 MANUAL_BRAKED_STATE_ = 0
-uint16 MANUAL_UNBRAKED_STATE = 1
-uint16 AUTO_READY_STATE = 2
-uint16 AUTO_INACTIVE_STATE = 3
-uint16 AUTO_ACTIVE_BRAKED_STATE = 4
-uint16 AUTO_ACTIVE_UNBRAKED_STATE = 5
-uint16 MANUAL_READY_STATE = 6
-uint16 CRITICAL_STOP1_STATE = 7
-uint16 CRITICAL_STOP2_STATE = 8
-uint16 STARTUP_STATE = 9
+uint16 MANUAL_BRAKED = 0
+uint16 MANUAL_UNBRAKED = 1
+uint16 AUTOMS_READY = 2
+uint16 AUTOMS_INACTIVE = 3
+uint16 AUTOMS_ACTIVE_BRAKED = 4
+uint16 AUTOMS_ACTIVE_UNBRAKED = 5
+uint16 MANUAL_READY = 6
+uint16 CRITICAL_STOP1 = 7
+uint16 CRITICAL_STOP2 = 8
+uint16 STARTUP = 9
 
 # Auto Manual Operator Control Constants
-uint16 AUTO_MAN_INVALID = 0
-uint16 AUTO_MAN_MANUAL = 1
-uint16 AUTO_MAN_AUTO = 2
+uint16 AUTOMS_MAN_INVALID = 0
+uint16 AUTOMS_MAN_MANUAL = 1
+uint16 AUTOMS_MAN_AUTOMS = 2
 
 # Cabin Safety Brake Operator Control Constants
 uint16 CABIN_BRAKE_INVALID = 0
@@ -36,25 +36,25 @@ uint16 REMOTE_STOP_STATE_GO = 1
 uint16 REMOTE_STOP_STATE_STOP = 2
 
 # User PC, PACMod, Vehicle Fault Constants
-uint16 OKAY = 0
-uint16 FAULT = 1
-uint16 TIMEOUT = 2
+uint8 OKAY = 0
+uint8 FAULT = 1
+uint8 TIMEOUT = 2
 
 std_msgs/Header header
 
 uint16 commanded_val                   # Echoed command. Values defined above in Safety Function Command Constants
 uint16 state                           # Current state of safety system. Values defined above in Safety Function State Constants
-uint16 automanual_opctrl               # Values defined above in Auto Manual Operator Control Constants
+uint16 automsman_opctrl                # Values defined above in Auto Manual Operator Control Constants
 uint16 cabin_safety_brake_opctrl       # Values defined above in Cabin E-Brake Operator Control Constants
 uint16 remote_stop_status              # Values defined above in Remote Stop Status Constants
 bool engine_status                     # True if running
 bool pacmod_system_status              # True if enabled
-uint16 user_pc_fault                   # Values defined above in User PC, PACMod, Vehicle Fault Constants
-uint16 pacmod_system_fault             # Values defined above in User PC, PACMod, Vehicle Fault Constants
-uint16 vehicle_fault                   # Values defined above in User PC, PACMod, Vehicle Fault Constants
+uint8 user_pc_fault                    # Values defined above in User PC, PACMod, Vehicle Fault Constants
+uint8 pacmod_system_fault              # Values defined above in User PC, PACMod, Vehicle Fault Constants
+
 bool manual_state_obtainable           # True if obtainable    
-bool auto_ready_state_obtainable       # True if obtainable    
-bool auto_state_obtainable             # True if obtainable    
+bool automs_ready_state_obtainable     # True if obtainable    
+bool automs_state_obtainable           # True if obtainable    
 bool manual_ready_state_obtainable     # True if obtainable    
 bool critical_stop1_state_obtainable   # True if obtainable    
 bool critical_stop2_state_obtainable   # True if obtainable    

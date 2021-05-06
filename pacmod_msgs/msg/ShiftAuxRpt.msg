@@ -1,4 +1,10 @@
 # Auxiliary feedback data related to shifting system
+
+# Calibration status constants
+uint8 INACTIVE = 0
+uint8 ACTIVE = 1
+uint8 ERROR = 2
+
 std_msgs/Header header
 
 bool between_gears                 # True if gear is in "between gears" state
@@ -6,6 +12,8 @@ bool stay_in_neutral_mode          # True if ON
 bool brake_interlock_active        # True if interlock is active
 bool speed_interlock_active        # True if interlock is active
 bool write_to_config               # True if CONFIG.TXT is being updated
+uint8 calibration_status           # Values defined above
+
 bool between_gears_avail           # True if this information is available on the platform.
                                    # Does not change during operation.
 bool stay_in_neutral_mode_avail    # True if this information is available on the platform.
