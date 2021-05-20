@@ -40,16 +40,10 @@ set(MSG_FILES
   "SystemControl.msg"
   "SystemStatus.msg"
   "SystemTDBlockage.msg"
-  "TrackMotionPower.msg"
   "VehicleStateMsg1.msg"
   "VehicleStateMsg2.msg"
   "VehicleStateMsg3.msg"
   "WheelSpeedMsg.msg"
-  "XCPMrrCtoReq.msg"
-  "XCPMrrCtoResp.msg"
-  "XCPMrrDaqResp.msg"
-  "XCPMrrDtoReq.msg"
-  "XCPMrrDtoResp.msg"
 )
 
 if(${ROS_VERSION} EQUAL 1)
