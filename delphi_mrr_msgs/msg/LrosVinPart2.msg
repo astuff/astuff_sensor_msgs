@@ -1,3 +1,3 @@
 std_msgs/Header header
 
-uint8 vin_part2
+uint64 vin_part2
