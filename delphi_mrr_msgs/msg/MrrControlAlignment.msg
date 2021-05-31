@@ -1,5 +1,0 @@
-std_msgs/Header header
-
-bool can_fac_align_cmd_3
-bool can_fac_align_cmd_2
-bool can_fac_align_cmd_1

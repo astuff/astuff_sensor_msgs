@@ -6,8 +6,8 @@ bool    super_res_target
 bool    nd_target
 bool    host_veh_clutter
 bool    valid_level
-float64 azimuth
-uint16  range
-uint16  range_rate
-uint8   amplitude
+float32 azimuth
+float32 range
+float32 range_rate
+int8    amplitude
 uint8   index_2lsb
