@@ -2,6 +2,9 @@
 Changelog for package astuff_sensor_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.0.2 (2020-06-18)
+------------------
+
 3.0.1 (2020-01-23)
 ------------------
 * Hybridizing astuff_sensor_msgs package.

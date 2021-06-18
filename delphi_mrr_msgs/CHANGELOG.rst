@@ -2,11 +2,10 @@
 Changelog for package delphi_mrr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-3.2.0 (2021-03-12)
+3.0.2 (2020-06-18)
 ------------------
-
-3.1.0 (2020-06-17)
-------------------
+* Cherry-pick delphi_mrr_msgs from master
+* Contributors: Ian Colwell
 
 3.0.1 (2020-01-23)
 ------------------
