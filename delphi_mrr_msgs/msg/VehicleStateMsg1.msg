@@ -6,6 +6,7 @@ uint8  can_intf_minor_version
 uint8  can_intf_major_version
 uint8  can_brake_pedal
 bool   can_high_wheel_slip
+uint8  can_turn_signal_status
 bool   can_washer_front_cmd
 bool   can_wiper_front_cmd
 uint8  can_wiper_speed_info
