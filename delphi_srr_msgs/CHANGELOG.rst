@@ -2,6 +2,9 @@
 Changelog for package delphi_srr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+3.3.0 (2021-06-18)
+------------------
+
 3.2.0 (2021-03-12)
 ------------------
 * Bag migration rules cleanup (`#76 <https://github.com/astuff/astuff_sensor_msgs/issues/76>`_)
