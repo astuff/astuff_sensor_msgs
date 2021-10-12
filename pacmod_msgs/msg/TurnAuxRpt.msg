@@ -1,6 +1,0 @@
-std_msgs/Header header
-
-bool driver_blinker_bulb_on
-bool driver_blinker_bulb_on_is_valid
-bool passenger_blinker_bulb_on
-bool passenger_blinker_bulb_on_is_valid
