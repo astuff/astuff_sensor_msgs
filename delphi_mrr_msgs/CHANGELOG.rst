@@ -2,6 +2,9 @@
 Changelog for package delphi_mrr_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+4.0.0 (2023-04-24)
+------------------
+
 3.3.0 (2021-06-18)
 ------------------
 * Remove unused MRR messages (`#87 <https://github.com/astuff/astuff_sensor_msgs/issues/87>`_)
